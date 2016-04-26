@@ -112,7 +112,7 @@ public class OpenScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent startActivity = new Intent(OpenScreen.this, LoginActivity.class);
+                Intent startActivity = new Intent(OpenScreen.this, Info.class);
                 startActivity(startActivity);
                 finish();
             }
