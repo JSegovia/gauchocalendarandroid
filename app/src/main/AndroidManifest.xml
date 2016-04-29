@@ -27,13 +27,13 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name" />
-        <activity android:name=".Info" />
         <activity android:name=".HomeScreen" />
         <activity android:name=".InputEvents" />
         <activity android:name=".JonsActivity" />
         <activity android:name=".LaurasActivity" />
         <activity android:name=".ChristiansActivity" />
-        <activity android:name=".MichaelsActivity"></activity>
+        <activity android:name=".MichaelsActivity" />
+        <activity android:name=".Information"></activity>
     </application>
 
 </manifest>
