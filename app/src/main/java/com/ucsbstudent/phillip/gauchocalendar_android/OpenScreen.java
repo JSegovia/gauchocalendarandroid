@@ -2,9 +2,14 @@ package com.ucsbstudent.phillip.gauchocalendar_android;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.firebase.client.AuthData;
+import com.firebase.client.Firebase;
+import com.firebase.client.authentication.Constants;
 
 
 /**
@@ -16,19 +21,14 @@ public class OpenScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_open_screen);
-
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent startActivity = new Intent(OpenScreen.this, Information.class);
+                Intent startActivity = new Intent(OpenScreen.this, StudentLogin.class);
                 startActivity(startActivity);
                 finish();
             }
         }, 2000);
-
-
     }
 }
