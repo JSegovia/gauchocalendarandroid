@@ -12,7 +12,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/LoginButtonText"
+        android:text="@string/SignUpButtonText"
         android:id="@+id/LoginButton"
         android:layout_below="@+id/TextFieldPASSWORD"
         android:layout_alignParentStart="true"
@@ -58,10 +58,20 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:text="@string/LoginButtonText"
+        android:id="@+id/loginbtn"
+        android:layout_below="@+id/accountques"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/GotAccount"
+        android:id="@+id/accountques"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import com.firebase.client.Firebase;
 
+import java.util.Map;
+
 /**
  * Created by Phillip on 5/5/2016.
  */
@@ -24,6 +26,7 @@ private Firebase firebaseRef;
         setContentView(R.layout.activity_student_login);
         Firebase.setAndroidContext(this);
         firebaseRef = new Firebase(FIREBASE_URL);
+        //firebaseRef.child("Users");
 
         findViewById(R.id.LoginButton).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,24 +37,26 @@ private Firebase firebaseRef;
                 String pass_word = password.getText().toString();
                 String email = user_name + "@umail.ucsb.edu";
 
-                if (user_name != "" && pass_word != "") {
+                if (user_name != "" && pass_word != "" &&
+                        user_name != "Enter Umail Username" && pass_word != "Enter your Password") {
                     StudentProfile student = new StudentProfile(user_name, pass_word, email);
-                    firebaseRef.push().setValue(student);
+                    firebaseRef.child("Users").push().setValue(student);
                     username.setText("");
                     password.setText("");
                     Toast.makeText(StudentLogin.this, "Account Inserted", Toast.LENGTH_LONG).show();
                 }
+
             }
         });
     }
 
 
-/*
-    public void buttonSignUp(com.firebase.client.core.view.View view){
+
+    public void buttonLogin(View view){
         Intent intent = new Intent(this, Information.class);
         startActivity(intent);
 
 
     }
-*/
+
 }

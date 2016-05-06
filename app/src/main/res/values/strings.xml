@@ -22,8 +22,10 @@
     <string name="title_activity_student_prof_login">StudentProfLogin</string>
 
     // These Strings are for the StudentLogin.java and activity_student_login.xml
-    <string name="LoginButtonText">Signup or Login</string>
+    <string name="SignUpButtonText">Signup </string>
     <string name="UserNameText">USERNAME</string>
     <string name="PasswordText">PASSWORD</string>
+    <string name="GotAccount">already have an account?</string>
+    <string name="LoginButtonText">Login</string>
 
 </resources>
