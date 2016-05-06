@@ -46,6 +46,8 @@ private Firebase firebaseRef;
                     Toast.makeText(StudentLogin.this, "Account Inserted", Toast.LENGTH_LONG).show();
                 }
 
+                Intent intent = new Intent(v.getContext(), Information.class);
+                startActivity(intent);
             }
         });
     }
