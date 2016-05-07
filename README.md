@@ -30,5 +30,13 @@ It will take you to a page like this:
 <<image coming soon>>
 
 You will want to click on the option "Import project (Eclipse ADT, Gradle, etc)"
+You will be walked through on how to import the project. 
+Here is a video you can follow along with:
+https://www.youtube.com/watch?v=E0MjorpDWxc
+And here is the link to our project:
+https://github.com/JSegovia/gauchocalendarandroid
+
+### Step 3
+Once you have the project up in your Android Studio then click the play button to run it.
 
 
