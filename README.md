@@ -27,7 +27,7 @@ http://developer.android.com/sdk/installing/index.html
 When you open up Android Studio for the first time it will provide you with multiple options for getting started.
 If you already have worked with Android Studio you should just go to File > close project.
 It will take you to a page like this:
-<<image coming soon>>
+![Alt tag](studio-welcomeReadme.png)
 
 You will want to click on the option "Import project (Eclipse ADT, Gradle, etc)"
 You will be walked through on how to import the project. 
