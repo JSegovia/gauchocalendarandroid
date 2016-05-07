@@ -37,6 +37,6 @@ And here is the link to our project:
 https://github.com/JSegovia/gauchocalendarandroid
 
 ### Step 3
-Once you have the project up in your Android Studio then click the play button to run it.
+Once you have the project up in your Android Studio then click the play button to run it. If you do not have an android device you will need to create an emulator and run it on that. Just as a note, the smaller the emulator phone the better it will run. 
 
 
