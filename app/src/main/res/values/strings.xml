@@ -28,4 +28,15 @@
     <string name="GotAccount">already have an account?</string>
     <string name="LoginButtonText">Login</string>
 
+    // These String are for the InputEvents.java and activity_input_events.xml
+    <string name="FilloutEvent">Add Courses or Custom Events</string>
+    <string name="Depart">Subject Area:</string>
+    <string name="Quarter">Quarter:</string>
+    <string name="CourseLvl">Course Level:</string>
+    <string name="search">Search</string>
+    <string name="gocalendar">See Calendar</string>
+
+
+    // These Strings are for the Information.java and actvity_information.xml
+    <string name="startcal">Begin</string>
 </resources>
