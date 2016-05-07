@@ -20,7 +20,15 @@ really care about their third or fourth class as a GE the schedule generator wil
 
 ## How to get this app running
 ### Step 1
-As of this moement, we have been working only with Android Studio so you will need to install everything necessary to run android studio. This means that if you have a Macbook you will need to download Xcode. Windows, Linux, and Apple all require you to download the latest SDK. You can read more about what your computer will need here:
+As of this moement, we have been working only with Android Studio so you will need to install everything necessary to run android studio. This means that if you have a Macbook you will need to download Xcode. Windows, Linux, and Apple all require you to download the latest SDK. This README will constantly be updated when we figure out other ways to run the app like using Eclipse. You can read more about what your computer will need for Android Studio here:
 http://developer.android.com/sdk/installing/index.html
 
 ### Step 2
+When you open up Android Studio for the first time it will provide you with multiple options for getting started.
+If you already have worked with Android Studio you should just go to File > close project.
+It will take you to a page like this:
+<<image coming soon>>
+
+You will want to click on the option "Import project (Eclipse ADT, Gradle, etc)"
+
+
