@@ -37,8 +37,8 @@ private Firebase firebaseRef;
                 String pass_word = password.getText().toString();
                 String email = user_name + "@umail.ucsb.edu";
 
-                if (user_name != "" && pass_word != "" &&
-                        user_name != "Enter Umail Username" && pass_word != "Enter your Password") {
+                if (user_name.matches("") || pass_word.matches("") ||
+                        user_name == "Enter Umail Username" || pass_word == "Enter your Password") {
                     StudentProfile student = new StudentProfile(user_name, pass_word, email);
                     firebaseRef.child("Users").push().setValue(student);
                     username.setText("");
