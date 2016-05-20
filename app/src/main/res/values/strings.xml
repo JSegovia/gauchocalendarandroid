@@ -39,4 +39,42 @@
 
     // These Strings are for the Information.java and actvity_information.xml
     <string name="startcal">Begin</string>
+
+
+    // These String are for the CalendarView.java and CalendarView.xml
+    <string name="sun">Sunday</string>
+    <string name="mon">Monday</string>
+    <string name="tue">Tuesday</string>
+    <string name="wed">Wednesday</string>
+    <string name="thu">Thursday</string>
+    <string name="fri">Friday</string>
+    <string name="sat">Saturday</string>
+
+    <string name="time12am">12 am</string>
+    <string name="time1am">12 am</string>
+    <string name="time2am">12 am</string>
+    <string name="time3am">12 am</string>
+    <string name="time4am">12 am</string>
+    <string name="time5am">12 am</string>
+    <string name="time6am">12 am</string>
+    <string name="time7am">12 am</string>
+    <string name="time8am">12 am</string>
+    <string name="time9am">12 am</string>
+    <string name="time10am">12 am</string>
+    <string name="time11am">12 am</string>
+    <string name="time12pm">12 am</string>
+    <string name="time1pm">12 am</string>
+    <string name="time2pm">12 am</string>
+    <string name="time3pm">12 am</string>
+    <string name="time4pm">12 am</string>
+    <string name="time5pm">12 am</string>
+    <string name="time6pm">12 am</string>
+    <string name="time7pm">12 am</string>
+    <string name="time8pm">12 am</string>
+    <string name="time9pm">12 am</string>
+    <string name="time10pm">12 am</string>
+    <string name="time11pm">12 am</string>
+
+    <string name="updating">Updating</string>
+
 </resources>
