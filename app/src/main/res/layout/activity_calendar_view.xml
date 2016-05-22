@@ -6,6 +6,10 @@
     android:orientation="vertical"
     android:padding="0dp" >
 
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     <LinearLayout
         android:id="@+id/dayLabelsLinearLayout"
         android:layout_width="match_parent"
@@ -268,7 +272,11 @@
                 android:textSize="15dp"
                 android:textStyle="bold" />
         </RelativeLayout>
+
+
     </LinearLayout>
+
+    </HorizontalScrollView>
 
     <View
         android:id="@+id/dividerView"

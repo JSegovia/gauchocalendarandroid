@@ -27,6 +27,7 @@
     <string name="PasswordText">PASSWORD</string>
     <string name="GotAccount">already have an account?</string>
     <string name="LoginButtonText">Login</string>
+    <string name="FBlogin">Login with Facebook</string>
 
     // These String are for the InputEvents.java and activity_input_events.xml
     <string name="FilloutEvent">Add Courses or Custom Events</string>
@@ -42,13 +43,13 @@
 
 
     // These String are for the CalendarView.java and CalendarView.xml
-    <string name="sun">Sunday</string>
-    <string name="mon">Monday</string>
-    <string name="tue">Tuesday</string>
-    <string name="wed">Wednesday</string>
-    <string name="thu">Thursday</string>
-    <string name="fri">Friday</string>
-    <string name="sat">Saturday</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
 
     <string name="time12am">12 am</string>
     <string name="time1am">12 am</string>

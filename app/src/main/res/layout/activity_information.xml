@@ -28,5 +28,16 @@
         android:onClick="start"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This application was created to make creating class schedules easy.
+        \n It will generate the best schedule based upon your listed preferences and notify you if there is no way to avoid time conflicts.
+        \n You can save up to three schedules at a time and import the one you like the most into google calendar."
+        android:id="@+id/description"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

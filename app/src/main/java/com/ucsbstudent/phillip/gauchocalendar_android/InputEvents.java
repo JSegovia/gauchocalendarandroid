@@ -13,6 +13,9 @@ public class InputEvents extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_events);
+
+        String[] str={"anthr", "art", "CMPSC"};
+        Spinner s= (Spinner)findViewById(R.id.spinnersubject);
     }
 /*
     Spinner dropdown = (Spinner)findViewById(R.id.spinnersubject);

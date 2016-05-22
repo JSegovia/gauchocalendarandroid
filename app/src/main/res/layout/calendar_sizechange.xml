@@ -2,6 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="1dp"
     android:layout_height="1440dp"
-    android:background="@drawable/bordered_rectangle">
+    android:background="@color/medium_dark_gray">
 
 </LinearLayout>
