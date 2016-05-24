@@ -28,6 +28,8 @@
     <string name="GotAccount">already have an account?</string>
     <string name="LoginButtonText">Login</string>
     <string name="FBlogin">Login with Facebook</string>
+    <string name="facebook_app_id">1742320862648531</string>
+
 
     // These String are for the InputEvents.java and activity_input_events.xml
     <string name="FilloutEvent">Add Courses or Custom Events</string>
@@ -77,5 +79,8 @@
     <string name="time11pm">12 am</string>
 
     <string name="updating">Updating</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
