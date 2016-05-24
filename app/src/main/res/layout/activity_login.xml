@@ -73,9 +73,15 @@
                 android:textStyle="bold" />
 
 
-
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:id="@+id/calendarView"
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
     </ScrollView>
+
+
 
 
 </LinearLayout>
