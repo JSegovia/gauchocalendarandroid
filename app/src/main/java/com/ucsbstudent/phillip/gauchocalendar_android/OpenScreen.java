@@ -1,15 +1,9 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
-
-import com.firebase.client.AuthData;
-import com.firebase.client.Firebase;
-import com.firebase.client.authentication.Constants;
+import android.support.v7.app.AppCompatActivity;
 
 
 /**
@@ -29,6 +23,6 @@ public class OpenScreen extends AppCompatActivity {
                 startActivity(startActivity);
                 finish();
             }
-        }, 2000);
+        }, 3500);
     }
 }
