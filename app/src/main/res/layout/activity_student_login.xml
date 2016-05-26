@@ -86,17 +86,7 @@
         android:layout_below="@+id/LoginButton"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/FBbutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/FacebookBlue"
-        android:text="@string/FBlogin"
-        android:gravity="center"
-        android:layout_gravity="bottom"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="false"
-        android:textColor="#ffffff" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -117,6 +107,15 @@
         android:layout_below="@+id/loginbtn"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="15dp" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginBottom="20dp"
+        android:name="com.ucsbstudent.phillip.gauchocalendar_android.StudentLoginFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

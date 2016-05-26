@@ -60,12 +60,12 @@ private Firebase firebaseRef;
         startActivity(intent);
 
     }
-
+/*
     public void FBButton(View view){
         Intent intent = new Intent(this, StudentLoginFragment.class);
         startActivity(intent);
     }
-
+*/
 /*
     StudentLoginFragment fragmentS1 = new StudentLoginFragment();
 
