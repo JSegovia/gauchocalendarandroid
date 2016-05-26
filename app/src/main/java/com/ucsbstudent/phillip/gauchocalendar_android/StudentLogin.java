@@ -1,5 +1,6 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
+import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -58,7 +59,25 @@ private Firebase firebaseRef;
         Intent intent = new Intent(this, Information.class);
         startActivity(intent);
 
-
     }
 
+    public void FBButton(View view){
+        Intent intent = new Intent(this, StudentLoginFragment.class);
+        startActivity(intent);
+    }
+
+/*
+    StudentLoginFragment fragmentS1 = new StudentLoginFragment();
+
+
+    @Override
+    public android.support.v4.app.FragmentManager getSupportFragmentManager() {
+        return super.getSupportFragmentManager();
+    }
+
+    @Override
+    public FragmentManager getFragmentManager() {
+        return super.getFragmentManager();
+    }
+    */
 }

@@ -82,7 +82,9 @@
         android:gravity="center"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="FBButton"/>
+
 
 
 </RelativeLayout>
