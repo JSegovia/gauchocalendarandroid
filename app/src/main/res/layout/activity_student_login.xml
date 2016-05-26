@@ -9,14 +9,26 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ucsbstudent.phillip.gauchocalendar_android.StudentLogin">
 
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ucsbseal"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/accountques"
+        android:layout_above="@+id/saysUsername"
+        android:layout_alignEnd="@+id/accountques"
+        android:layout_alignParentBottom="false" />
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/SignUpButtonText"
         android:id="@+id/LoginButton"
-        android:layout_below="@+id/TextFieldPASSWORD"
-        android:layout_alignParentStart="true"
-        android:onClick="buttonSignUp"/>
+        android:onClick="buttonSignUp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,7 +36,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/UserNameText"
         android:id="@+id/saysUsername"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/TextFieldUSERNAME"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -32,7 +44,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/TextFieldUSERNAME"
         android:hint="Enter Umail Username"
-        android:layout_below="@+id/saysUsername"
+        android:layout_above="@+id/saysPassword"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -41,7 +53,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/PasswordText"
         android:id="@+id/saysPassword"
-        android:layout_below="@+id/TextFieldUSERNAME"
+        android:layout_above="@+id/TextFieldPASSWORD"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -51,7 +63,7 @@
         android:ems="10"
         android:hint="Enter your Password"
         android:id="@+id/TextFieldPASSWORD"
-        android:layout_below="@+id/saysPassword"
+        android:layout_above="@+id/LoginButton"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -60,9 +72,10 @@
         android:layout_height="wrap_content"
         android:text="@string/LoginButtonText"
         android:id="@+id/loginbtn"
+        android:onClick="buttonLogin"
+        android:layout_marginTop="0dp"
         android:layout_below="@+id/accountques"
-        android:layout_centerHorizontal="true"
-        android:onClick="buttonLogin"/>
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,7 +83,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/GotAccount"
         android:id="@+id/accountques"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/LoginButton"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -82,7 +95,28 @@
         android:gravity="center"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="false"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:id="@+id/textView3"
+        android:autoText="false"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:background="@drawable/circle"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="85dp"
+        android:layout_below="@+id/loginbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp" />
 
 
 </RelativeLayout>
