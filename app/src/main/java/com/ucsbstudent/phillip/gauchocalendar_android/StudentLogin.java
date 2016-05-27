@@ -14,6 +14,8 @@ import android.widget.Toast;
 import com.firebase.client.Firebase;
 
 import java.util.Map;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 
 /**
  * Created by Phillip on 5/5/2016.
@@ -60,24 +62,5 @@ private Firebase firebaseRef;
         startActivity(intent);
 
     }
-/*
-    public void FBButton(View view){
-        Intent intent = new Intent(this, StudentLoginFragment.class);
-        startActivity(intent);
-    }
-*/
-/*
-    StudentLoginFragment fragmentS1 = new StudentLoginFragment();
 
-
-    @Override
-    public android.support.v4.app.FragmentManager getSupportFragmentManager() {
-        return super.getSupportFragmentManager();
-    }
-
-    @Override
-    public FragmentManager getFragmentManager() {
-        return super.getFragmentManager();
-    }
-    */
 }

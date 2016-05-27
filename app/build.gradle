@@ -39,4 +39,6 @@ dependencies {
     compile 'com.android.support:support-v4:24.0.0-beta1'
     compile 'com.firebase:firebase-client-android:2.5.2'
     compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'org.jsoup:jsoup:1.9.2'
+
 }

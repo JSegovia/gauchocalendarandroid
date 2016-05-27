@@ -38,6 +38,32 @@
     <string name="search">Search</string>
     <string name="gocalendar">See Calendar</string>
 
+    <string-array name="departments">
+        <item>ANTH</item> <item>ART</item> <item>ART CS</item> <item>ARTHI</item> <item>ARTST</item>
+        <item>AS AM</item> <item>ASTRO</item> <item>BIOL</item> <item>BIOL CS</item> <item>BMSE</item>
+        <item>BL ST</item> <item>CH E</item> <item>CHEM CS</item> <item>CHEM</item> <item>CH ST</item>
+        <item>CHIN</item> <item>CLASS</item> <item>COMM</item> <item>C LIT</item> <item>CMPSC</item>
+        <item>CMPSCCS</item> <item>CMPTG</item> <item>CMPTGCS</item> <item>CNCSP</item> <item>DANCE</item>
+        <item>DYNS</item> <item>EARTH</item> <item>EACS</item> <item>EEMB</item> <item>ECON</item>
+        <item>ED</item> <item>ECE</item> <item>ENGR</item> <item>ENGL</item> <item>ESM</item> <item>ENV S</item>
+        <item>ESS</item> <item>ES</item> <item>FEMST</item> <item>FAMST</item> <item>FLMST</item> <item>FR</item>
+        <item>GEN S</item> <item>GEN SCS</item> <item>GEOG</item> <item>GER</item> <item>GPS</item> <item>GLOBL</item>
+        <item>GREEK</item> <item>HEB</item> <item>HIST</item> <item>INT</item> <item>INT CS</item> <item>ITAL</item>
+        <item>JAPAN</item> <item>KOR</item> <item>LATIN</item> <item>LAIS</item> <item>LING</item> <item>LIT</item>
+        <item>LIT CS</item> <item>MARSC</item> <item>MATRL</item> <item>MATH</item> <item>MATH CS</item> <item>ME</item>
+        <item>MAT</item> <item>ME ST</item> <item>MES</item> <item>MS</item> <item>MCDB</item> <item>MUS</item>
+        <item>MUS CS</item> <item>MUS A</item> <item>PHIL</item> <item>PHYS</item> <item>PHYS CS</item> <item>POL S</item>
+        <item>PORT</item> <item>PSY</item> <item>RG ST</item> <item>RENST</item> <item>SLAV</item> <item>SOC</item>
+        <item>SPAN</item> <item>SHS</item> <item>STAT</item> <item>TMP</item> <item>THTR</item> <item>WRIT</item>
+        <item>WL</item> <item>WL CS</item>
+
+    </string-array>
+
+    <string-array name="Quarter">
+        <item> Summer 2016</item>
+        <item> Fall 2016 </item>
+    </string-array>
+
 
     // These Strings are for the Information.java and actvity_information.xml
     <string name="startcal">Begin</string>

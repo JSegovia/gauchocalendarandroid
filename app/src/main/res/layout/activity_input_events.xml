@@ -54,24 +54,8 @@
         android:spinnerMode="dropdown"
         android:background="@android:drawable/btn_dropdown"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/CourseLvl"
-        android:id="@+id/Quarter"
-        android:layout_below="@+id/spinnerQuarter"
-        android:layout_alignParentStart="true" />
-
-    <Spinner
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinnercourselvl"
-        android:background="@android:drawable/btn_dropdown"
-        android:layout_below="@+id/Quarter"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/QuarterTxt"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
