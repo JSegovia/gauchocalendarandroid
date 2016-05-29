@@ -31,13 +31,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name" />
         <activity android:name=".HomeScreen" />
-        <activity android:name=".InputEvents" />
+
+        <activity android:name=".InputEvents"
+            android:screenOrientation="portrait"/>
+
         <activity android:name=".Information" />
+
         <activity android:name=".StudentLogin" />
+
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
