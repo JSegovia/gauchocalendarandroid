@@ -177,9 +177,9 @@
             android:layout_height="wrap_content"
             android:text="@string/addCustom"
             android:id="@+id/btnAddCustom"
-            android:layout_below="@+id/spinnerAmPm"/>
+            android:layout_below="@+id/spinnerAmPm" />
 
-        //added events should be put in a list below custom event button
+
 
 
         <Button
@@ -192,7 +192,15 @@
             android:layout_below="@+id/btnAddCustom"
             android:layout_alignParentEnd="true" />
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listEvents"
+    android:layout_below="@+id/gocalendar">
 
+    //added events should be put in a list below see calendar button
+
+</LinearLayout>
 
 
     </RelativeLayout>
