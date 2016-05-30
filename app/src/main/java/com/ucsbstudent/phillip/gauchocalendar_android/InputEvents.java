@@ -1,13 +1,17 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
 import android.app.ActionBar;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
@@ -15,6 +19,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
@@ -30,6 +35,8 @@ public class InputEvents extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapter;
 
     private LinearLayout linearLayoutEvents;
+    private View mEmptyView;
+
     private EditText EditEventName;
     private EditText EditLocation;
     private Button mButton;
@@ -44,6 +51,7 @@ public class InputEvents extends AppCompatActivity {
 
         linearLayoutEvents = (LinearLayout) findViewById(R.id.listEvents);
         linearLayoutEvents.setOrientation(LinearLayout.VERTICAL);
+
         EditEventName = (EditText) findViewById(R.id.insertTitle);
         EditLocation = (EditText) findViewById(R.id.insertLocation);
         mButton = (Button) findViewById(R.id.btnAddCustom);
@@ -160,14 +168,32 @@ public class InputEvents extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-    private View.OnClickListener onCLickAddcustom(){
+        // TODO: Handle screen rotation:
+        // encapsulate information in a parcelable object, and save it
+        // into the state bundle.
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        // TODO: Handle screen rotation:
+        // restore the saved items and inflate each one with inflateEditRow;
+
+    }
+
+    private View.OnClickListener onCLickAddcustom() {
         return new View.OnClickListener() {
+
+            String henry = "henry";
             @Override
             public void onClick(View v) {
-                linearLayoutEvents.addView(createNewEvent(EditEventName.getText().toString()));
-                linearLayoutEvents.addView(createNewLocation(EditLocation.getText().toString()));
-
+                String nameEvent = EditEventName.getText().toString();
+                String nameLocation = EditLocation.getText().toString();
                 Spinner spinner = (Spinner) findViewById(R.id.spinnerweekday);
                 String weekdaytext = spinner.getSelectedItem().toString();
                 Spinner spinner1 = (Spinner) findViewById(R.id.spinnerhour);
@@ -176,70 +202,49 @@ public class InputEvents extends AppCompatActivity {
                 String min = spinner2.getSelectedItem().toString();
                 Spinner spinner3 = (Spinner) findViewById(R.id.spinnerAmPm);
                 String ampm = spinner3.getSelectedItem().toString();
-                linearLayoutEvents.addView(createNewTime(weekdaytext, hour, min, ampm));
 
-                linearLayoutEvents.addView(createButtoncancel());
+                inflatedEditRow(nameEvent,nameLocation,weekdaytext,hour, min, ampm);
+                v.setVisibility(View.VISIBLE);
 
             }
         };
     }
 
-    private Button createButtoncancel(){
-        String canceltext = "Cancel Event";
-        final String test = "works";
-        LinearLayout.LayoutParams layoutParams= new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        layoutParams.gravity = Gravity.RIGHT;
-        final Button cancel = new Button(this);
-        cancel.setText(canceltext);
-        cancel.setTextColor(Color.parseColor("Red"));
-        cancel.setTextSize(10);
-        cancel.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-        cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cancel.setText(test);
-            }
-        });
-        return cancel;
+    // onClick handler for the "X" button of each row
+    public void onDeleteClicked(View v) {
+        // remove the row by calling the getParent on button
+        linearLayoutEvents.removeView((View) v.getParent());
     }
 
+    // Helper for inflating a row
+    private void inflatedEditRow(String nameEvent, String nameLoc, String weekday, String hr, String min, String ampm) {
 
-    private TextView createNewEvent(String text){
-        LinearLayout.LayoutParams lparams= new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        lparams.topMargin=20;
-        final TextView eventtextbox = new TextView(this);
-        eventtextbox.setLayoutParams(lparams);
-        eventtextbox.setText("Event: " + text);
-        eventtextbox.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-        eventtextbox.setTextColor(Color.parseColor("White"));
-        eventtextbox.setTextSize(20);
-        return eventtextbox;
-    }
 
-    private TextView createNewLocation(String textlocation){
-        LinearLayout.LayoutParams layoutParams= new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        final TextView locationtextbox = new TextView(this);
-        locationtextbox.setLayoutParams(layoutParams);
-        locationtextbox.setText("Location: " + textlocation);
-        locationtextbox.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-        locationtextbox.setTextColor(Color.parseColor("White"));
-        locationtextbox.setTextSize(15);
-        return locationtextbox;
-    }
 
-    private TextView createNewTime(String weekday, String hour, String min, String ampm){
-        LinearLayout.LayoutParams layoutParams= new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        final TextView newtime = new TextView(this);
-        newtime.setLayoutParams(layoutParams);
-        newtime.setText("Time:" + weekday + ", " + hour +":" + min + " " +ampm);
-        newtime.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-        newtime.setTextColor(Color.parseColor("White"));
-        newtime.setTextSize(15);
-        return newtime;
+        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        final View rowView = inflater.inflate(R.layout.row, null);
+        final ImageButton deleteButton = (ImageButton) rowView
+                .findViewById(R.id.buttonDelete);
+        final TextView nameofEvent = (TextView) rowView
+                .findViewById(R.id.nameofEvent);
+        final TextView nameofLocation = (TextView) rowView
+                .findViewById(R.id.nameofLocation);
+        final TextView nameofDateTime = (TextView) rowView
+                .findViewById(R.id.DateandTime);
+
+        if (nameEvent != null && !nameEvent.isEmpty()) {
+            nameofEvent.setText("Event: " + nameEvent);
+            nameofLocation.setText("Location: " + nameLoc);
+            nameofDateTime.setText(weekday + " " + hr + ":" + min + " " + ampm);
+
+        } else {
+            mEmptyView = rowView;
+            deleteButton.setVisibility(View.INVISIBLE);
+        }
+
+        // Inflate at the end of all rows but before the "Add new" button
+        linearLayoutEvents.addView(rowView, linearLayoutEvents.getChildCount() - 1);
+
     }
 
 }
