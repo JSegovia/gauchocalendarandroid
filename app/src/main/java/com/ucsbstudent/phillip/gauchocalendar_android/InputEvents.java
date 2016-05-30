@@ -22,6 +22,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class InputEvents extends AppCompatActivity {
 
     Spinner spinner;
@@ -165,9 +167,18 @@ public class InputEvents extends AppCompatActivity {
             public void onClick(View v) {
                 linearLayoutEvents.addView(createNewEvent(EditEventName.getText().toString()));
                 linearLayoutEvents.addView(createNewLocation(EditLocation.getText().toString()));
-                linearLayoutEvents.addView(createButtoncancel());
+
                 Spinner spinner = (Spinner) findViewById(R.id.spinnerweekday);
                 String weekdaytext = spinner.getSelectedItem().toString();
+                Spinner spinner1 = (Spinner) findViewById(R.id.spinnerhour);
+                String hour = spinner1.getSelectedItem().toString();
+                Spinner spinner2 = (Spinner) findViewById(R.id.spinnermin);
+                String min = spinner2.getSelectedItem().toString();
+                Spinner spinner3 = (Spinner) findViewById(R.id.spinnerAmPm);
+                String ampm = spinner3.getSelectedItem().toString();
+                linearLayoutEvents.addView(createNewTime(weekdaytext, hour, min, ampm));
+
+                linearLayoutEvents.addView(createButtoncancel());
 
             }
         };
@@ -219,5 +230,16 @@ public class InputEvents extends AppCompatActivity {
         return locationtextbox;
     }
 
+    private TextView createNewTime(String weekday, String hour, String min, String ampm){
+        LinearLayout.LayoutParams layoutParams= new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        final TextView newtime = new TextView(this);
+        newtime.setLayoutParams(layoutParams);
+        newtime.setText("Time:" + weekday + ", " + hour +":" + min + " " +ampm);
+        newtime.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+        newtime.setTextColor(Color.parseColor("White"));
+        newtime.setTextSize(15);
+        return newtime;
+    }
 
 }
