@@ -3,9 +3,11 @@ package com.ucsbstudent.phillip.gauchocalendar_android;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
@@ -43,7 +45,7 @@ public class InputEvents extends AppCompatActivity {
         EditEventName = (EditText) findViewById(R.id.insertTitle);
         EditLocation = (EditText) findViewById(R.id.insertLocation);
         mButton = (Button) findViewById(R.id.btnAddCustom);
-        mButton.setOnClickListener(onCLick());
+        mButton.setOnClickListener(onCLickAddcustom());
 
 
         seecalendar = (Button) findViewById(R.id.gocalendar);
@@ -157,15 +159,40 @@ public class InputEvents extends AppCompatActivity {
 
 
 
-    private View.OnClickListener onCLick(){
+    private View.OnClickListener onCLickAddcustom(){
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 linearLayoutEvents.addView(createNewEvent(EditEventName.getText().toString()));
                 linearLayoutEvents.addView(createNewLocation(EditLocation.getText().toString()));
+                linearLayoutEvents.addView(createButtoncancel());
+                Spinner spinner = (Spinner) findViewById(R.id.spinnerweekday);
+                String weekdaytext = spinner.getSelectedItem().toString();
+
             }
         };
     }
+
+    private Button createButtoncancel(){
+        String canceltext = "Cancel Event";
+        final String test = "works";
+        LinearLayout.LayoutParams layoutParams= new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        layoutParams.gravity = Gravity.RIGHT;
+        final Button cancel = new Button(this);
+        cancel.setText(canceltext);
+        cancel.setTextColor(Color.parseColor("Red"));
+        cancel.setTextSize(10);
+        cancel.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cancel.setText(test);
+            }
+        });
+        return cancel;
+    }
+
 
     private TextView createNewEvent(String text){
         LinearLayout.LayoutParams lparams= new LinearLayout.LayoutParams(
@@ -191,4 +218,6 @@ public class InputEvents extends AppCompatActivity {
         locationtextbox.setTextSize(15);
         return locationtextbox;
     }
+
+
 }
