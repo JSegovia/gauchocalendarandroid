@@ -31,9 +31,6 @@
     <string name="facebook_app_id">286464531696191</string>
 
 
-
-
-
     // These String are for the InputEvents.java and activity_input_events.xml
     <string name="FilloutEvent">Search Courses</string>
     <string name="CustomEvent">Custom Event</string>
@@ -48,23 +45,98 @@
     <string name="addCustom">Add Event</string>
 
     <string-array name="departments">
-        <item>ANTH</item> <item>ART</item> <item>ART CS</item> <item>ARTHI</item> <item>ARTST</item>
-        <item>AS AM</item> <item>ASTRO</item> <item>BIOL</item> <item>BIOL CS</item> <item>BMSE</item>
-        <item>BL ST</item> <item>CH E</item> <item>CHEM CS</item> <item>CHEM</item> <item>CH ST</item>
-        <item>CHIN</item> <item>CLASS</item> <item>COMM</item> <item>C LIT</item> <item>CMPSC</item>
-        <item>CMPSCCS</item> <item>CMPTG</item> <item>CMPTGCS</item> <item>CNCSP</item> <item>DANCE</item>
-        <item>DYNS</item> <item>EARTH</item> <item>EACS</item> <item>EEMB</item> <item>ECON</item>
-        <item>ED</item> <item>ECE</item> <item>ENGR</item> <item>ENGL</item> <item>ESM</item> <item>ENV S</item>
-        <item>ESS</item> <item>ES</item> <item>FEMST</item> <item>FAMST</item> <item>FLMST</item> <item>FR</item>
-        <item>GEN S</item> <item>GEN SCS</item> <item>GEOG</item> <item>GER</item> <item>GPS</item> <item>GLOBL</item>
-        <item>GREEK</item> <item>HEB</item> <item>HIST</item> <item>INT</item> <item>INT CS</item> <item>ITAL</item>
-        <item>JAPAN</item> <item>KOR</item> <item>LATIN</item> <item>LAIS</item> <item>LING</item> <item>LIT</item>
-        <item>LIT CS</item> <item>MARSC</item> <item>MATRL</item> <item>MATH</item> <item>MATH CS</item> <item>ME</item>
-        <item>MAT</item> <item>ME ST</item> <item>MES</item> <item>MS</item> <item>MCDB</item> <item>MUS</item>
-        <item>MUS CS</item> <item>MUS A</item> <item>PHIL</item> <item>PHYS</item> <item>PHYS CS</item> <item>POL S</item>
-        <item>PORT</item> <item>PSY</item> <item>RG ST</item> <item>RENST</item> <item>SLAV</item> <item>SOC</item>
-        <item>SPAN</item> <item>SHS</item> <item>STAT</item> <item>TMP</item> <item>THTR</item> <item>WRIT</item>
-        <item>WL</item> <item>WL CS</item>
+        <item>ANTH</item>
+        <item>ART</item>
+        <item>ART CS</item>
+        <item>ARTHI</item>
+        <item>ARTST</item>
+        <item>AS AM</item>
+        <item>ASTRO</item>
+        <item>BIOL</item>
+        <item>BIOL CS</item>
+        <item>BMSE</item>
+        <item>BL ST</item>
+        <item>CH E</item>
+        <item>CHEM CS</item>
+        <item>CHEM</item>
+        <item>CH ST</item>
+        <item>CHIN</item>
+        <item>CLASS</item>
+        <item>COMM</item>
+        <item>C LIT</item>
+        <item>CMPSC</item>
+        <item>CMPSCCS</item>
+        <item>CMPTG</item>
+        <item>CMPTGCS</item>
+        <item>CNCSP</item>
+        <item>DANCE</item>
+        <item>DYNS</item>
+        <item>EARTH</item>
+        <item>EACS</item>
+        <item>EEMB</item>
+        <item>ECON</item>
+        <item>ED</item>
+        <item>ECE</item>
+        <item>ENGR</item>
+        <item>ENGL</item>
+        <item>ESM</item>
+        <item>ENV S</item>
+        <item>ESS</item>
+        <item>ES</item>
+        <item>FEMST</item>
+        <item>FAMST</item>
+        <item>FLMST</item>
+        <item>FR</item>
+        <item>GEN S</item>
+        <item>GEN SCS</item>
+        <item>GEOG</item>
+        <item>GER</item>
+        <item>GPS</item>
+        <item>GLOBL</item>
+        <item>GREEK</item>
+        <item>HEB</item>
+        <item>HIST</item>
+        <item>INT</item>
+        <item>INT CS</item>
+        <item>ITAL</item>
+        <item>JAPAN</item>
+        <item>KOR</item>
+        <item>LATIN</item>
+        <item>LAIS</item>
+        <item>LING</item>
+        <item>LIT</item>
+        <item>LIT CS</item>
+        <item>MARSC</item>
+        <item>MATRL</item>
+        <item>MATH</item>
+        <item>MATH CS</item>
+        <item>ME</item>
+        <item>MAT</item>
+        <item>ME ST</item>
+        <item>MES</item>
+        <item>MS</item>
+        <item>MCDB</item>
+        <item>MUS</item>
+        <item>MUS CS</item>
+        <item>MUS A</item>
+        <item>PHIL</item>
+        <item>PHYS</item>
+        <item>PHYS CS</item>
+        <item>POL S</item>
+        <item>PORT</item>
+        <item>PSY</item>
+        <item>RG ST</item>
+        <item>RENST</item>
+        <item>SLAV</item>
+        <item>SOC</item>
+        <item>SPAN</item>
+        <item>SHS</item>
+        <item>STAT</item>
+        <item>TMP</item>
+        <item>THTR</item>
+        <item>WRIT</item>
+        <item>WL</item>
+        <item>WL CS</item>
     </string-array>
 
     <string-array name="Quarter">
@@ -73,40 +145,100 @@
     </string-array>
 
     <string-array name="Weekday">
-        <item>Sunday</item> <item>Monday</item> <item>Tuesday</item> <item>Wednesday</item>
-        <item>Thursday</item> <item>Friday</item> <item>Saturday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
     </string-array>
 
     <string-array name="Hours">
-        <item> 1 </item> <item> 2 </item> <item> 3 </item> <item> 4 </item> <item> 5 </item>
-        <item> 6 </item> <item> 7 </item> <item> 8 </item> <item> 9 </item> <item> 10 </item>
-        <item> 11 </item> <item> 12 </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
     </string-array>
 
     <string-array name="Min">
         <item> 00 </item>
-        <item> 01 </item> <item> 02 </item> <item> 03 </item> <item> 04 </item> <item> 05 </item>
-        <item> 06 </item> <item> 07 </item> <item> 08 </item> <item> 09 </item> <item> 10 </item>
-        <item> 11 </item> <item> 12 </item> <item> 13 </item> <item> 14 </item> <item> 15 </item>
-        <item> 16 </item> <item> 17 </item> <item> 18 </item> <item> 19 </item> <item> 20 </item>
-        <item> 21 </item> <item> 22 </item> <item> 23 </item> <item> 24 </item> <item> 25 </item>
-        <item> 26 </item> <item> 27 </item> <item> 28 </item> <item> 29 </item> <item> 30 </item>
-        <item> 31 </item> <item> 32 </item> <item> 33 </item> <item> 34 </item> <item> 35 </item>
-        <item> 36 </item> <item> 37 </item> <item> 38 </item> <item> 39 </item> <item> 40 </item>
-        <item> 41 </item> <item> 42 </item> <item> 43 </item> <item> 44 </item> <item> 45 </item>
-        <item> 46 </item> <item> 47 </item> <item> 48 </item> <item> 49 </item> <item> 50 </item>
-        <item> 51 </item> <item> 52 </item> <item> 53 </item> <item> 54 </item> <item> 55 </item>
-        <item> 56 </item> <item> 57 </item> <item> 58 </item> <item> 59 </item> <item> 60 </item>
+        <item> 01 </item>
+        <item> 02 </item>
+        <item> 03 </item>
+        <item> 04 </item>
+        <item> 05 </item>
+        <item> 06 </item>
+        <item> 07 </item>
+        <item> 08 </item>
+        <item> 09 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+        <item> 15 </item>
+        <item> 16 </item>
+        <item> 17 </item>
+        <item> 18 </item>
+        <item> 19 </item>
+        <item> 20 </item>
+        <item> 21 </item>
+        <item> 22 </item>
+        <item> 23 </item>
+        <item> 24 </item>
+        <item> 25 </item>
+        <item> 26 </item>
+        <item> 27 </item>
+        <item> 28 </item>
+        <item> 29 </item>
+        <item> 30 </item>
+        <item> 31 </item>
+        <item> 32 </item>
+        <item> 33 </item>
+        <item> 34 </item>
+        <item> 35 </item>
+        <item> 36 </item>
+        <item> 37 </item>
+        <item> 38 </item>
+        <item> 39 </item>
+        <item> 40 </item>
+        <item> 41 </item>
+        <item> 42 </item>
+        <item> 43 </item>
+        <item> 44 </item>
+        <item> 45 </item>
+        <item> 46 </item>
+        <item> 47 </item>
+        <item> 48 </item>
+        <item> 49 </item>
+        <item> 50 </item>
+        <item> 51 </item>
+        <item> 52 </item>
+        <item> 53 </item>
+        <item> 54 </item>
+        <item> 55 </item>
+        <item> 56 </item>
+        <item> 57 </item>
+        <item> 58 </item>
+        <item> 59 </item>
+        <item> 60 </item>
     </string-array>
 
     <string-array name="AmPm">
-        <item> AM </item> <item> PM </item>
+        <item> AM </item>
+        <item> PM </item>
     </string-array>
 
     <string name="colon"> : </string>
-
-
-
 
 
     // These Strings are for the Information.java and actvity_information.xml
