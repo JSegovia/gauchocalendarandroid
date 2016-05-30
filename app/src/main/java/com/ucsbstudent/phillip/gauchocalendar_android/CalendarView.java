@@ -14,6 +14,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.concurrent.locks.ReadWriteLock;
+
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 import static android.widget.LinearLayout.LayoutParams.*;
 
@@ -27,10 +30,19 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
+        ArrayList<CustomEventClass> custom =
+                (ArrayList<CustomEventClass>)getIntent().getSerializableExtra("customEvents");
+
+        RelativeLayout Sun = (RelativeLayout) findViewById(R.id.relativeLayoutSunday);
+        RelativeLayout Mon = (RelativeLayout) findViewById(R.id.relativeLayoutMonDay);
+        RelativeLayout Tue = (RelativeLayout) findViewById(R.id.relativeLayoutTueDay);
+        RelativeLayout Wed = (RelativeLayout) findViewById(R.id.relativeLayoutWedDay);
+        RelativeLayout Thu = (RelativeLayout) findViewById(R.id.relativeLayoutThuDay);
+        RelativeLayout Fri = (RelativeLayout) findViewById(R.id.relativeLayoutFriDay);
+        RelativeLayout Sat = (RelativeLayout) findViewById(R.id.relativeLayoutSatDay);
 
         String hello = "test";
 
-        RelativeLayout Sat = (RelativeLayout) findViewById(R.id.relativeLayoutSatDay);
         Button btn = new Button(this);
         btn.setText(hello);
         btn.setTextColor(Color.parseColor("green"));

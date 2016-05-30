@@ -178,6 +178,7 @@ public class InputEvents extends AppCompatActivity {
     public void goCalendar(View view) {
         Intent intent = new Intent(this, CalendarView.class);
         startActivity(intent);
+        intent.putExtra("customEvents",customEvents); //gives array of customEvent objects
 
     }
 
