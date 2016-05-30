@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -27,9 +28,21 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
+
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class InputEvents extends AppCompatActivity {
+
+    private static final String FIREBASE_URL="https://sizzling-inferno-7789.firebaseIO.com";
+    private Firebase firebaseRef;
+    public int globali;
+
+
+    private ArrayList<CustomEventClass> customEvents = new ArrayList<>();
+
 
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
@@ -48,6 +61,7 @@ public class InputEvents extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_events);
+        firebaseRef = new Firebase(FIREBASE_URL);
 
         linearLayoutEvents = (LinearLayout) findViewById(R.id.listEvents);
         linearLayoutEvents.setOrientation(LinearLayout.VERTICAL);
@@ -189,7 +203,7 @@ public class InputEvents extends AppCompatActivity {
     private View.OnClickListener onCLickAddcustom() {
         return new View.OnClickListener() {
 
-            String henry = "henry";
+
             @Override
             public void onClick(View v) {
                 String nameEvent = EditEventName.getText().toString();
@@ -203,8 +217,26 @@ public class InputEvents extends AppCompatActivity {
                 Spinner spinner3 = (Spinner) findViewById(R.id.spinnerAmPm);
                 String ampm = spinner3.getSelectedItem().toString();
 
+
+                if(TextUtils.isEmpty(nameEvent) ||  TextUtils.isEmpty(nameLocation)) {
+                    EditEventName.setError("Please enter an event title");
+                    EditLocation.setError("Please specify the location");
+                    return;
+                }
+
                 inflatedEditRow(nameEvent,nameLocation,weekdaytext,hour, min, ampm);
                 v.setVisibility(View.VISIBLE);
+
+                int weekdayInt = spinner.getSelectedItemPosition();
+                int hourInt = spinner1.getSelectedItemPosition();
+                int minInt = spinner2.getSelectedItemPosition();
+                int ampmInt = spinner3.getSelectedItemPosition();
+
+                CustomEventClass temp = new CustomEventClass(nameEvent,nameLocation,
+                        weekdaytext, weekdayInt,hourInt,minInt,ampm);
+                firebaseRef.child("TestCustomEvent").push().setValue(temp);
+                customEvents.add(temp);
+
 
             }
         };
@@ -213,7 +245,22 @@ public class InputEvents extends AppCompatActivity {
     // onClick handler for the "X" button of each row
     public void onDeleteClicked(View v) {
         // remove the row by calling the getParent on button
-        linearLayoutEvents.removeView((View) v.getParent());
+        TextView nameofEvent = (TextView) findViewById(R.id.nameofEvent);
+        String test = nameofEvent.getText().toString();
+        TextView location = (TextView)findViewById(R.id.nameofLocation);
+        location.setText(test);
+        for (int i=0; i < customEvents.size();i++){
+            if (customEvents.get(i).getEventTitle().equals(test)){
+                customEvents.remove(i);
+                break;
+            }
+        }
+        //linearLayoutEvents.removeView((View) v.getParent());
+        firebaseRef.child("TestCustomEvent").removeValue();
+
+        for (int i=0; i < customEvents.size();i++){
+            firebaseRef.child("TestCustomEvent").push().setValue(customEvents.get(i));
+        }
     }
 
     // Helper for inflating a row
@@ -244,6 +291,8 @@ public class InputEvents extends AppCompatActivity {
 
         // Inflate at the end of all rows but before the "Add new" button
         linearLayoutEvents.addView(rowView, linearLayoutEvents.getChildCount() - 1);
+        linearLayoutEvents.setId(globali);
+        globali++;
 
     }
 
