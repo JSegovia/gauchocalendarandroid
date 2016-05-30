@@ -234,7 +234,7 @@ public class InputEvents extends AppCompatActivity {
 
                 CustomEventClass temp = new CustomEventClass(nameEvent,nameLocation,
                         weekdaytext, weekdayInt,hourInt,minInt,ampm);
-                firebaseRef.child("TestCustomEvent").push().setValue(temp);
+                //firebaseRef.child("TestCustomEvent").push().setValue(temp);
                 customEvents.add(temp);
 
 
@@ -255,7 +255,7 @@ public class InputEvents extends AppCompatActivity {
                 break;
             }
         }
-        //linearLayoutEvents.removeView((View) v.getParent());
+        linearLayoutEvents.removeView((View) v.getParent());
         firebaseRef.child("TestCustomEvent").removeValue();
 
         for (int i=0; i < customEvents.size();i++){
