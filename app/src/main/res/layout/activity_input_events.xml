@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +9,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ucsbstudent.phillip.gauchocalendar_android.InputEvents">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relscrollinput">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,10 +35,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/spinnersubject"
         android:spinnerMode="dropdown"
-        android:layout_below="@+id/subject"
-        android:layout_alignParentStart="true"
         android:background="@android:drawable/btn_dropdown"
-        />
+        android:layout_below="@+id/subject"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +47,7 @@
         android:id="@+id/subject"
         android:layout_below="@+id/PromptEvent"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,24 +64,7 @@
         android:id="@+id/spinnerQuarter"
         android:spinnerMode="dropdown"
         android:background="@android:drawable/btn_dropdown"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/CourseLvl"
-        android:id="@+id/Quarter"
-        android:layout_below="@+id/spinnerQuarter"
-        android:layout_alignParentStart="true" />
-
-    <Spinner
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinnercourselvl"
-        android:background="@android:drawable/btn_dropdown"
-        android:layout_below="@+id/Quarter"
+        android:layout_below="@+id/QuarterTxt"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -79,19 +73,145 @@
         android:layout_height="wrap_content"
         android:text="@string/search"
         android:id="@+id/buttonsearch"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/spinnerQuarter"
         android:layout_alignParentStart="true" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/gocalendar"
-        android:id="@+id/gocalendar"
-        android:layout_alignTop="@+id/buttonsearch"
-        android:layout_alignParentEnd="true"
-        android:onClick="goCalendar"
-        />
+        // After the search button a list of check box options should appear on the screen
+
+// Start Custom Event
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/CustomEvent"
+            android:id="@+id/CustomEventText"
+            android:layout_below="@id/buttonsearch"
+            android:paddingTop="40dp"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Title"
+            android:id="@+id/EventName"
+            android:layout_below="@+id/CustomEventText"
+            android:paddingTop="15dp"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertTitle"
+            android:layout_below="@+id/EventName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/loc"
+            android:id="@+id/location"
+            android:layout_below="@+id/insertTitle" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertLocation"
+            android:layout_below="@+id/location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dateTime"
+            android:id="@+id/dateTime"
+            android:layout_below="@+id/insertLocation" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerweekday"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_below="@+id/dateTime" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerhour"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_below="@+id/spinnerweekday" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colon"
+            android:id="@+id/colon"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/spinnerweekday"
+            android:layout_toEndOf="@+id/spinnerhour" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinnermin"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_below="@+id/spinnerweekday"
+            android:layout_toEndOf="@+id/colon" />
+
+        <Spinner
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerAmPm"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_alignTop="@+id/spinnermin"
+            android:layout_toEndOf="@+id/spinnermin" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addCustom"
+            android:id="@+id/btnAddCustom"
+            android:layout_below="@+id/spinnerAmPm" />
+
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gocalendar"
+            android:id="@+id/gocalendar"
+            android:onClick="goCalendar"
+            android:layout_below="@+id/btnAddCustom"
+            android:layout_alignParentEnd="true" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listEvents"
+    android:layout_below="@+id/gocalendar"
+    android:background="@color/com_facebook_blue">
+
+    //added events should be put in a list below see calendar button
+
+</LinearLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
 
 
 </RelativeLayout>
+

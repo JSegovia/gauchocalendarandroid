@@ -34,9 +34,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
     //compile files (libs/firebase-client-android-2.5.2.jar)
     //compile project(':firebase-client-android-2.5.2')
-    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
-    compile 'com.android.support:design:24.0.0-alpha2'
-    compile 'com.android.support:support-v4:24.0.0-alpha2'
+
+
+    compile 'com.android.support:appcompat-v7:24.0.0-beta1'
+    compile 'com.android.support:design:24.0.0-beta1'
+    compile 'com.android.support:support-v4:24.0.0-beta1'
     compile 'com.firebase:firebase-client-android:2.5.2'
-    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'org.jsoup:jsoup:1.9.2'
+    compile 'com.firebase:firebase-client-android:2.3.1'
 }

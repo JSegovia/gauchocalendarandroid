@@ -1,5 +1,6 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
+import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import android.widget.Toast;
 import com.firebase.client.Firebase;
 
 import java.util.Map;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 
 /**
  * Created by Phillip on 5/5/2016.
@@ -37,14 +40,16 @@ private Firebase firebaseRef;
                 String pass_word = password.getText().toString();
                 String email = user_name + "@umail.ucsb.edu";
 
-                if (user_name.matches("") || pass_word.matches("") ||
-                        user_name == "Enter Umail Username" || pass_word == "Enter your Password") {
+                //if (user_name.matches("") || pass_word.matches("") ||
+                //        user_name == "Enter Umail Username" || pass_word == "Enter your Password") {
+
+
                     StudentProfile student = new StudentProfile(user_name, pass_word, email);
                     firebaseRef.child("Users").push().setValue(student);
                     username.setText("");
                     password.setText("");
                     Toast.makeText(StudentLogin.this, "Account Inserted", Toast.LENGTH_LONG).show();
-                }
+                //}
 
                 Intent intent = new Intent(v.getContext(), Information.class);
                 startActivity(intent);
@@ -57,7 +62,6 @@ private Firebase firebaseRef;
     public void buttonLogin(View view){
         Intent intent = new Intent(this, Information.class);
         startActivity(intent);
-
 
     }
 
