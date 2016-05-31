@@ -14,15 +14,15 @@ import java.util.ArrayList;
 
 public class AddToFireBase extends AppCompatActivity {
 
-
+    ArrayList<Lecture> newCourses = new ArrayList<Lecture>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_to_fire_base);
 
-        ArrayList<Lecture> newCourses = new ArrayList<Lecture>();
+
         try {
-            FileInputStream fis = new FileInputStream("/C:\\Users\\Phillip\\Android Projects\\gauchocalendarandroid\\app\\src\\main\\res\\raw\\parsedcourses");
+            FileInputStream fis = new FileInputStream("/C:\\Users\\Phillip\\Android Projects\\gauchocalendarandroid\\app\\src\\main\\res\\raw\\parsedcourses.txt");
             ObjectInputStream ois = new ObjectInputStream(fis);
             newCourses = (ArrayList) ois.readObject();
             ois.close();
@@ -41,7 +41,7 @@ public class AddToFireBase extends AppCompatActivity {
         String est = newCourses.get(5).name;
         TextView tryharder = (TextView) findViewById(R.id.testfirebase);
         tryharder.setText(est);
-
+        Log.d("Watermellon", est);
 
     }
 
