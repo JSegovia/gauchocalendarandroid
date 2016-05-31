@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Parcelable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ import com.firebase.client.Firebase;
 
 import org.w3c.dom.Text;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class InputEvents extends AppCompatActivity {
@@ -41,7 +43,7 @@ public class InputEvents extends AppCompatActivity {
     public int globali;
 
 
-    private ArrayList<CustomEventClass> customEvents = new ArrayList<>();
+    public ArrayList<CustomEventClass> customE = new ArrayList<>();
 
 
     Spinner spinner;
@@ -176,9 +178,13 @@ public class InputEvents extends AppCompatActivity {
     }
 
     public void goCalendar(View view) {
+
         Intent intent = new Intent(this, CalendarView.class);
+
+        intent.putParcelableArrayListExtra("custom", customE);
+         //gives array of customEvent objects
         startActivity(intent);
-        //intent.putExtra("customEvents",customEvents); //gives array of customEvent objects
+
 
     }
 
@@ -235,9 +241,9 @@ public class InputEvents extends AppCompatActivity {
 
                 CustomEventClass temp = new CustomEventClass(nameEvent,nameLocation,
                         weekdaytext, weekdayInt,hourInt,minInt,ampm);
-                firebaseRef.child("TestCustomEvent").push().setValue(temp);
-                customEvents.add(temp);
-
+                //firebaseRef.child("TestCustomEvent").push().setValue(temp);
+                customE.add(temp);
+                //firebaseRef.child("tester").push().setValue(customEvents.get(0));
 
             }
         };
@@ -250,17 +256,17 @@ public class InputEvents extends AppCompatActivity {
         String test = nameofEvent.getText().toString();
         TextView location = (TextView)findViewById(R.id.nameofLocation);
         location.setText(test);
-        for (int i=0; i < customEvents.size();i++){
-            if (customEvents.get(i).getEventTitle().equals(test)){
-                customEvents.remove(i);
+        for (int i=0; i < customE.size();i++){
+            if (customE.get(i).getEventTitle().equals(test)){
+                customE.remove(i);
                 break;
             }
         }
         linearLayoutEvents.removeView((View) v.getParent());
         firebaseRef.child("TestCustomEvent").removeValue();
 
-        for (int i=0; i < customEvents.size();i++){
-            firebaseRef.child("TestCustomEvent").push().setValue(customEvents.get(i));
+        for (int i=0; i < customE.size();i++){
+            firebaseRef.child("TestCustomEvent").push().setValue(customE.get(i));
         }
     }
 

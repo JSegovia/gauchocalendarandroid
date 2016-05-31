@@ -31,8 +31,9 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
-        //ArrayList<CustomEventClass> custom =
-        //        (ArrayList<CustomEventClass>)getIntent().getSerializableExtra("customEvents");
+
+        ArrayList<CustomEventClass> customarray = getIntent().getParcelableArrayListExtra("custom");
+
 
         RelativeLayout Sun = (RelativeLayout) findViewById(R.id.relativeLayoutSunday);
         RelativeLayout Mon = (RelativeLayout) findViewById(R.id.relativeLayoutMonDay);
@@ -42,8 +43,8 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
         RelativeLayout Fri = (RelativeLayout) findViewById(R.id.relativeLayoutFriDay);
         RelativeLayout Sat = (RelativeLayout) findViewById(R.id.relativeLayoutSatDay);
 
-        /*
-        for (int i=0; i < custom.size(); i++){
+
+        for (int i=0; i < customarray.size(); i++){
 
             String personal = "Pers";
             Button btn = new Button(this);
@@ -53,24 +54,53 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
             btn.setOnClickListener(this);
 
 
-            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
+            paramss.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
 
-            int hour = custom.get(i).getHour();
-            int min = custom.get(i).getMin();
-            String ampm = custom.get(i).getAmpm();
+            int hour = customarray.get(i).getHour();
+            int min = customarray.get(i).getMin();
+            String ampm = customarray.get(i).getAmpm();
 
             int margin = hour*40;
             margin = margin + min;
 
             if (ampm.equals("AM")){
-                int fmargin = margin *2;
+                margin = margin *2;
+            }
+            paramss.topMargin = margin;
+
+            if(customarray.get(i).getWeekdayInt() == 0){
+                Sun.addView(btn,paramss);
+            }
+
+            if(customarray.get(i).getWeekdayInt() == 1){
+                Mon.addView(btn,paramss);
+            }
+
+            if(customarray.get(i).getWeekdayInt() == 2){
+                Tue.addView(btn,paramss);
+            }
+
+            if(customarray.get(i).getWeekdayInt() == 3){
+                Wed.addView(btn,paramss);
+            }
+
+            if(customarray.get(i).getWeekdayInt() == 4){
+                Thu.addView(btn,paramss);
+            }
+
+            if(customarray.get(i).getWeekdayInt() == 5){
+                Fri.addView(btn,paramss);
+            }
+
+            if(customarray.get(i).getWeekdayInt() == 6){
+                Sat.addView(btn,paramss);
             }
 
         }
 
-        */
+
         String hello = "test";
 
         Button btn = new Button(this);
