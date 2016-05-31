@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@drawable/lightfade"
     android:orientation="vertical">
 
     <LinearLayout
@@ -718,12 +718,13 @@
                                 android:background="#9ACC61"
                                 android:visibility="gone" />
 
-
+               <!--
                             <Button
                                 android:layout_width="fill_parent"
                                 android:layout_height="40dp"
                                 android:background="@color/FacebookBlue"
                                 android:text="CS48"/>
+                -->
 
                         </RelativeLayout>
 

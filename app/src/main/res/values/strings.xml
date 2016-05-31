@@ -252,7 +252,8 @@
 
 
     // These Strings are for the Information.java and actvity_information.xml
-    <string name="startcal">Begin</string>
+    <string name="startcal">get started</string>
+    <string name="info">Information</string>
 
 
     // These String are for the CalendarView.java and CalendarView.xml

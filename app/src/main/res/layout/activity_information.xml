@@ -7,13 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ucsbstudent.phillip.gauchocalendar_android.Information">
+    tools:context="com.ucsbstudent.phillip.gauchocalendar_android.Information"
+    android:background="@drawable/bkgnd">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/GC"
+        android:textColor="@color/white"
+        android:text="@string/info"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -22,22 +24,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/startcal"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
         android:id="@+id/start"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:onClick="start"
-        />
+        android:layout_marginBottom="37dp"
+        android:background="@color/com_facebook_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
         android:text="This application was created to make creating class schedules easy.
-        \n It will generate the best schedule based upon your listed preferences and notify you if there is no way to avoid time conflicts.
-        \n You can save up to three schedules at a time and import the one you like the most into google calendar."
+        \n You can add any personal events or courses to your agenda and the app will make a non-conflicting schedule for you. You can also choose whether you prefer earlier or later courses. Click the button below to get started."
         android:id="@+id/description"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/makearray"
+        android:layout_alignParentStart="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -47,7 +52,8 @@
         android:id="@+id/makearray"
         android:layout_below="@+id/textView"
         android:layout_alignEnd="@+id/description"
-        android:onClick="makeArrayList"/>
+        android:onClick="makeArrayList"
+        android:visibility="invisible"/>
 
 
 </RelativeLayout>

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
@@ -60,6 +61,18 @@ private Firebase firebaseRef;
 
 
     public void buttonLogin(View view){
+        EditText username = (EditText) findViewById(R.id.TextFieldUSERNAME);
+        EditText password = (EditText) findViewById(R.id.TextFieldPASSWORD);
+
+        String user = username.getText().toString();
+        String pass = password.getText().toString();
+
+        if (TextUtils.isEmpty(user) || TextUtils.isEmpty(pass)) {
+            username.setError("Please enter your credentials");
+            password.setError("Please enter your credentials");
+            return;
+        }
+
         Intent intent = new Intent(this, Information.class);
         startActivity(intent);
 

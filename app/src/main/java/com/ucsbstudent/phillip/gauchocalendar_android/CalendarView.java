@@ -47,8 +47,9 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
         for (int i=0; i < customarray.size(); i++){
 
             String personal = "Pers";
+            String name = customarray.get(i).getEventTitle().toString();
             Button btn = new Button(this);
-            btn.setText(personal);
+            btn.setText(name);
             btn.setTextColor(Color.parseColor("White"));
             btn.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
             btn.setOnClickListener(this);
@@ -62,8 +63,22 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
             int min = customarray.get(i).getMin();
             String ampm = customarray.get(i).getAmpm();
 
-            int margin = hour*40;
-            margin = margin + min;
+            int size;
+            int mini=50;
+            int maxi=500;
+
+            size = mini + (int)(Math.random()*maxi);
+            btn.setHeight(size);
+
+            int margin;
+            if(hour ==0){
+                margin = 60;
+            }
+            else{
+                margin = hour*60;
+            }
+
+            margin = margin + (min/2);
 
             if (ampm.equals("AM")){
                 margin = margin *2;
@@ -101,22 +116,35 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
         }
 
 
-        String hello = "test";
+        String hello = "CMPSC8";
 
-        Button btn = new Button(this);
-        btn.setText(hello);
-        btn.setTextColor(Color.parseColor("green"));
-        btn.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-        btn.setOnClickListener(this);
+        Button btn1 = new Button(this);
+        btn1.setText(hello);
+        //btn.setTextColor(Color.parseColor("green"));
+        btn1.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+        btn1.setOnClickListener(this);
 
 
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
-        params.topMargin = 40;
+        params.topMargin = 660;
 
+        Button btn2 = new Button(this);
+        btn2.setText(hello);
+        //btn.setTextColor(Color.parseColor("green"));
+        btn2.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+        btn2.setOnClickListener(this);
 
-        Sat.addView(btn, params);
+        Button btn3 = new Button(this);
+        btn3.setText(hello);
+        //btn.setTextColor(Color.parseColor("green"));
+        btn3.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+        btn3.setOnClickListener(this);
+
+        Tue.addView(btn1, params);
+        Wed.addView(btn2,params);
+        Thu.addView(btn3,params);
 
         // btn.setLayoutParams(new LayoutParams());
         // TextView tv = new TextView(this);
@@ -130,8 +158,8 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create(); //Read Update
-        alertDialog.setTitle("hi");
-        alertDialog.setMessage("this is my app");
+        alertDialog.setTitle("CMPSC8");
+        alertDialog.setMessage("TWR    11:00am - 12:20pm   BRDA 1640");
 
         alertDialog.show();  //<-- See This!
     }
