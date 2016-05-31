@@ -18,4 +18,9 @@ public class Information extends AppCompatActivity {
         Intent intent = new Intent(this, InputEvents.class);
         startActivity(intent);
     }
+
+    public void  makeArrayList(View v){
+        Intent i = new Intent(this, AddToFireBase.class);
+        startActivity(i);
+    }
 }

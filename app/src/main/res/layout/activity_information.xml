@@ -39,5 +39,15 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Array"
+        android:id="@+id/makearray"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/description"
+        android:onClick="makeArrayList"/>
+
 
 </RelativeLayout>

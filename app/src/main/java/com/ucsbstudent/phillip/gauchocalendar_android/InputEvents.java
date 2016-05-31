@@ -178,7 +178,7 @@ public class InputEvents extends AppCompatActivity {
     public void goCalendar(View view) {
         Intent intent = new Intent(this, CalendarView.class);
         startActivity(intent);
-        intent.putExtra("customEvents",customEvents); //gives array of customEvent objects
+        //intent.putExtra("customEvents",customEvents); //gives array of customEvent objects
 
     }
 
@@ -235,7 +235,7 @@ public class InputEvents extends AppCompatActivity {
 
                 CustomEventClass temp = new CustomEventClass(nameEvent,nameLocation,
                         weekdaytext, weekdayInt,hourInt,minInt,ampm);
-                //firebaseRef.child("TestCustomEvent").push().setValue(temp);
+                firebaseRef.child("TestCustomEvent").push().setValue(temp);
                 customEvents.add(temp);
 
 

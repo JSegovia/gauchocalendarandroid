@@ -13,6 +13,7 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import java.util.Random;
 
 import java.util.ArrayList;
 import java.util.concurrent.locks.ReadWriteLock;
@@ -30,8 +31,8 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_view);
-        ArrayList<CustomEventClass> custom =
-                (ArrayList<CustomEventClass>)getIntent().getSerializableExtra("customEvents");
+        //ArrayList<CustomEventClass> custom =
+        //        (ArrayList<CustomEventClass>)getIntent().getSerializableExtra("customEvents");
 
         RelativeLayout Sun = (RelativeLayout) findViewById(R.id.relativeLayoutSunday);
         RelativeLayout Mon = (RelativeLayout) findViewById(R.id.relativeLayoutMonDay);
@@ -41,6 +42,35 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
         RelativeLayout Fri = (RelativeLayout) findViewById(R.id.relativeLayoutFriDay);
         RelativeLayout Sat = (RelativeLayout) findViewById(R.id.relativeLayoutSatDay);
 
+        /*
+        for (int i=0; i < custom.size(); i++){
+
+            String personal = "Pers";
+            Button btn = new Button(this);
+            btn.setText(personal);
+            btn.setTextColor(Color.parseColor("White"));
+            btn.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+            btn.setOnClickListener(this);
+
+
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                    ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            params.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
+
+            int hour = custom.get(i).getHour();
+            int min = custom.get(i).getMin();
+            String ampm = custom.get(i).getAmpm();
+
+            int margin = hour*40;
+            margin = margin + min;
+
+            if (ampm.equals("AM")){
+                int fmargin = margin *2;
+            }
+
+        }
+
+        */
         String hello = "test";
 
         Button btn = new Button(this);
