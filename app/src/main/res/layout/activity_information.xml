@@ -53,7 +53,7 @@
         android:layout_below="@+id/textView"
         android:layout_alignEnd="@+id/description"
         android:onClick="makeArrayList"
-        android:visibility="invisible"/>
+        android:visibility="visible"/>
 
 
 </RelativeLayout>
