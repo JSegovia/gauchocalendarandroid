@@ -1,8 +1,10 @@
-package com.ucsbstudent.phillip.gauchocalendar_android;
+package com.ucsbstudent.phillip.gauchocalendar_android.notinuse;
 
 /**
  * Created by Phillip on 5/31/2016.
  */
+import com.ucsbstudent.phillip.gauchocalendar_android.notinuse.Lecture;
+
 import java.io.*;
 import java.util.ArrayList;
 

@@ -76,9 +76,16 @@
         android:id="@+id/buttonsearch"
         android:layout_below="@+id/spinnerQuarter"
         android:layout_alignParentStart="true"
-        android:onClick="showclasses"/>
+        android:onClick="showclasses" />
 
         <!-- After the search button a list of check box options should appear on the screen -->
+
+
+        <!-- CardView -->
+        <include layout="@layout/content" />
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"

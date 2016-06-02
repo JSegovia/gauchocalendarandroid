@@ -1,6 +1,10 @@
 <resources>
 
+    <string name="test">Test</string>
+    <string name="testday">Monday</string>
     <string name="delete">delete</string>
+    <string name="time">10am - 12pm</string>
+    <string name="location">PHELPS</string>
     <string name="button_delete_row_description">Delete</string>
     <string-array name="categories">
         <item >HOME</item>

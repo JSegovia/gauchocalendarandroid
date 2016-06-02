@@ -8,7 +8,10 @@ import android.os.Parcelable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -35,6 +38,7 @@ import com.firebase.client.Firebase;
 import org.w3c.dom.Text;
 
 import java.io.Serializable;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class InputEvents extends AppCompatActivity {
@@ -60,11 +64,19 @@ public class InputEvents extends AppCompatActivity {
     private Button seecalendar;
 
 
+    classAdapter adapter123;
+    StringBuffer sb=null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_events);
         firebaseRef = new Firebase(FIREBASE_URL);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.);
+        //getSupportActionBar(toolbar);
+
+        adapter123 = new classAdapter(this, getClasses());
+
 
         linearLayoutEvents = (LinearLayout) findViewById(R.id.listEvents);
         linearLayoutEvents.setOrientation(LinearLayout.VERTICAL);
@@ -228,6 +240,30 @@ public class InputEvents extends AppCompatActivity {
 
     }
 
+    public void showclasses(){
+        sb = new StringBuffer();
+        for (LectureOrSection p : adapter123.checkedclasses){
+            sb.append(p.getNamofLS());
+            sb.append("\n");
+        }
+
+        if(adapter123.checkedclasses.size() > 0){
+            Toast.makeText(InputEvents.this,sb.toString(),Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(InputEvents.this,"PLease check classes",Toast.LENGTH_SHORT).show();
+        }
+
+        //RECYCLER
+        RecyclerView rv = (RecyclerView)findViewById(R.id.classRecycler);
+        rv.setLayoutManager(new LinearLayoutManager(this));
+        rv.setItemAnimator(new DefaultItemAnimator());
+
+        //SET ADAPTER
+        rv.setAdapter(adapter123);
+
+
+    }
+
 
 
     public void goCalendar(View view) {
@@ -381,7 +417,34 @@ public class InputEvents extends AppCompatActivity {
     }
 
 
+
+    public ArrayList<LectureOrSection> getClasses() {
+        ArrayList<LectureOrSection> courses = new ArrayList<>();
+        LectureOrSection p = new LectureOrSection("cs", "MWF", "10am", "PHELPS", "135");
+        courses.add(p);
+
+        LectureOrSection q = new LectureOrSection("cs5", "MWF", "10am", "PHELPS", "135");
+        courses.add(p);
+
+        LectureOrSection r = new LectureOrSection("cs6", "MWF", "10am", "PHELPS", "135");
+        courses.add(p);
+        return courses;
+
+
+    }
+
+
+    //StringBuffer sb=null;
+    //classAdapter adapter123;
+
+
+/*
     public void showclasses(View v) {
+        sb = new StringBuffer();
+
+        for (LectureOrSection ls : classAdapter.checkedclasses)
+
+
         Spinner spin = (Spinner) findViewById(R.id.spinnerhour);
         String name = spin.getSelectedItem().toString();
 
@@ -551,7 +614,9 @@ public class InputEvents extends AppCompatActivity {
         btnadd.setLayoutParams(lparamslect);
         test.addView(btnadd);
 
+
     }
+*/
 
 
 }

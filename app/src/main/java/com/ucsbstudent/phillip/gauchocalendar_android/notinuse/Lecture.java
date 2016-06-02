@@ -1,4 +1,6 @@
-package com.ucsbstudent.phillip.gauchocalendar_android;
+package com.ucsbstudent.phillip.gauchocalendar_android.notinuse;
+
+import com.ucsbstudent.phillip.gauchocalendar_android.notinuse.Section;
 
 import java.io.Serializable;
 import java.util.ArrayList;
