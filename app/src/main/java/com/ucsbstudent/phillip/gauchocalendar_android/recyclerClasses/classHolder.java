@@ -1,9 +1,12 @@
-package com.ucsbstudent.phillip.gauchocalendar_android;
+package com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import com.ucsbstudent.phillip.gauchocalendar_android.R;
+import com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses.classClickListener;
 
 /**
  * Created by Phillip on 6/2/2016.
@@ -13,7 +16,7 @@ public class classHolder extends RecyclerView.ViewHolder implements View.OnClick
     TextView name,days,time,location;
     CheckBox chk;
 
-    classClickListener classClickListener;
+    com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses.classClickListener classClickListener;
 
     public classHolder(View itemView){
         super(itemView);

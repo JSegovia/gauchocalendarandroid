@@ -1,44 +1,31 @@
-package com.ucsbstudent.phillip.gauchocalendar_android;
+package com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Parcelable;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.Firebase;
+import com.ucsbstudent.phillip.gauchocalendar_android.CalendarView;
+import com.ucsbstudent.phillip.gauchocalendar_android.CustomEventClass;
+import com.ucsbstudent.phillip.gauchocalendar_android.LectureOrSection;
+import com.ucsbstudent.phillip.gauchocalendar_android.R;
 
-import org.w3c.dom.Text;
-
-import java.io.Serializable;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class InputEvents extends AppCompatActivity {
@@ -76,7 +63,6 @@ public class InputEvents extends AppCompatActivity {
         //getSupportActionBar(toolbar);
 
         adapter123 = new classAdapter(this, getClasses());
-
 
         linearLayoutEvents = (LinearLayout) findViewById(R.id.listEvents);
         linearLayoutEvents.setOrientation(LinearLayout.VERTICAL);
@@ -238,9 +224,12 @@ public class InputEvents extends AppCompatActivity {
             }
         });
 
+        //Load courses into array of strings
+
+
     }
 
-    public void showclasses(){
+    public void showclasses(View v){
         sb = new StringBuffer();
         for (LectureOrSection p : adapter123.checkedclasses){
             sb.append(p.getNamofLS());

@@ -1,10 +1,11 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses.InputEvents;
 
 public class Information extends AppCompatActivity {
 

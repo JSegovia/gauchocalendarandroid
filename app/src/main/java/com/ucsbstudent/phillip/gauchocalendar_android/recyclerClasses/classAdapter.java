@@ -1,4 +1,4 @@
-package com.ucsbstudent.phillip.gauchocalendar_android;
+package com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+
+import com.ucsbstudent.phillip.gauchocalendar_android.LectureOrSection;
+import com.ucsbstudent.phillip.gauchocalendar_android.R;
 
 import java.util.ArrayList;
 
