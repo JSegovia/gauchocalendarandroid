@@ -2,6 +2,7 @@ package com.ucsbstudent.phillip.gauchocalendar_android;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -17,232 +18,119 @@ import java.util.ArrayList;
 
 public class AddToFireBase extends AppCompatActivity {
 
-    ArrayList<Lecture> courses = new ArrayList<Lecture>();
+    ArrayList<LectureOrSection> coursesFall2016 = new ArrayList<LectureOrSection>();
     //private static final String FIREBASE_URL="https://sizzling-inferno-7789.firebaseIO.com";
     //private Firebase firebaseRef;
     String test = "";
+    ArrayList<String> stringListTest = new ArrayList<String>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_to_fire_base);
-        //ArrayList<Lecture> lectures = new ArrayList<>();
-        //File sdcard = Environment.getExternalStorageDirectory();
-        //File fileName = new File(sdcard,"courses.txt");
-
 
         Context context = getApplicationContext();
 
         String filePath = context.getFilesDir().getAbsolutePath();
+
         File fileName = new File(filePath, "courses");
-
-
-        // The name of the file to open.
-        //String fileName = "C:\\Users\\Phillip\\Android Projects\\gauchocalendarandroid\\app\\src\\main\\res\\raw\\courses.txt";
-
-        // This will reference one line at a time
-        //String line = null;
-
         try {
-            // FileReader reads text files in the default encoding.
-         //   FileReader fileReader =
-        //            new FileReader("courses");
 
-            // Always wrap FileReader in BufferedReader.
             BufferedReader bufferedReader =
                     new BufferedReader(new InputStreamReader(getAssets().open("courses.txt")));
 
-
-            for( int i =0; i < 4; i++){
-                test += bufferedReader.readLine();
-
-            }
-
-
-           // string2Lect(bufferedReader);
-            //while((line = bufferedReader.readLine()) != null) {
-                //lectures.add(bufferedReader.readLine());
-              //  StringBuilder = bufferedReader.readLine() * 5;
-
-              //  string2Lect()
-         //   }
+            // This puts all the strings into an array of strings
+            String temp;
+            while ((temp = bufferedReader.readLine()) != null) {
+                try {
+                    stringListTest.add(temp);
+                    stringListTest.add(bufferedReader.readLine());
 
 
-            // Always close files.
-            bufferedReader.close();
-        }
-        catch(FileNotFoundException ex) {
-            System.out.println(
-                    "Unable to open fileTHISTHITHITHIEHGEITH '" +
-                            fileName + "'");
-        }
-        catch(IOException ex) {
-            System.out.println(
-                    "Error reading file '"
-                            + fileName + "'");
-            // Or we could just do this:
-            // ex.printStackTrace();
-        }
-
-/*
-
-
-
-
-        }*/
-           // test = "WHO"  + "\n"  + "WHAT" + "\n" + "WHERE \n";
-        //  String est = lectures.get(5).name;
-            TextView tryharder = (TextView) findViewById(R.id.testfirebase);
-            tryharder.setText("NOT PRESSED");
-
-
-
-    /*
-
-*/
-        }
-
-    public void makeit(View view){
-
-
-
-        /* ArrayList<String> lectures = new ArrayList<String>();
-
-        //File sdcard = Environment.getExternalStorageDirectory();
-        //File fileName = new File(sdcard,"courses.txt");
-
-
-        Context context = getApplicationContext();
-
-        String filePath = context.getFilesDir().getAbsolutePath();
-        File fileName = new File(filePath, "courses.txt");
-
-
-        // The name of the file to open.
-        //String fileName = "C:\\Users\\Phillip\\Android Projects\\gauchocalendarandroid\\app\\src\\main\\res\\raw\\courses.txt";
-
-        // This will reference one line at a time
-        String line = null;
-            AssetManager am = getAssets();
-            InputStreamReader ims = null;
-            BufferedReader bufferedReader = null;
-        try {
-            // FileReader reads text files in the default encoding.
-          //  FileReader fileReader =
-           //         new FileReader(fileName);
-
-
-            ims  = new InputStreamReader(am.open("courses.txt"), "UTF-8");
-            bufferedReader = new BufferedReader(ims);
-
-
-            // Always wrap FileReader in BufferedReader.
-          //  InputStream ins = getResources().openRawResource(
-         //           getResources().getIdentifier("courses",
-           //                 "raw", getPackageName()));
-
-
-         //   BufferedReader bufferedReader =
-         //           new BufferedReader(new InputStreamReader(ins));
-
-            while((line = bufferedReader.readLine()) != null) {
-                lectures.add(line);
-            }
-
-            // Always close files.
-            bufferedReader.close();
-        }
-        catch(FileNotFoundException ex) {
-            System.out.println(
-                    "Unable to open fileSECONDSECONSECOND '" +
-                            fileName + "'");
-        }
-        catch(IOException ex) {
-            System.out.println(
-                    "Error reading file '"
-                            + fileName + "'");
-            // Or we could just do this:
-            // ex.printStackTrace();
-
-
-            Lecture newCourse;
-
-            int counter = -1;//used for the index of courses
-
-            int index = 0; //Start at Anth 2
-            String currentLect = lectures.get(index); //set to Anth 2
-            String lectDays;
-            String lectTimes;
-            String lectLocation;
-            String lectOcc;
-            String sectDays;
-            String sectTimes;
-            String sectLocation;
-            String sectOcc;
-            Boolean isSect = false;
-
-
-            for (int i = 0; i < lectures.size(); i++) {
-                if (isSect == false) {
-                    lectDays = lectures.get(index + 1);
-                    lectTimes = lectures.get(index + 2);
-                    lectLocation = lectures.get(index + 3);
-                    lectOcc = lectures.get(index + 4);
-
-                    newCourse = new Lecture(currentLect, lectDays, lectTimes, lectLocation, lectOcc);
-                    courses.add(newCourse);
-                    counter++;
-
-                    if (index + 5 >= lectures.size()) {
-                        break;
-                    }
-
-                    if (lectures.get(index + 5).equals(currentLect)) {
-
-                        isSect = true;
-                    } else {
-
-                        currentLect = lectures.get(index + 5);
-                    }
-
-                    index = index + 5;
-
-                } else {
-                    sectDays = lectures.get(index + 1);
-                    sectTimes = lectures.get(index + 2);
-                    sectLocation = lectures.get(index + 3);
-                    sectOcc = lectures.get(index + 4);
-
-
-                    courses.get(counter).addSection(sectDays, sectTimes, sectLocation, sectOcc);
-
-                    if (index + 5 >= lectures.size()) {
-                        break;
-                    }
-
-                    if (!(lectures.get(index + 5).equals(currentLect))) {
-                        isSect = false;
-                        currentLect = lectures.get(index + 5);
-                    }
-
-                    index = index + 5;
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
 
-*/
-           // String est = lectures.get(5);
-            TextView tryharder = (TextView) findViewById(R.id.testfirebase);
-            tryharder.setText(test);
+
+            // Always close files.
+            bufferedReader.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println(
+                    "Unable to open fileTHISTHITHITHIEHGEITH '" +
+                            fileName + "'");
+        } catch (IOException ex) {
+            System.out.println(
+                    "Error reading file '"
+                            + fileName + "'");
+            // Or we could just do this:
+            // ex.printStackTrace();
         }
 
 
+        // test = "WHO"  + "\n"  + "WHAT" + "\n" + "WHERE \n";
+        //  String est = lectures.get(5).name;
+        TextView tryharder = (TextView) findViewById(R.id.testfirebase);
+        tryharder.setText("NOT PRESSED");
 
 
+    }
 
+    // don't even need this button, we only need one button to make this work
+
+    public void makeit(View view) {
 
 /*
+        String attempt = "";
+        for (int i = 0; i < stringListTest.size(); i++){
+            attempt += stringListTest.get(i);
+            attempt += " ";
+        }
+*/
+        //String attempt = stringListTest.get(5);
+        // String est = lectures.get(5);
+        //test = stringListTest.get(0);
+        String attempt = "Loaded Strings arraylist ";
+        attempt += stringListTest.get(0);
+        TextView tester = (TextView) findViewById(R.id.testfirebase);
+        tester.setText(attempt);
 
-                */
+    }
+
+
+    public void buildobjects(View v) {
+        for (int i = 0; i < (stringListTest.size()-1); i += 5) {
+            String coursename = stringListTest.get(i);
+            String weekdays = stringListTest.get(i + 1);
+            String time = stringListTest.get(i + 2);
+            String location = stringListTest.get(i + 3);
+            String enrolled = stringListTest.get(i + 4);
+
+            LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
+                    time, location, enrolled);
+
+            coursesFall2016.add(temporary);
+        }
+
+
+        TextView tester2 = (TextView)findViewById(R.id.testfirebase);
+        Float start = coursesFall2016.get(0).getStartTime();
+        String time = Float.toString(start);
+        tester2.setText(time);
+/*
+        String pray;
+        TextView tester2 = (TextView)findViewById(R.id.testfirebase);
+        //pray = coursesFall2016.get(0).getNamofLS();
+        int size = coursesFall2016.size();
+        pray = Integer.toString(size);
+        pray += " <- actual size, loop size - > ";
+        int loopsize = ((stringListTest.size())/5);
+        pray += Integer.toString(loopsize);
+        tester2.setText(pray);
+*/
+    }
+}
 
 
 
@@ -250,9 +138,12 @@ public class AddToFireBase extends AppCompatActivity {
 
 
 
+    // No longer needed
+    /*
+    public void string2Lect(BufferedReader br) {
 
-public void string2Lect(BufferedReader br) {
-ArrayList<String> stringList = new ArrayList<String>();
+
+        ArrayList<String> stringList = new ArrayList<String>();
 //ArrayList<Lecture> finalList  = new ArrayList<Lecture>();
         while (br != null) {
             try {
@@ -263,10 +154,10 @@ ArrayList<String> stringList = new ArrayList<String>();
             }
 
         }
-parse(stringList);
+        parse(stringList);
 
 
-}
+    }
 
 public void parse(ArrayList<String> lectures){
 
@@ -335,4 +226,6 @@ public void parse(ArrayList<String> lectures){
     }
 
     }
-}
+    */
+
+

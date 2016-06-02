@@ -149,13 +149,21 @@
             android:background="@android:drawable/btn_dropdown"
             android:layout_below="@+id/dateTime" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/starttime"
+            android:id="@+id/starttime"
+            android:layout_below="@+id/spinnerweekday" />
+
         <Spinner
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:id="@+id/spinnerhour"
             android:spinnerMode="dropdown"
             android:background="@android:drawable/btn_dropdown"
-            android:layout_below="@+id/spinnerweekday" />
+            android:layout_below="@+id/starttime" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -164,7 +172,7 @@
             android:text="@string/colon"
             android:id="@+id/colon"
             android:paddingTop="3dp"
-            android:layout_below="@+id/spinnerweekday"
+            android:layout_below="@+id/starttime"
             android:layout_toEndOf="@+id/spinnerhour" />
 
         <Spinner
@@ -173,7 +181,7 @@
             android:id="@+id/spinnermin"
             android:spinnerMode="dropdown"
             android:background="@android:drawable/btn_dropdown"
-            android:layout_below="@+id/spinnerweekday"
+            android:layout_below="@+id/starttime"
             android:layout_toEndOf="@+id/colon" />
 
         <Spinner
@@ -185,13 +193,58 @@
             android:layout_alignTop="@+id/spinnermin"
             android:layout_toEndOf="@+id/spinnermin" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/endtime"
+            android:id="@+id/endtime"
+            android:layout_below="@+id/spinnerhour" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerhour1"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_below="@+id/endtime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/colon"
+            android:id="@+id/colon1"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/endtime"
+            android:layout_toEndOf="@+id/spinnerhour1" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinnermin1"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_below="@+id/endtime"
+            android:layout_toEndOf="@+id/colon" />
+
+        <Spinner
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerAmPm1"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_alignTop="@+id/spinnermin1"
+            android:layout_toEndOf="@+id/spinnermin1" />
+
+
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/addCustom"
             android:id="@+id/btnAddCustom"
-            android:layout_below="@+id/spinnerAmPm" />
+            android:layout_below="@+id/spinnerAmPm1" />
 
 
 

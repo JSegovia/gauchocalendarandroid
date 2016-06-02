@@ -176,7 +176,59 @@ public class InputEvents extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+
+
+        //Spinner for Hours1
+        spinner = (Spinner) findViewById(R.id.spinnerhour1);
+        adapter = ArrayAdapter.createFromResource(this, R.array.Hours, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
+        //Spinner for Minutes1
+        spinner = (Spinner) findViewById(R.id.spinnermin1);
+        adapter = ArrayAdapter.createFromResource(this, R.array.Min, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
+        //Spinner for AMPM1
+        spinner = (Spinner) findViewById(R.id.spinnerAmPm1);
+        adapter = ArrayAdapter.createFromResource(this, R.array.AmPm, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
     }
+
+
 
     public void goCalendar(View view) {
 
@@ -223,6 +275,7 @@ public class InputEvents extends AppCompatActivity {
             public void onClick(View v) {
                 String nameEvent = EditEventName.getText().toString();
                 String nameLocation = EditLocation.getText().toString();
+
                 Spinner spinner = (Spinner) findViewById(R.id.spinnerweekday);
                 String weekdaytext = spinner.getSelectedItem().toString();
                 Spinner spinner1 = (Spinner) findViewById(R.id.spinnerhour);
@@ -233,22 +286,34 @@ public class InputEvents extends AppCompatActivity {
                 String ampm = spinner3.getSelectedItem().toString();
 
 
+                Spinner spinner5 = (Spinner) findViewById(R.id.spinnerhour1);
+                String hourF = spinner5.getSelectedItem().toString();
+                Spinner spinner6 = (Spinner) findViewById(R.id.spinnermin1);
+                String minF = spinner6.getSelectedItem().toString();
+                Spinner spinner7 = (Spinner) findViewById(R.id.spinnerAmPm1);
+                String ampmF = spinner7.getSelectedItem().toString();
+
+
                 if (TextUtils.isEmpty(nameEvent) || TextUtils.isEmpty(nameLocation)) {
                     EditEventName.setError("Please enter an event title");
                     EditLocation.setError("Please specify the location");
                     return;
                 }
 
-                inflatedEditRow(nameEvent, nameLocation, weekdaytext, hour, min, ampm);
+                inflatedEditRow(nameEvent, nameLocation, weekdaytext, hour, min, ampm, hourF, minF, ampmF);
                 v.setVisibility(View.VISIBLE);
 
                 int weekdayInt = spinner.getSelectedItemPosition();
                 int hourInt = spinner1.getSelectedItemPosition();
                 int minInt = spinner2.getSelectedItemPosition();
                 int ampmInt = spinner3.getSelectedItemPosition();
+                int hourIntF = spinner5.getSelectedItemPosition();
+                int minIntF = spinner6.getSelectedItemPosition();
+                int ampmIntF = spinner7.getSelectedItemPosition();
+
 
                 CustomEventClass temp = new CustomEventClass(nameEvent, nameLocation,
-                        weekdaytext, weekdayInt, hourInt, minInt, ampm);
+                        weekdaytext, weekdayInt, hourInt, minInt, ampm, hourIntF, minIntF, ampmF);
                 //firebaseRef.child("TestCustomEvent").push().setValue(temp);
                 customE.add(temp);
                 //firebaseRef.child("tester").push().setValue(customEvents.get(0));
@@ -279,7 +344,8 @@ public class InputEvents extends AppCompatActivity {
     }
 
     // Helper for inflating a row
-    private void inflatedEditRow(String nameEvent, String nameLoc, String weekday, String hr, String min, String ampm) {
+    private void inflatedEditRow(String nameEvent, String nameLoc, String weekday, String hr, String min, String ampm,
+                                 String hr2, String min2, String ampm2) {
 
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -292,11 +358,15 @@ public class InputEvents extends AppCompatActivity {
                 .findViewById(R.id.nameofLocation);
         final TextView nameofDateTime = (TextView) rowView
                 .findViewById(R.id.DateandTime);
+        final TextView nameofDateTime2 = (TextView) rowView
+                .findViewById(R.id.DateandTime2);
 
         if (nameEvent != null && !nameEvent.isEmpty()) {
             nameofEvent.setText("Event: " + nameEvent);
             nameofLocation.setText("Location: " + nameLoc);
-            nameofDateTime.setText(weekday + " " + hr + ":" + min + " " + ampm);
+            nameofDateTime.setText("Start: " + weekday + " " + hr + ":" + min + " " + ampm);
+            nameofDateTime2.setText("End: " + weekday + " " + hr2 + ":" + min2 + " " + ampm2);
+
 
         } else {
             mEmptyView = rowView;

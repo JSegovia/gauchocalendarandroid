@@ -12,19 +12,26 @@ public class CustomEventClass implements Parcelable {
     public String Location;
     public String Weekday;
     public int weekdayInt;
-    public int hour;
-    public int min;
-    public String ampm;
+    public int Shour;
+    public int Smin;
+    public String Sampm;
+    public int Ehour;
+    public int Emin;
+    public String Eampm;
 
     public CustomEventClass(String EventTitle, String Location, String Weekday,
-                            int weekdayInt, int hour, int min, String ampm){
+                            int weekdayInt, int hour, int min, String ampm,
+                            int hourE, int minE, String ampmE){
         this.EventTitle = EventTitle;
         this.Location = Location;
         this.Weekday = Weekday;
         this.weekdayInt = weekdayInt;
-        this.hour = hour;
-        this.min = min;
-        this.ampm = ampm;
+        this.Shour = hour;
+        this.Smin = min;
+        this.Sampm = ampm;
+        this.Ehour = hourE;
+        this.Emin = minE;
+        this.Eampm = ampmE;
     }
 
     public static final Creator<CustomEventClass> CREATOR = new Creator<CustomEventClass>() {
@@ -45,17 +52,23 @@ public class CustomEventClass implements Parcelable {
         this.Weekday = day;
     }
     public void setWeekdayInt(int dayInt){ this.weekdayInt = dayInt;}
-    public void setHour(int hr) {this.hour = hr;}
-    public void setMin(int minute){ this.min = minute;}
-    public void setAmpm(String mornAfter){this.ampm = mornAfter;}
+    public void setShour(int hr) {this.Shour = hr;}
+    public void setSmin(int minute){ this.Smin = minute;}
+    public void setSampm(String mornAfter){this.Sampm = mornAfter;}
+    public void setEhour(int hrE) {this.Ehour = hrE;}
+    public void setEmin(int minuteE){ this.Emin = minuteE;}
+    public void setEampm(String mornAfterE){this.Eampm = mornAfterE;}
 
     public String getEventTitle() {return EventTitle;}
     public String getLocation() {return Location; }
     public  String getWeekday(){ return Weekday; }
     public int getWeekdayInt() {return weekdayInt;}
-    public int getHour() {return hour;}
-    public int getMin(){ return min;}
-    public String getAmpm(){return ampm;}
+    public int getShour() {return Shour;}
+    public int getSmin(){ return Smin;}
+    public String getSampm(){return Sampm;}
+    public int getEhour() {return Ehour;}
+    public int getEmin(){ return Emin;}
+    public String getEampm(){return Eampm;}
 
 
     public CustomEventClass(Parcel in){
@@ -64,9 +77,12 @@ public class CustomEventClass implements Parcelable {
         Location = in.readString();
         Weekday = in.readString();
         weekdayInt = in.readInt();
-        hour = in.readInt();
-        min = in.readInt();
-        ampm = in.readString();
+        Shour = in.readInt();
+        Smin = in.readInt();
+        Sampm = in.readString();
+        Ehour = in.readInt();
+        Emin = in.readInt();
+        Eampm = in.readString();
     }
 
     @Override
@@ -80,8 +96,11 @@ public class CustomEventClass implements Parcelable {
         dest.writeString(Location);
         dest.writeString(Weekday);
         dest.writeInt(weekdayInt);
-        dest.writeInt(hour);
-        dest.writeInt(min);
-        dest.writeString(ampm);
+        dest.writeInt(Shour);
+        dest.writeInt(Smin);
+        dest.writeString(Sampm);
+        dest.writeInt(Ehour);
+        dest.writeInt(Emin);
+        dest.writeString(Eampm);
     }
 }

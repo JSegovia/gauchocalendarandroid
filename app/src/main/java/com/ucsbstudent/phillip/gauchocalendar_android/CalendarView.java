@@ -59,9 +59,9 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
                     ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             paramss.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
 
-            int hour = customarray.get(i).getHour();
-            int min = customarray.get(i).getMin();
-            String ampm = customarray.get(i).getAmpm();
+            int hour = customarray.get(i).getShour();
+            int min = customarray.get(i).getSmin();
+            String ampm = customarray.get(i).getSampm();
 
             int size;
             int mini=50;

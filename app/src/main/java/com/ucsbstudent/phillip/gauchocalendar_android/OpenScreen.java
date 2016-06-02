@@ -31,8 +31,10 @@ public class OpenScreen extends AppCompatActivity {
                 startActivity(startActivity);
                 finish();
             }
-        }, 3500);
+        }, 35);
 
+
+        // value used to be 3500
     }
 
 

@@ -51,8 +51,10 @@
     <string name="gocalendar">See Calendar</string>
     <string name="Title">Event Name</string>
     <string name="loc">Location</string>
-    <string name="dateTime">Day/Time</string>
+    <string name="dateTime">Day of Week</string>
     <string name="addCustom">Add Event</string>
+    <string name="starttime">Start Time</string>
+    <string name="endtime">End Time</string>
 
     <string-array name="departments">
         <item>ANTH</item>
