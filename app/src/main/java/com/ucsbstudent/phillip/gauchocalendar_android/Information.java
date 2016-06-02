@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses.InputEvents;
+import com.ucsbstudent.phillip.gauchocalendar_android.recyclers.InputEvents;
 
 public class Information extends AppCompatActivity {
 

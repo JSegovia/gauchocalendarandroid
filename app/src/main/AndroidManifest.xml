@@ -38,7 +38,7 @@
 
 
         <activity
-            android:name=".recyclerClasses.InputEvents"
+            android:name=".recyclers.InputEvents"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"
             android:parentActivityName=".Information">
@@ -73,10 +73,10 @@
         <activity
             android:name=".CalendarView"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            android:parentActivityName=".recyclerClasses.InputEvents">
+            android:parentActivityName=".recyclers.InputEvents">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".recyclerClasses.InputEvents"
+                android:value=".recyclers.InputEvents"
                 />
         </activity>
 

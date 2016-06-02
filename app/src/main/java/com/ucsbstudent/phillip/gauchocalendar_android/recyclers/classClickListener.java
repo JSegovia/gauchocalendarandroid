@@ -1,4 +1,4 @@
-package com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses;
+package com.ucsbstudent.phillip.gauchocalendar_android.recyclers;
 
 import android.view.View;
 

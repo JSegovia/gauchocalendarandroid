@@ -1,4 +1,4 @@
-package com.ucsbstudent.phillip.gauchocalendar_android.recyclerClasses;
+package com.ucsbstudent.phillip.gauchocalendar_android.recyclers;
 
 import android.content.Context;
 import android.content.Intent;
@@ -26,6 +26,11 @@ import com.ucsbstudent.phillip.gauchocalendar_android.CustomEventClass;
 import com.ucsbstudent.phillip.gauchocalendar_android.LectureOrSection;
 import com.ucsbstudent.phillip.gauchocalendar_android.R;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class InputEvents extends AppCompatActivity {
@@ -36,6 +41,9 @@ public class InputEvents extends AppCompatActivity {
 
 
     public ArrayList<CustomEventClass> customE = new ArrayList<>();
+
+    ArrayList<LectureOrSection> coursesFall2016 = new ArrayList<LectureOrSection>();
+    ArrayList<String> stringListF16 = new ArrayList<String>();
 
 
     Spinner spinner;
@@ -62,7 +70,56 @@ public class InputEvents extends AppCompatActivity {
         //Toolbar toolbar = (Toolbar) findViewById(R.id.);
         //getSupportActionBar(toolbar);
 
-        adapter123 = new classAdapter(this, getClasses());
+
+
+        // Make ArrayList stringListF16
+        Context context = getApplicationContext();
+
+        String filePath = context.getFilesDir().getAbsolutePath();
+
+        File fileName = new File(filePath, "courses");
+        try {
+
+            BufferedReader bufferedReader =
+                    new BufferedReader(new InputStreamReader(getAssets().open("courses.txt")));
+
+            // This puts all the strings into an array of strings
+            String temp;
+            while ((temp = bufferedReader.readLine()) != null) {
+                try {
+                    stringListF16.add(temp);
+                    stringListF16.add(bufferedReader.readLine());
+
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+
+
+            // Always close files.
+            bufferedReader.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println(
+                    "Unable to open fileTHISTHITHITHIEHGEITH '" +
+                            fileName + "'");
+        } catch (IOException ex) {
+            System.out.println(
+                    "Error reading file '"
+                            + fileName + "'");
+            // Or we could just do this:
+            // ex.printStackTrace();
+        }
+
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+        //adapter123 = new classAdapter(this, getClasses());
 
         linearLayoutEvents = (LinearLayout) findViewById(R.id.listEvents);
         linearLayoutEvents.setOrientation(LinearLayout.VERTICAL);
@@ -230,6 +287,10 @@ public class InputEvents extends AppCompatActivity {
     }
 
     public void showclasses(View v){
+
+
+        adapter123 = new classAdapter(this, getClasses());
+
         sb = new StringBuffer();
         for (LectureOrSection p : adapter123.checkedclasses){
             sb.append(p.getNamofLS());
@@ -250,6 +311,25 @@ public class InputEvents extends AppCompatActivity {
         //SET ADAPTER
         rv.setAdapter(adapter123);
 
+
+    }
+
+    public void loadinArray(View v){
+        for (int i = 0; i < (stringListF16.size()-1); i += 5) {
+            String coursename = stringListF16.get(i);
+            String weekdays = stringListF16.get(i + 1);
+            String time = stringListF16.get(i + 2);
+            String location = stringListF16.get(i + 3);
+            String enrolled = stringListF16.get(i + 4);
+
+            LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
+                    time, location, enrolled);
+
+            coursesFall2016.add(temporary);
+        }
+
+        TextView test = (TextView)findViewById(R.id.isitloaded);
+        test.setText("Done:" + coursesFall2016.get(5).NameofLS);
 
     }
 
@@ -409,6 +489,26 @@ public class InputEvents extends AppCompatActivity {
 
     public ArrayList<LectureOrSection> getClasses() {
         ArrayList<LectureOrSection> courses = new ArrayList<>();
+
+        /*
+        for (int i = 0; i < (25); i += 5) {
+            String coursename = stringListF16.get(i);
+            String weekdays = stringListF16.get(i + 1);
+            String time = stringListF16.get(i + 2);
+            String location = stringListF16.get(i + 3);
+            String enrolled = stringListF16.get(i + 4);
+
+            LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
+                    time, location, enrolled);
+
+            courses.add(temporary);
+        }
+        */
+        for(int i=0; i < 6; i++){
+            courses.add(coursesFall2016.get(i));
+        }
+        return courses;
+        /*
         LectureOrSection p = new LectureOrSection("cs", "MWF", "10am", "PHELPS", "135");
         courses.add(p);
 
@@ -418,7 +518,7 @@ public class InputEvents extends AppCompatActivity {
         LectureOrSection r = new LectureOrSection("cs6", "MWF", "10am", "PHELPS", "135");
         courses.add(p);
         return courses;
-
+        */
 
     }
 

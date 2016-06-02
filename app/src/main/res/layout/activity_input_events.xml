@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".recyclerClasses.InputEvents"
+    tools:context=".recyclers.InputEvents"
     android:background="@drawable/fadeblue">
 
     <ScrollView
@@ -67,6 +67,26 @@
         android:background="@android:drawable/btn_dropdown"
         android:layout_below="@+id/QuarterTxt"
         android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/loadItall"
+            android:id="@+id/loadClasses"
+            android:layout_toEndOf="@+id/spinnerQuarter"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/spinnersubject"
+            android:layout_alignParentRight="true"
+            android:onClick="loadinArray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isitloaded"
+            android:layout_below="@+id/loadClasses"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
