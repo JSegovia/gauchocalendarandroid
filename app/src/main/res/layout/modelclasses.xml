@@ -51,8 +51,8 @@
             android:text="@string/location"
             android:id="@+id/loc"
             android:padding="10dp"
-            android:layout_below="@id/NameCourse"
-            android:layout_toRightOf="@id/timeDay"
+            android:layout_below="@id/weekdays"
+
             />
 
 

@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".notinuse.LoginActivity"
             android:label="@string/app_name" />
         <activity android:name=".notinuse.HomeScreen" />
 

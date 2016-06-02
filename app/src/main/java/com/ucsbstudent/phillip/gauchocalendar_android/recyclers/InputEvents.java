@@ -2,6 +2,7 @@ package com.ucsbstudent.phillip.gauchocalendar_android.recyclers;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -288,6 +289,14 @@ public class InputEvents extends AppCompatActivity {
 
     public void showclasses(View v){
 
+        Button fail = (Button)findViewById(R.id.buttonsearch);
+        if(coursesFall2016.size() == 0) {
+            fail.setError("Please load classes");
+            return;
+        }
+
+        TextView clear = (TextView)findViewById(R.id.isitloaded);
+        clear.setText("");
 
         adapter123 = new classAdapter(this, getClasses());
 
@@ -315,22 +324,33 @@ public class InputEvents extends AppCompatActivity {
     }
 
     public void loadinArray(View v){
-        for (int i = 0; i < (stringListF16.size()-1); i += 5) {
-            String coursename = stringListF16.get(i);
-            String weekdays = stringListF16.get(i + 1);
-            String time = stringListF16.get(i + 2);
-            String location = stringListF16.get(i + 3);
-            String enrolled = stringListF16.get(i + 4);
 
-            LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
-                    time, location, enrolled);
+        if (coursesFall2016.size() ==0) {
 
-            coursesFall2016.add(temporary);
+            for (int i = 0; i < (stringListF16.size() - 1); i += 5) {
+                String coursename = stringListF16.get(i);
+                String weekdays = stringListF16.get(i + 1);
+                String time = stringListF16.get(i + 2);
+                String location = stringListF16.get(i + 3);
+                String enrolled = stringListF16.get(i + 4);
+
+                LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
+                        time, location, enrolled);
+
+                coursesFall2016.add(temporary);
+            }
+
+            TextView test = (TextView) findViewById(R.id.isitloaded);
+            test.setText("Done:" + coursesFall2016.get(5).NameofLS);
+
         }
+        else {
+            AlertDialog alertDialog = new AlertDialog.Builder(this).create(); //Read Update
+            alertDialog.setTitle("Already Loaded");
+            alertDialog.setMessage("You don't need to load classes again");
 
-        TextView test = (TextView)findViewById(R.id.isitloaded);
-        test.setText("Done:" + coursesFall2016.get(5).NameofLS);
-
+            alertDialog.show();  //<-- See This!
+        }
     }
 
 
@@ -490,222 +510,13 @@ public class InputEvents extends AppCompatActivity {
     public ArrayList<LectureOrSection> getClasses() {
         ArrayList<LectureOrSection> courses = new ArrayList<>();
 
-        /*
-        for (int i = 0; i < (25); i += 5) {
-            String coursename = stringListF16.get(i);
-            String weekdays = stringListF16.get(i + 1);
-            String time = stringListF16.get(i + 2);
-            String location = stringListF16.get(i + 3);
-            String enrolled = stringListF16.get(i + 4);
-
-            LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
-                    time, location, enrolled);
-
-            courses.add(temporary);
-        }
-        */
         for(int i=0; i < 6; i++){
             courses.add(coursesFall2016.get(i));
         }
         return courses;
-        /*
-        LectureOrSection p = new LectureOrSection("cs", "MWF", "10am", "PHELPS", "135");
-        courses.add(p);
-
-        LectureOrSection q = new LectureOrSection("cs5", "MWF", "10am", "PHELPS", "135");
-        courses.add(p);
-
-        LectureOrSection r = new LectureOrSection("cs6", "MWF", "10am", "PHELPS", "135");
-        courses.add(p);
-        return courses;
-        */
-
-    }
-
-
-    //StringBuffer sb=null;
-    //classAdapter adapter123;
-
-
-/*
-    public void showclasses(View v) {
-        sb = new StringBuffer();
-
-        for (LectureOrSection ls : classAdapter.checkedclasses)
-
-
-        Spinner spin = (Spinner) findViewById(R.id.spinnerhour);
-        String name = spin.getSelectedItem().toString();
-
-        LinearLayout test = (LinearLayout) findViewById(R.id.listCourses);
-
-        LinearLayout.LayoutParams lparamslect = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        lparamslect.setMargins(40,15,15,15);
-
-        LinearLayout.LayoutParams lparamssect = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        lparamslect.setMargins(10,10,10,10);
-
-
-        CheckBox checkBox = new CheckBox(getApplicationContext());
-        checkBox.setText("CMPSC8   KOC    TWR    11:00am - 12:20pm   BRDA 1640");
-        checkBox.setTextColor(getResources().getColor(R.color.black));
-        checkBox.setLayoutParams(lparamslect);
-        test.addView(checkBox);
-
-        CheckBox checkBox1 = new CheckBox(getApplicationContext());
-        checkBox1.setText("CMPSC8       F    11:00am - 12:20pm  PHELP3525");
-        checkBox1.setTextColor(getResources().getColor(R.color.black));
-        checkBox1.setLayoutParams(lparamssect);
-        test.addView(checkBox1);
-
-        CheckBox checkBox2 = new CheckBox(getApplicationContext());
-        checkBox2.setText("CMPSC8       F    12:30pm - 1:50pm  PHELP3525");
-        checkBox2.setTextColor(getResources().getColor(R.color.black));
-        checkBox2.setLayoutParams(lparamssect);
-        test.addView(checkBox2);
-
-        CheckBox checkBox3 = new CheckBox(getApplicationContext());
-        checkBox3.setText("CMPSC8       F    2:00pm - 3:20pm  PHELP3525");
-        checkBox3.setTextColor(getResources().getColor(R.color.black));
-        checkBox3.setLayoutParams(lparamssect);
-        test.addView(checkBox3);
-
-        CheckBox checkBox4 = new CheckBox(getApplicationContext());
-        checkBox4.setText("CMPSC8   TBA    MWF    12:30pm - 1:50pm  PHELP1260");
-        checkBox4.setTextColor(getResources().getColor(R.color.black));
-        checkBox4.setLayoutParams(lparamslect);
-        test.addView(checkBox4);
-
-        CheckBox checkBox5 = new CheckBox(getApplicationContext());
-        checkBox5.setText("CMPSC8      T    11:00am - 12:20pm  PHELP3525");
-        checkBox5.setTextColor(getResources().getColor(R.color.black));
-        checkBox5.setLayoutParams(lparamssect);
-        test.addView(checkBox5);
-
-        CheckBox checkBox6 = new CheckBox(getApplicationContext());
-        checkBox6.setText("CMPSC8      T    12:30pm - 1:50pm  PHELP3525");
-        checkBox6.setTextColor(getResources().getColor(R.color.black));
-        checkBox6.setLayoutParams(lparamssect);
-        test.addView(checkBox6);
-
-        CheckBox checkBox7 = new CheckBox(getApplicationContext());
-        checkBox7.setText("CMPSC8      T    2:00pm - 3:20pm  PHELP3525");
-        checkBox7.setTextColor(getResources().getColor(R.color.black));
-        checkBox7.setLayoutParams(lparamssect);
-        test.addView(checkBox7);
-
-        CheckBox checkBox8 = new CheckBox(getApplicationContext());
-        checkBox8.setText("CMPSC8   TBA    MWF    3:30pm - 4:50pm  PHELP3526");
-        checkBox8.setTextColor(getResources().getColor(R.color.black));
-        checkBox8.setLayoutParams(lparamslect);
-        test.addView(checkBox8);
-
-        CheckBox checkBox9 = new CheckBox(getApplicationContext());
-        checkBox9.setText("CMPSC8      T    3:30pm - 4:50pm  PHELP3525");
-        checkBox9.setTextColor(getResources().getColor(R.color.black));
-        checkBox9.setLayoutParams(lparamssect);
-        test.addView(checkBox9);
-
-        CheckBox checkBox10 = new CheckBox(getApplicationContext());
-        checkBox10.setText("CMPSC8      T    5:00pm - 6:20pm  PHELP3525");
-        checkBox10.setTextColor(getResources().getColor(R.color.black));
-        checkBox10.setLayoutParams(lparamssect);
-        test.addView(checkBox10);
-
-        CheckBox checkBox11 = new CheckBox(getApplicationContext());
-        checkBox11.setText("CMPSC16   TBA    T R    12:30pm - 1:50pm  PHELP1260");
-        checkBox11.setTextColor(getResources().getColor(R.color.black));
-        checkBox11.setLayoutParams(lparamslect);
-        test.addView(checkBox11);
-
-        CheckBox checkBox12 = new CheckBox(getApplicationContext());
-        checkBox12.setText("CMPSC16      M    9:00am - 10:15am  PHELP3525");
-        checkBox12.setTextColor(getResources().getColor(R.color.black));
-        checkBox12.setLayoutParams(lparamssect);
-        test.addView(checkBox12);
-
-        CheckBox checkBox13 = new CheckBox(getApplicationContext());
-        checkBox13.setText("CMPSC16      M    10:30am - 11:45am  PHELP3525");
-        checkBox13.setTextColor(getResources().getColor(R.color.black));
-        checkBox13.setLayoutParams(lparamssect);
-        test.addView(checkBox13);
-
-        CheckBox checkBox14 = new CheckBox(getApplicationContext());
-        checkBox14.setText("CMPSC40   CAPPELLO    TWR    2:00pm - 3:20pm  PHELP3526");
-        checkBox14.setTextColor(getResources().getColor(R.color.black));
-        checkBox14.setLayoutParams(lparamslect);
-        test.addView(checkBox14);
-
-        CheckBox checkBox15 = new CheckBox(getApplicationContext());
-        checkBox15.setText("CMPSC40      F   11:00am - 12:25pm  PHELP3524");
-        checkBox15.setTextColor(getResources().getColor(R.color.black));
-        checkBox15.setLayoutParams(lparamssect);
-        test.addView(checkBox15);
-
-        CheckBox checkBox16 = new CheckBox(getApplicationContext());
-        checkBox16.setText("CMPSC40      F    12:30pm - 1:50pm  PHELP3524");
-        checkBox16.setTextColor(getResources().getColor(R.color.black));
-        checkBox16.setLayoutParams(lparamssect);
-        test.addView(checkBox16);
-
-        CheckBox checkBox17 = new CheckBox(getApplicationContext());
-        checkBox17.setText("CMPSC56   CONRAD    TWR    9:30am - 10:50pm  PHELP3526");
-        checkBox17.setTextColor(getResources().getColor(R.color.black));
-        checkBox17.setLayoutParams(lparamslect);
-        test.addView(checkBox17);
-
-        CheckBox checkBox18 = new CheckBox(getApplicationContext());
-        checkBox18.setText("CMPSC56      F    9:00am - 10:20am  PHELP3525");
-        checkBox18.setTextColor(getResources().getColor(R.color.black));
-        checkBox18.setLayoutParams(lparamssect);
-        test.addView(checkBox18);
-
-        CheckBox checkBox19 = new CheckBox(getApplicationContext());
-        checkBox19.setText("CMPSC56      F    10:30am - 11:50am  PHELP3525");
-        checkBox19.setTextColor(getResources().getColor(R.color.black));
-        checkBox19.setLayoutParams(lparamssect);
-        test.addView(checkBox19);
-
-        CheckBox checkBox20 = new CheckBox(getApplicationContext());
-        checkBox20.setText("CMPSC138   VAN DAM    MWF   11:00am - 12:20pm  PHELP2510");
-        checkBox20.setTextColor(getResources().getColor(R.color.black));
-        checkBox20.setLayoutParams(lparamslect);
-        test.addView(checkBox20);
-
-        CheckBox checkBox21 = new CheckBox(getApplicationContext());
-        checkBox21.setText("CMPSC138      R    11:00am - 12:20pm  PHELP2510");
-        checkBox21.setTextColor(getResources().getColor(R.color.black));
-        checkBox21.setLayoutParams(lparamssect);
-        test.addView(checkBox21);
-
-        CheckBox checkBox22 = new CheckBox(getApplicationContext());
-        checkBox22.setText("CMPSC192    TBA    TBA");
-        checkBox22.setTextColor(getResources().getColor(R.color.black));
-        checkBox22.setLayoutParams(lparamslect);
-        test.addView(checkBox22);
-
-        CheckBox checkBox23 = new CheckBox(getApplicationContext());
-        checkBox23.setText("CMPSC193    TBA   TBA");
-        checkBox23.setTextColor(getResources().getColor(R.color.black));
-        checkBox23.setLayoutParams(lparamslect);
-        test.addView(checkBox23);
-
-        CheckBox checkBox24 = new CheckBox(getApplicationContext());
-        checkBox24.setText("CMPSC196     TBA   TBA");
-        checkBox24.setTextColor(getResources().getColor(R.color.black));
-        checkBox24.setLayoutParams(lparamslect);
-        test.addView(checkBox24);
-
-        Button btnadd = new Button(getApplicationContext());
-        btnadd.setText("Add Class");
-        btnadd.setLayoutParams(lparamslect);
-        test.addView(btnadd);
 
 
     }
-*/
 
 
 }
