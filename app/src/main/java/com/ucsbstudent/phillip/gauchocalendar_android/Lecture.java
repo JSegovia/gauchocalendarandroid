@@ -1,11 +1,12 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by christiannewkirk on 5/30/16.
  */
-public class Lecture {
+public class Lecture implements Serializable{
 
         String name;
         String days;

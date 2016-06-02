@@ -1,9 +1,12 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
+
+import java.io.Serializable;
+
 /**
  * Created by christiannewkirk on 5/30/16.
  */
 
-public class Section{
+public class Section implements Serializable{
 
     String day;
     String time;
