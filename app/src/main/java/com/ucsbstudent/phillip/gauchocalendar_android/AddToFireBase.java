@@ -26,7 +26,7 @@ public class AddToFireBase extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_to_fire_base);
-        ArrayList<Lecture> lectures = new ArrayList<>();
+        //ArrayList<Lecture> lectures = new ArrayList<>();
         //File sdcard = Environment.getExternalStorageDirectory();
         //File fileName = new File(sdcard,"courses.txt");
 
@@ -41,7 +41,7 @@ public class AddToFireBase extends AppCompatActivity {
         //String fileName = "C:\\Users\\Phillip\\Android Projects\\gauchocalendarandroid\\app\\src\\main\\res\\raw\\courses.txt";
 
         // This will reference one line at a time
-        String line = null;
+        //String line = null;
 
         try {
             // FileReader reads text files in the default encoding.
@@ -251,7 +251,7 @@ public class AddToFireBase extends AppCompatActivity {
 
 
 
-public ArrayList<Lecture> string2Lect(BufferedReader br) {
+public void string2Lect(BufferedReader br) {
 ArrayList<String> stringList = new ArrayList<String>();
 //ArrayList<Lecture> finalList  = new ArrayList<Lecture>();
         while (br != null) {
@@ -263,69 +263,76 @@ ArrayList<String> stringList = new ArrayList<String>();
             }
 
         }
-return parse(stringList);
+parse(stringList);
 
 
 }
 
-public ArrayList<Lecture> parse(ArrayList<String> courses){
-        ArrayList<Lecture> returnedList = new ArrayList<Lecture>();
-    ArrayList<Section> sections = new ArrayList<Section>();
+public void parse(ArrayList<String> lectures){
 
-        Lecture newCourse;
+    Lecture newCourse;
 
-        int index = 1; //Start at Anth 2
-        String currentLect = courses.get(index); //set to Anth 2
-        String lectDays;
-        String lectTimes;
-        String lectLocation;
-        String lectOcc;
-        String sectDays;
-        String sectTimes;
-        String sectLocation;
-        String sectOcc;
-        Boolean isSect = false;
+    int counter = -1;//used for the index of courses
 
-
-        for(int i = 0; i < courses.size(); i++){
-        if(isSect == false){
-        lectDays = courses.get(index+5);
-        lectTimes = courses.get(index+6);
-        lectLocation = courses.get(index+7);
-        lectOcc = courses.get(index+8);
-
-        newCourse = new Lecture(currentLect,lectDays, lectTimes, lectLocation, lectOcc);
-        returnedList.add(newCourse);
+    int index = 0; //Start at Anth 2
+    String currentLect = lectures.get(index); //set to Anth 2
+    String lectDays;
+    String lectTimes;
+    String lectLocation;
+    String lectOcc;
+    String sectDays;
+    String sectTimes;
+    String sectLocation;
+    String sectOcc;
+    Boolean isSect = false;
 
 
-        if(index+11 < courses.size()){
-        if(courses.get(index+11).equals(currentLect)){
-        isSect = true;
-        }
-        else{
-        currentLect = courses.get(index+11);
-        }
-        index = index+11;
-        }
+    for(int i = 0; i < lectures.size(); i++) {
+        if (isSect == false) {
+            lectDays = lectures.get(index + 1);
+            lectTimes = lectures.get(index + 2);
+            lectLocation = lectures.get(index + 3);
+            lectOcc = lectures.get(index + 4);
 
-        }
-        else {
-            sectDays = courses.get(index + 5);
-            sectTimes = courses.get(index + 6);
-            sectLocation = courses.get(index + 7);
-            sectOcc = courses.get(index + 8);
+            newCourse = new Lecture(currentLect, lectDays, lectTimes, lectLocation, lectOcc);
+            courses.add(newCourse);
+            counter++;
 
-            Section newSection = new Section(sectDays, sectTimes, sectLocation, sectOcc);
-            sections.add(newSection);
-
-            if (index + 11 < courses.size()) {
-                if (!(courses.get(index + 11).equals(currentLect))) {
-                    isSect = false;
-                    currentLect = courses.get(index + 11);
-                }
-
-                index = index + 11;
+            if (index + 5 >= lectures.size()) {
+                break;
             }
-        }}
-return returnedList;}
+
+            if (lectures.get(index + 5).equals(currentLect)) {
+
+                isSect = true;
+            } else {
+
+                currentLect = lectures.get(index + 5);
+            }
+
+            index = index + 5;
+
+        } else {
+            sectDays = lectures.get(index + 1);
+            sectTimes = lectures.get(index + 2);
+            sectLocation = lectures.get(index + 3);
+            sectOcc = lectures.get(index + 4);
+
+
+            courses.get(counter).addSection(sectDays, sectTimes, sectLocation, sectOcc);
+
+            if (index + 5 >= lectures.size()) {
+                break;
+            }
+
+            if (!(lectures.get(index + 5).equals(currentLect))) {
+                isSect = false;
+                currentLect = lectures.get(index + 5);
+            }
+
+            index = index + 5;
+        }
+    }
+
+    }
 }
