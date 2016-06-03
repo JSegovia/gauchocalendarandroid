@@ -125,11 +125,12 @@ public class  CalendarView extends AppCompatActivity implements View.OnClickList
         btn1.setOnClickListener(this);
 
 
+
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
-        params.topMargin = 660;
-
+        //params.topMargin = 660;
+        params.addRule(RelativeLayout.BELOW, R.id.twoam);
         Button btn2 = new Button(this);
         btn2.setText(hello);
         //btn.setTextColor(Color.parseColor("green"));

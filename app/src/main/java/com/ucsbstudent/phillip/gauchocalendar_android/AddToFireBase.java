@@ -34,11 +34,11 @@ public class AddToFireBase extends AppCompatActivity {
 
         String filePath = context.getFilesDir().getAbsolutePath();
 
-        File fileName = new File(filePath, "courses");
+        File fileName = new File(filePath, "fall2016");
         try {
 
             BufferedReader bufferedReader =
-                    new BufferedReader(new InputStreamReader(getAssets().open("courses.txt")));
+                    new BufferedReader(new InputStreamReader(getAssets().open("fall2016.txt")));
 
             // This puts all the strings into an array of strings
             String temp;
@@ -81,19 +81,9 @@ public class AddToFireBase extends AppCompatActivity {
 
     public void makeit(View view) {
 
-/*
-        String attempt = "";
-        for (int i = 0; i < stringListTest.size(); i++){
-            attempt += stringListTest.get(i);
-            attempt += " ";
-        }
-*/
-        //String attempt = stringListTest.get(5);
-        // String est = lectures.get(5);
-        //test = stringListTest.get(0);
-       // String attempt = "Loaded Strings arraylist ";
-        String attempt = Float.toString(coursesFall2016.get(0).getStartTime());
-        attempt += stringListTest.get(0);
+
+        String attempt = coursesFall2016.get(0).getLectorSect();
+        attempt += coursesFall2016.get(0).getNamofLS();
         TextView tester = (TextView) findViewById(R.id.testfirebase);
         tester.setText(attempt);
 
@@ -102,23 +92,24 @@ public class AddToFireBase extends AppCompatActivity {
 
     public void buildobjects(View v) {
         for (int i = 0; i < (stringListTest.size()-1); i += 5) {
-            String coursename = stringListTest.get(i);
-            String weekdays = stringListTest.get(i + 1);
-            String time = stringListTest.get(i + 2);
-            String location = stringListTest.get(i + 3);
-            String enrolled = stringListTest.get(i + 4);
+            String lectsect = stringListTest.get(i);
+            String coursename = stringListTest.get(i+1);
+            String weekdays = stringListTest.get(i + 2);
+            String time = stringListTest.get(i + 3);
+            String location = stringListTest.get(i + 4);
 
-            LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
-                    time, location, enrolled);
+            LectureOrSection temporary = new LectureOrSection(lectsect, coursename, weekdays,
+                    time, location);
 
             coursesFall2016.add(temporary);
         }
 
 
         TextView tester2 = (TextView)findViewById(R.id.testfirebase);
-        Float start = coursesFall2016.get(0).getStartTime();
-        String time = Float.toString(start);
-        tester2.setText(time);
+        //Float start = coursesFall2016.get(0).getStartTime();
+        String names = coursesFall2016.get(0).getLectorSect();
+        names += coursesFall2016.get(0).getNamofLS();
+        //tester2.setText(time);
 /*
         String pray;
         TextView tester2 = (TextView)findViewById(R.id.testfirebase);

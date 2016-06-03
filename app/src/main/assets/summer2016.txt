@@ -1,0 +1,6135 @@
+Lecture: 
+ANTH 2
+MTWR
+3:30pm - 4:40pm
+GIRV 1112
+Section: 
+ANTH 2
+F
+2:00pm - 3:10pm
+HSSB 2202
+Section: 
+ANTH 2
+F
+11:00am - 12:10pm
+HSSB 3202
+Lecture: 
+ANTH 2
+F
+12:30pm - 1:40pm
+HSSB 2202
+Lecture: 
+ANTH 2
+MTWR
+11:00am - 12:10pm
+GIRV 1119
+Section: 
+ANTH 2
+F
+11:00am - 12:10pm
+HSSB 1232
+Section: 
+ANTH 2
+F
+12:30pm - 1:40pm
+HSSB 2201
+Section: 
+ANTH 2
+F
+9:30 am - 10:40am
+HSSB 1232
+Lecture: 
+ANTH 3SS
+MTWR
+9:30 am - 10:40am
+GIRV 1119
+Lecture: 
+ANTH 3SS
+F
+11:00am - 12:10pm
+GIRV 2108
+Section: 
+ANTH 3SS
+F
+12:30pm - 1:40pm
+GIRV 2108
+Section: 
+ANTH 3SS
+F
+2:00pm - 3:10pm
+GIRV 2108
+Lecture: 
+ANTH 5
+MTWR
+9:30 am - 10:40am
+GIRV 1112
+Section: 
+ANTH 5
+F
+11:00am - 12:10pm
+HSSB 2201
+Section: 
+ANTH 5
+F
+12:30pm - 1:40pm
+HSSB 2201
+Section: 
+ANTH 5
+F
+2:00pm - 3:10pm
+HSSB 2201
+Lecture: 
+ANTH 9
+MTWR
+11:00am - 12:10pm
+PHELP1526
+Lecture: 
+ANTH 99
+
+
+T B A
+Lecture: 
+ANTH 105
+MTWR
+2:00pm - 3:10pm
+ARTS 1353
+Lecture: 
+ANTH 107
+T R
+6:30pm - 8:35pm
+PHELP3505
+Lecture: 
+ANTH 109
+T R
+6:30pm - 8:35pm
+HSSB 1174
+Lecture: 
+ANTH 111
+MTWR
+9:30 am - 10:40am
+ARTS 1353
+Lecture: 
+ANTH 125
+MTWR
+12:30pm - 1:40pm
+ARTS 1353
+Lecture: 
+ANTH 127
+MTWR
+11:00am - 12:10pm
+387 103
+Lecture: 
+ANTH 131
+MTWR
+11:00am - 12:10pm
+GIRV 2127
+Lecture: 
+ANTH 142
+MTWR
+9:30 am - 10:40am
+387 104
+Lecture: 
+ANTH 153S
+
+
+T B A
+Lecture: 
+ANTH 190
+
+
+T B A
+Lecture: 
+ANTH 194P
+
+
+T B A
+Lecture: 
+ANTH 199RA
+
+
+T B A
+Lecture: 
+ART 1A
+T R
+1:00pm - 2:55pm
+ARTS 1344
+Section: 
+ART 1A
+W
+1:00pm - 2:55pm
+ARTS 1344
+Section: 
+ART 1A
+M W
+11:00am - 12:55pm
+ARTS 1344
+Section: 
+ART 1A
+T
+9:00 am - 10:55am
+ARTS 1344
+Lecture: 
+ART 7A
+T
+2:00pm - 4:55pm
+ARTS 1345
+Section: 
+ART 7A
+T R
+11:00am - 12:55pm
+ARTS 1345
+Lecture: 
+ART 18
+M W
+9:00 am - 11:50am
+ARTS 2636
+Section: 
+ART 18
+M W
+2:00pm - 4:50pm
+ARTS 2636
+Lecture: 
+ART 100
+T R
+1:00pm - 3:50pm
+ARTS 2422
+Lecture: 
+ART 110
+W
+12:00pm - 4:50pm
+ARTS 2235
+Lecture: 
+ART 117
+T R
+10:00am - 12:50pm
+ARTS 2636
+Lecture: 
+ART 125
+T R
+2:00pm - 4:15pm
+ARTS 1344
+Lecture: 
+ART 130
+T R
+3:15pm - 5:30pm
+ARTS 1344
+Lecture: 
+ART 199
+
+
+T B A
+Lecture: 
+ART 199RA
+
+
+T B A
+Lecture: 
+ARTHI 1
+MTWR
+12:30pm - 1:40pm
+ARTS 1341
+Section: 
+ARTHI 1
+M
+2:00pm - 3:10pm
+ARTS 2324
+Section: 
+ARTHI 1
+M
+3:30pm - 4:40pm
+ARTS 2324
+Lecture: 
+ARTHI 6A
+MTWR
+11:00am - 12:10pm
+ARTS 1341
+Section: 
+ARTHI 6A
+W
+2:00pm - 3:10pm
+ARTS 2324
+Section: 
+ARTHI 6A
+W
+12:30pm - 1:40pm
+ARTS 2324
+Lecture: 
+ARTHI 6B
+MTWR
+11:00am - 12:10pm
+ARTS 1341
+Section: 
+ARTHI 6B
+T
+2:00pm - 3:10pm
+ARTS 2324
+Section: 
+ARTHI 6B
+T
+12:30pm - 1:40pm
+ARTS 2324
+Lecture: 
+ARTHI 6C
+MTWR
+12:30pm - 1:40pm
+ARTS 1341
+Section: 
+ARTHI 6C
+R
+3:30pm - 4:40pm
+ARTS 2324
+Section: 
+ARTHI 6C
+R
+2:00pm - 3:10pm
+ARTS 2324
+Lecture: 
+ARTHI 6F
+MTWR
+9:30 am - 10:40am
+ARTS 1341
+Section: 
+ARTHI 6F
+W
+11:00am - 12:10pm
+ARTS 2324
+Section: 
+ARTHI 6F
+W
+12:30pm - 1:45pm
+ARTS 2324
+Lecture: 
+ARTHI 117F
+
+
+T B A
+Lecture: 
+ARTHI 119C
+MTWR
+2:00pm - 3:10pm
+ARTS 1341
+Lecture: 
+ARTHI 130A
+MTWR
+5:00pm - 6:10pm
+ARTS 1341
+Lecture: 
+ARTHI 130C
+MTWR
+3:30pm - 4:45pm
+ARTS 1341
+Lecture: 
+ARTHI 132A
+
+
+T B A
+Lecture: 
+ARTHI 136C
+MTWR
+8:00 am - 9:10 am
+ARTS 1341
+Lecture: 
+ARTHI 136I
+MTWR
+2:00pm - 3:10pm
+ARTS 1341
+Lecture: 
+ARTHI 141E
+
+
+T B A
+Lecture: 
+ARTHI 141E
+
+
+T B A
+Lecture: 
+ARTHI 198
+
+
+T B A
+Lecture: 
+ARTHI 199
+
+
+T B A
+Lecture: 
+AS AM 2
+MTW
+9:30 am - 10:55am
+ARTS 1349
+Section: 
+AS AM 2
+W
+2:00pm - 3:20pm
+HSSB 1210
+Section: 
+AS AM 2
+W
+3:30pm - 4:50pm
+HSSB 1210
+Lecture: 
+AS AM 5
+MTW
+12:30pm - 1:55pm
+ARTS 1349
+Section: 
+AS AM 5
+W
+3:30pm - 4:50pm
+HSSB 5024
+Section: 
+AS AM 5
+W
+5:30pm - 6:50pm
+HSSB 5024
+Lecture: 
+AS AM 100AA
+MTW
+2:00pm - 3:25pm
+GIRV 1119
+Lecture: 
+AS AM 119
+MTW
+11:00am - 12:25pm
+GIRV 2108
+Lecture: 
+AS AM 130
+MTW
+2:00pm - 3:25pm
+GIRV 2108
+Lecture: 
+AS AM 137
+MTW
+12:30pm - 1:55pm
+HSSB 1231
+Lecture: 
+AS AM 161
+MTW
+3:30pm - 4:55pm
+GIRV 2108
+Lecture: 
+ASTRO 1
+MTW
+12:30pm - 1:50pm
+BRDA 1610
+Section: 
+ASTRO 1
+R
+12:30pm - 1:50pm
+SH 1430
+Section: 
+ASTRO 1
+R
+11:00am - 12:20pm
+SH 1430
+Lecture: 
+BMSE 199
+
+
+T B A
+Lecture: 
+BL ST 1
+MTW
+2:00pm - 3:20pm
+GIRV 2128
+Section: 
+BL ST 1
+T
+11:00am - 12:20pm
+SH 3707
+Section: 
+BL ST 1
+W
+11:00am - 12:20pm
+SH 3707
+Lecture: 
+BL ST 3
+MTW
+9:30 am - 10:55am
+SH 1430
+Section: 
+BL ST 3
+T
+11:00am - 12:20pm
+SH 3707
+Section: 
+BL ST 3
+W
+11:00am - 12:20pm
+SH 3707
+Lecture: 
+BL ST 99
+
+
+T B A
+Lecture: 
+BL ST 99RA
+
+
+T B A
+Lecture: 
+BL ST 126
+MTW
+9:30 am - 10:55am
+SH 1431
+Lecture: 
+BL ST 153
+MTWR
+11:00am - 12:20pm
+GIRV 2128
+Lecture: 
+BL ST 199
+
+
+T B A
+Lecture: 
+BL ST 199RA
+
+
+T B A
+Lecture: 
+CH E 99
+
+
+T B A
+Lecture: 
+CH E 193
+
+
+T B A
+Lecture: 
+CH E 198
+
+
+T B A
+Lecture: 
+CHEM 1B
+M W F
+9:00 am - 9:50 am
+BUCHN1940
+Lecture: 
+CHEM 1BL
+M
+5:00pm - 8:50pm
+PSB-N2637
+Lecture: 
+CHEM 1BL
+W
+5:00pm - 8:50pm
+PSB-N2637
+Lecture: 
+CHEM 1BL
+M
+5:00pm - 8:50pm
+PSB-N2653
+Lecture: 
+CHEM 1BL
+W
+5:00pm - 8:50pm
+PSB-N2653
+Lecture: 
+CHEM 1BL
+M
+5:00pm - 8:50pm
+PSB-N2664
+Lecture: 
+CHEM 1BL
+W
+5:00pm - 8:50pm
+PSB-N2664
+Lecture: 
+CHEM 1C
+M W F
+9:00 am - 9:50 am
+CHEM 1179
+Lecture: 
+CHEM 1CL
+M
+5:00pm - 8:50pm
+PSB-N2638
+Lecture: 
+CHEM 1CL
+W
+1:00pm - 4:50pm
+PSB-N2638
+Lecture: 
+CHEM 1CL
+M
+5:00pm - 8:50pm
+PSB-N2654
+Lecture: 
+CHEM 1CL
+W
+5:00pm - 8:50pm
+PSB-N2654
+Lecture: 
+CHEM 1CL
+W
+5:00pm - 8:50pm
+PSB-N2638
+Lecture: 
+CHEM 1CL
+M
+1:00pm - 4:50pm
+PSB-N2638
+Lecture: 
+CHEM 1CL
+M
+1:00pm - 4:50pm
+PSB-N2654
+Lecture: 
+CHEM 1CL
+W
+1:00pm - 4:50pm
+PSB-N2654
+Lecture: 
+CHEM 6AL
+M W
+3:00pm - 3:50pm
+CHEM 1179
+Section: 
+CHEM 6AL
+T
+5:00pm - 8:50pm
+PSB-N1662
+Section: 
+CHEM 6AL
+T
+5:00pm - 8:50pm
+PSB-N1670
+Section: 
+CHEM 6AL
+M
+8:00 am - 11:50am
+PSB-N1652
+Section: 
+CHEM 6AL
+M
+8:00 am - 11:50am
+PSB-N1662
+Section: 
+CHEM 6AL
+W
+8:00 am - 11:50am
+PSB-N1670
+Section: 
+CHEM 6AL
+W
+8:00 am - 11:50am
+PSB-N1652
+Section: 
+CHEM 6AL
+W
+8:00 am - 11:50am
+PSB-N1662
+Section: 
+CHEM 6AL
+T
+5:00pm - 8:50pm
+PSB-N1652
+Lecture: 
+CHEM 6BL
+M W
+1:00pm - 4:50pm
+PSB-N1652
+Lecture: 
+CHEM 6BL
+M W
+1:00pm - 4:50pm
+PSB-N1662
+Lecture: 
+CHEM 6BL
+M W
+5:00pm - 8:50pm
+PSB-N1652
+Lecture: 
+CHEM 6BL
+M W
+5:00pm - 8:50pm
+PSB-N1662
+Lecture: 
+CHEM 6BL
+M W
+5:00pm - 8:50pm
+PSB-N1670
+Lecture: 
+CHEM 6BL
+M W
+1:00pm - 4:50pm
+PSB-N1670
+Lecture: 
+CHEM 6BL
+T R
+8:00 am - 11:50am
+PSB-N1652
+Lecture: 
+CHEM 6BL
+T R
+8:00 am - 11:50am
+PSB-N1662
+Lecture: 
+CHEM 6BL
+T R
+1:00pm - 4:50pm
+PSB-N1652
+Lecture: 
+CHEM 6BL
+T R
+8:00 am - 11:50am
+PSB-N1670
+Lecture: 
+CHEM 6BL
+T R
+1:00pm - 4:50pm
+PSB-N1662
+Lecture: 
+CHEM 6BL
+T R
+1:00pm - 4:50pm
+PSB-N1670
+Lecture: 
+CHEM 6CL
+M W
+10:00am - 2:50pm
+PSB-N1649
+Lecture: 
+CHEM 6CL
+T R
+10:00am - 2:50pm
+PSB-N1649
+Lecture: 
+CHEM 99
+
+
+T B A
+Lecture: 
+CHEM 109A
+M W F
+10:00am - 10:50am
+CHEM 1171
+Lecture: 
+CHEM 109C
+M W F
+12:30pm - 1:20pm
+CHEM 1179
+Lecture: 
+CHEM W 142A
+
+
+ONLINE
+Lecture: 
+CHEM 150
+MTWR
+12:30pm - 1:35pm
+BRDA 1640
+Lecture: 
+CHEM 173A
+MTWR
+9:00 am - 10:20am
+PHELP1260
+Lecture: 
+CHEM 192
+
+
+T B A
+Lecture: 
+CHEM 193
+
+
+T B A
+Lecture: 
+CHEM 199
+
+
+T B A
+Lecture: 
+CH ST 1A
+MTWR
+9:30 am - 10:35am
+PHELP2524
+Section: 
+CH ST 1A
+F
+9:30 am - 10:50am
+GIRV 2108
+Section: 
+CH ST 1A
+F
+12:30pm - 1:50pm
+SH 1609
+Lecture: 
+CH ST 1B
+MTWR
+3:30pm - 4:55pm
+GIRV 1116
+Lecture: 
+CH ST 1C
+MTWR
+2:00pm - 3:25pm
+GIRV 2129
+Lecture: 
+CH ST 138
+MTWR
+2:00pm - 4:05pm
+PHELP1160
+Section: 
+CH ST 138
+W
+4:30pm - 5:20pm
+SH 1609
+Section: 
+CH ST 138
+W
+5:30pm - 6:20pm
+SH 1609
+Lecture: 
+CH ST 148
+MTWR
+9:30 am - 10:50am
+GIRV 2108
+Lecture: 
+CH ST 149
+MTWR
+11:00am - 12:20pm
+GIRV 2108
+Lecture: 
+CH ST 153
+MTWR
+11:00am - 12:20pm
+387 103
+Lecture: 
+CH ST 166
+MTWR
+11:00am - 12:20pm
+GIRV 1112
+Lecture: 
+CH ST 167
+MTWR
+9:30 am - 10:50am
+GIRV 1116
+Lecture: 
+CH ST 168F
+MTW
+11:00am - 12:25pm
+SH 1430
+Lecture: 
+CH ST 180
+MTWR
+3:30pm - 4:35pm
+NH 1109
+Lecture: 
+CH ST 184A
+MTWR
+11:00am - 1:05pm
+ARTS 1356
+Lecture: 
+CH ST 199RA
+
+
+T B A
+Lecture: 
+CHIN 40
+T R
+2:00pm - 4:05pm
+GIRV 1108
+Lecture: 
+CHIN 103
+MTWR
+2:00pm - 4:55pm
+HSSB 1215
+Lecture: 
+CHIN 125
+MTWR
+9:30 am - 12:25pm
+HSSB 2252
+Lecture: 
+CHIN 198
+
+
+T B A
+Lecture: 
+CHIN 199
+
+
+T B A
+Lecture: 
+CLASS 37
+MTWR
+11:00am - 12:20pm
+PHELP1508
+Lecture: 
+CLASS 40
+MTWR
+11:00am - 12:20pm
+GIRV 1004
+Section: 
+CLASS 40
+T
+9:00 am - 9:50 am
+HSSB 1211
+Section: 
+CLASS 40
+T
+2:00pm - 2:50pm
+HSSB 1214
+Section: 
+CLASS 40
+W
+9:00 am - 9:50 am
+HSSB 1214
+Section: 
+CLASS 40
+W
+2:00pm - 2:50pm
+HSSB 1210
+Section: 
+CLASS 40
+R
+9:00 am - 9:50 am
+HSSB 1211
+Section: 
+CLASS 40
+R
+2:00pm - 2:50pm
+HSSB 1214
+Section: 
+CLASS 40
+W
+1:00pm - 1:50pm
+HSSB 1214
+Section: 
+CLASS 40
+R
+1:00pm - 1:50pm
+HSSB 1207
+Section: 
+CLASS 40
+T
+1:00pm - 1:50pm
+HSSB 1207
+Section: 
+CLASS 40
+MTWR
+9:30 am - 10:50am
+BUCHN1910
+Section: 
+CLASS 40
+T
+8:00 am - 8:50 am
+BUCHN1934
+Section: 
+CLASS 40
+T
+1:00pm - 1:50pm
+HSSB 1207
+Section: 
+CLASS 40
+T
+4:00pm - 4:50pm
+HSSB 3202
+Section: 
+CLASS 40
+R
+8:00 am - 8:50 am
+HSSB 1206
+Section: 
+CLASS 40
+R
+1:00pm - 1:50pm
+HSSB 1207
+Section: 
+CLASS 40
+R
+4:00pm - 4:50pm
+HSSB 1215
+Section: 
+CLASS 40
+W
+8:00 am - 8:50 am
+BUCHN1934
+Section: 
+CLASS 40
+W
+1:00pm - 1:50pm
+HSSB 1207
+Section: 
+CLASS 40
+W
+4:00pm - 4:50pm
+BUCHN1934
+Section: 
+CLASS 40
+W
+12:00pm - 12:50pm
+HSSB 1207
+Section: 
+CLASS 40
+T
+12:00pm - 12:50pm
+HSSB 1233
+Section: 
+CLASS 40
+R
+2:00pm - 2:50pm
+HSSB 1211
+Lecture: 
+CLASS 40H
+W
+5:00pm - 5:50pm
+HSSB 2201
+Lecture: 
+CLASS 50
+MTWR
+9:30 am - 10:45am
+PHELP2524
+Lecture: 
+CLASS 99
+T
+3:30pm - 5:00pm
+HSSB 4065
+Lecture: 
+CLASS 99
+
+
+T B A
+Lecture: 
+COMM 1
+MTW
+9:30 am - 10:50am
+PSYCH1924
+Section: 
+COMM 1
+R
+9:30 am - 10:45am
+HSSB 1224
+Section: 
+COMM 1
+R
+9:30 am - 10:45am
+HSSB 1227
+Section: 
+COMM 1
+R
+11:00am - 12:25pm
+PHELP2514
+Section: 
+COMM 1
+R
+11:00am - 12:25pm
+HSSB 1207
+Section: 
+COMM 1
+R
+12:30pm - 1:55pm
+HSSB 1231
+Lecture: 
+COMM 88
+MTW
+12:30pm - 1:50pm
+PHELP2516
+Section: 
+COMM 88
+R
+12:30pm - 1:55pm
+PHELP1444
+Section: 
+COMM 88
+R
+2:00pm - 3:25pm
+PHELP1444
+Lecture: 
+COMM 89
+TWR
+11:00am - 12:20pm
+SSMS 1009
+Section: 
+COMM 89
+R
+12:30pm - 1:55pm
+SSMS 1009
+Section: 
+COMM 89
+R
+2:00pm - 3:25pm
+SSMS 1009
+Section: 
+COMM 89
+TWR
+11:00am - 12:20pm
+SSMS 1009
+Section: 
+COMM 89
+R
+12:30pm - 1:55pm
+SSMS 1009
+Section: 
+COMM 89
+R
+2:00pm - 3:25pm
+SSMS 1009
+Lecture: 
+COMM 103
+TWR
+9:30 am - 12:20pm
+PHELP1425
+Lecture: 
+COMM 107
+TWR
+9:30 am - 12:20pm
+ARTS 1353
+Lecture: 
+COMM 111
+TWR
+12:30pm - 3:20pm
+PHELP1425
+Lecture: 
+COMM 113
+TWR
+12:30pm - 3:20pm
+PHELP1425
+Lecture: 
+COMM 114
+MTW
+12:30pm - 1:50pm
+PHELP2524
+Lecture: 
+COMM 117
+TWR
+3:30pm - 4:50pm
+NH 1111
+Lecture: 
+COMM 122
+MTW
+3:30pm - 4:50pm
+GIRV 1116
+Lecture: 
+COMM 124
+MTW
+8:00 am - 9:20 am
+PHELP2516
+Lecture: 
+COMM 133
+TWR
+9:30 am - 12:20pm
+ARTS 1353
+Lecture: 
+COMM 145
+MTW
+9:30 am - 10:50am
+PHELP3505
+Lecture: 
+COMM 148
+TWR
+12:30pm - 3:20pm
+ARTS 1353
+Lecture: 
+COMM 151
+MTW
+9:30 am - 10:50am
+PHELP2516
+Lecture: 
+COMM 154
+TWR
+2:00pm - 4:50pm
+ARTS 1353
+Lecture: 
+COMM 166
+MTW
+2:00pm - 3:20pm
+GIRV 1116
+Lecture: 
+COMM 170
+TWR
+11:00am - 12:20pm
+PHELP2524
+Lecture: 
+COMM 199
+
+
+T B A
+Lecture: 
+COMM 199RA
+
+
+T B A
+Lecture: 
+C LIT 30A
+MTWR
+2:00pm - 3:25pm
+PHELP1448
+Lecture: 
+C LIT 30B
+MTWR
+9:30 am - 10:55am
+GIRV 2108
+Lecture: 
+C LIT 30C
+MTWR
+12:30pm - 1:55pm
+GIRV 1116
+Section: 
+C LIT 30C
+
+
+T B A
+Lecture: 
+C LIT 31
+TWR
+2:00pm - 3:55pm
+PHELP1445
+Lecture: 
+C LIT 32
+MTWR
+12:30pm - 1:55pm
+PHELP1448
+Lecture: 
+C LIT 34
+MTWR
+11:00am - 12:25pm
+PHELP1448
+Lecture: 
+C LIT 100
+TWR
+3:30pm - 4:55pm
+PHELP1445
+Lecture: 
+C LIT 113
+T R
+5:00pm - 7:10pm
+GIRV 2124
+Lecture: 
+C LIT 153
+TW
+2:00pm - 4:10pm
+GIRV 2119
+Lecture: 
+C LIT 179B
+TWR
+2:00pm - 3:25pm
+PHELP1445
+Lecture: 
+C LIT 179C
+M W F
+11:00am - 12:25pm
+GIRV 1116
+Lecture: 
+C LIT 196H
+
+
+T B A
+Lecture: 
+C LIT 199
+
+
+T B A
+Lecture: 
+CMPSC 8
+TWR
+11:00am - 12:20pm
+BRDA 1640
+Section: 
+CMPSC 8
+F
+11:00am - 12:20pm
+PHELP3525
+Section: 
+CMPSC 8
+F
+12:30pm - 1:50pm
+PHELP3525
+Section: 
+CMPSC 8
+F
+2:00pm - 3:20pm
+PHELP3525
+Section: 
+CMPSC 8
+M W F
+12:30pm - 1:50pm
+PHELP1260
+Section: 
+CMPSC 8
+T
+11:00am - 12:20pm
+PHELP3525
+Section: 
+CMPSC 8
+T
+12:30pm - 1:50pm
+PHELP3525
+Section: 
+CMPSC 8
+T
+2:00pm - 3:20pm
+PHELP3525
+Section: 
+CMPSC 8
+M W F
+3:30pm - 4:50pm
+PHELP3526
+Section: 
+CMPSC 8
+T
+3:30pm - 4:50pm
+PHELP3525
+Section: 
+CMPSC 8
+T
+5:00pm - 6:20pm
+PHELP3525
+Lecture: 
+CMPSC 16
+T R
+12:30pm - 1:50pm
+PHELP1260
+Section: 
+CMPSC 16
+M
+9:00 am - 10:15am
+PHELP3525
+Section: 
+CMPSC 16
+M
+10:30am - 11:45am
+PHELP3525
+Lecture: 
+CMPSC 40
+TWR
+2:00pm - 3:20pm
+PHELP3526
+Section: 
+CMPSC 40
+F
+11:00am - 12:20pm
+PHELP2524
+Section: 
+CMPSC 40
+F
+12:30pm - 1:50pm
+PHELP2524
+Lecture: 
+CMPSC 56
+TWR
+9:30 am - 10:50am
+PHELP3526
+Section: 
+CMPSC 56
+F
+9:00 am - 10:20am
+PHELP3525
+Section: 
+CMPSC 56
+F
+10:30am - 11:50am
+PHELP3525
+Lecture: 
+CMPSC 138
+M W F
+11:00am - 12:20pm
+PHELP2510
+Section: 
+CMPSC 138
+R
+11:00am - 12:20pm
+PHELP2510
+Lecture: 
+CMPSC 192
+
+
+T B A
+Lecture: 
+CMPSC 193
+
+
+T B A
+Lecture: 
+CMPSC 196
+
+
+T B A
+Lecture: 
+CNCSP 101
+MT R
+2:00pm - 3:25pm
+ED 1213
+Lecture: 
+CNCSP 101
+MT R
+2:00pm - 3:25pm
+ED 1213
+Lecture: 
+CNCSP 102
+W
+2:00pm - 4:00pm
+ED 1213
+Lecture: 
+CNCSP 102
+W
+2:00pm - 4:00pm
+ED 1213
+Lecture: 
+CNCSP 110
+MT R
+3:30pm - 4:55pm
+ED 1213
+Lecture: 
+CNCSP 112
+MT R
+10:30am - 11:45am
+ED 1213
+Lecture: 
+CNCSP 114
+MT R
+9:00 am - 10:15am
+ED 1213
+Lecture: 
+CNCSP 114
+MT R
+12:30pm - 1:45pm
+ED 1213
+Lecture: 
+CNCSP 115
+MT R
+10:00am - 11:50am
+GIRV 1004
+Section: 
+CNCSP 115
+W F
+10:00am - 11:50am
+GIRV 1108
+Section: 
+CNCSP 115
+W F
+10:00am - 11:50am
+HSSB 1210
+Section: 
+CNCSP 115
+W F
+10:00am - 11:50am
+HSSB 1214
+Section: 
+CNCSP 115
+W F
+10:00am - 11:50am
+HSSB 1231
+Section: 
+CNCSP 115
+W F
+10:00am - 11:50am
+BUCHN1934
+Section: 
+CNCSP 115
+W F
+10:00am - 11:50am
+GIRV 2124
+Section: 
+CNCSP 115
+T R
+1:00pm - 2:50pm
+GIRV 2123
+Section: 
+CNCSP 115
+T R
+1:00pm - 2:50pm
+GIRV 2129
+Lecture: 
+CNCSP 199
+
+
+T B A
+Lecture: 
+CNCSP 199RA
+
+
+T B A
+Lecture: 
+DANCEW 36
+
+
+ONLINE
+Lecture: 
+DANCE 41
+MTWRF
+8:00 am - 9:20 am
+HSSB 1135
+Lecture: 
+DANCE 60
+MTWRF
+11:00am - 12:20pm
+HSSB 1151
+Lecture: 
+DANCE 147S
+MTWRF
+11:00am - 12:20pm
+TD-W 1501
+Lecture: 
+DANCE 149
+
+
+T B A
+Lecture: 
+DANCE 156S
+MTWRF
+9:30 am - 10:50am
+HSSB 1135
+Lecture: 
+DANCE 199
+
+
+T B A
+Lecture: 
+EARTH 2
+TWR
+9:30 am - 10:50am
+SH 1430
+Section: 
+EARTH 2
+W
+12:00pm - 2:50pm
+PSB-S2724
+Section: 
+EARTH 2
+R
+2:00pm - 4:50pm
+PSB-S2724
+Section: 
+EARTH 2
+TWR
+9:30 am - 10:50am
+PHELP2516
+Section: 
+EARTH 2
+W
+12:00pm - 2:50pm
+PSB-S2724
+Section: 
+EARTH 2
+R
+2:00pm - 4:50pm
+PSB-S2724
+Lecture: 
+EARTH 7
+TWR
+11:00am - 12:20pm
+BRDA 1640
+Section: 
+EARTH 7
+T
+2:00pm - 3:25pm
+PSB-S2725
+Section: 
+EARTH 7
+W
+2:00pm - 3:25pm
+PSB-S2725
+Section: 
+EARTH 7
+R
+9:00 am - 10:25am
+PSB-S2725
+Lecture: 
+EARTH 10
+TWR
+11:00am - 12:20pm
+WEBB 1025
+Section: 
+EARTH 10
+T
+3:00pm - 4:25pm
+PSB-S2712
+Section: 
+EARTH 10
+R
+2:00pm - 3:25pm
+PSB-S2712
+Lecture: 
+EARTH 20
+TWR
+2:00pm - 3:20pm
+NH 1105
+Section: 
+EARTH 20
+W
+9:00 am - 10:25am
+PSB-S2712
+Section: 
+EARTH 20
+R
+10:00am - 11:25am
+PSB-S2712
+Lecture: 
+EARTHW 20
+
+
+ONLINE
+Section: 
+EARTHW 20
+T
+6:00pm - 8:00pm
+ON LINE
+Section: 
+EARTHW 20
+W
+6:00pm - 8:00pm
+ON LINE
+Section: 
+EARTHW 20
+R
+6:00pm - 8:00pm
+ON LINE
+Lecture: 
+EARTH 187
+
+
+T B A
+Lecture: 
+EARTH 192
+
+
+T B A
+Lecture: 
+EARTH 196HC
+
+
+T B A
+Lecture: 
+EARTH 198
+
+
+T B A
+Lecture: 
+EARTH 199
+
+
+T B A
+Lecture: 
+EARTH 199RA
+
+
+T B A
+Lecture: 
+EACS 4B
+MTWR
+10:30am - 11:40am
+ARTS 1349
+Lecture: 
+EACS 47
+MTWR
+11:00am - 12:20pm
+HSSB 3001E
+Lecture: 
+EEMB 2
+MTWR
+2:00pm - 3:20pm
+BUCHN1910
+Lecture: 
+EEMB 2L
+T R
+9:00 am - 11:50am
+BSIF 2211
+Lecture: 
+EEMB 2L
+T R
+9:00 am - 11:50am
+BSIF 2112
+Lecture: 
+EEMB 2L
+T R
+3:30pm - 6:20pm
+BSIF 2112
+Lecture: 
+EEMB 2L
+T R
+3:30pm - 6:20pm
+BSIF 2211
+Lecture: 
+EEMB 2L
+T R
+6:30pm - 9:20pm
+BSIF 2112
+Lecture: 
+EEMB 2L
+T R
+6:30pm - 9:20pm
+BSIF 2211
+Lecture: 
+EEMB 2L
+M W
+5:00pm - 7:50pm
+BSIF 2211
+Lecture: 
+EEMB 2L
+M W
+5:00pm - 7:50pm
+BSIF 2112
+Lecture: 
+EEMB W 22
+
+
+ONLINE
+Section: 
+EEMB W 22
+
+
+ONLINE
+Section: 
+EEMB W 22
+
+
+ONLINE
+Lecture: 
+EEMB 40
+MTW
+12:30pm - 1:55pm
+LSB 1001
+Section: 
+EEMB 40
+W
+9:00 am - 9:50 am
+LSB 1101
+Section: 
+EEMB 40
+W
+10:00am - 10:50am
+LSB 1101
+Section: 
+EEMB 40
+W
+11:00am - 11:50am
+LSB 1101
+Lecture: 
+EEMB 84
+
+
+T B A
+Lecture: 
+EEMB 94
+T R
+1:00pm - 2:20pm
+SSMS 2013
+Section: 
+EEMB 94
+W
+12:30pm - 3:00pm
+OFF CAMPS
+Lecture: 
+EEMB 101
+MTWR
+11:00am - 12:05pm
+PHELP1260
+Section: 
+EEMB 101
+F
+9:00 am - 9:50 am
+LSB 1101
+Section: 
+EEMB 101
+F
+10:00am - 10:50am
+LSB 1101
+Section: 
+EEMB 101
+F
+11:00am - 11:50am
+BUCHN1934
+Lecture: 
+EEMB 118
+M W F
+11:00am - 12:25pm
+NH 1109
+Section: 
+EEMB 118
+T
+11:00am - 3:50pm
+BSIF 1239
+Section: 
+EEMB 118
+T
+11:00am - 3:50pm
+BSIF 1239
+Lecture: 
+EEMB 127
+T R
+9:30 am - 10:45am
+PSYCH1902
+Section: 
+EEMB 127
+F
+11:00am - 11:50am
+PHELP1526
+Section: 
+EEMB 127
+F
+9:00 am - 9:50 am
+PHELP1526
+Section: 
+EEMB 127
+F
+10:00am - 10:50am
+PHELP1526
+Lecture: 
+EEMB 127L
+M W
+9:00 am - 1:50pm
+LSB 1007
+Lecture: 
+EEMB 156
+MTW
+2:00pm - 3:15pm
+LSB 1001
+Section: 
+EEMB 156
+M
+3:30pm - 4:50pm
+BUCHN1934
+Section: 
+EEMB 156
+T
+5:30pm - 6:50pm
+BUCHN1934
+Section: 
+EEMB 156
+T
+3:30pm - 4:50pm
+BUCHN1934
+Lecture: 
+EEMB 170
+T R
+8:00 am - 9:20 am
+LSB 1101
+Section: 
+EEMB 170
+T
+3:00pm - 6:00pm
+555 1119
+Section: 
+EEMB 170
+R
+2:00pm - 6:00pm
+555 1119
+Lecture: 
+EEMB 185
+
+
+T B A
+Lecture: 
+ECON 1
+MT R
+9:30 am - 10:50am
+NH 1006
+Section: 
+ECON 1
+W
+9:30 am - 10:50am
+GIRV 2112
+Section: 
+ECON 1
+W
+11:00am - 12:20pm
+TD-W 2600
+Section: 
+ECON 1
+W
+12:30pm - 1:50pm
+GIRV 1116
+Lecture: 
+ECON 2
+MTW
+12:30pm - 1:50pm
+SH 1431
+Section: 
+ECON 2
+R
+12:30pm - 1:50pm
+PHELP2524
+Section: 
+ECON 2
+R
+3:30pm - 4:50pm
+387 104
+Lecture: 
+ECON 3A
+MTW
+11:00am - 12:25pm
+WEBB 1100
+Section: 
+ECON 3A
+R
+11:00am - 12:20pm
+NH 1122
+Section: 
+ECON 3A
+R
+8:00 am - 9:20 am
+NH 1122
+Section: 
+ECON 3A
+R
+9:30 am - 10:50am
+NH 1122
+Lecture: 
+ECON 3B
+M W
+11:00am - 1:10pm
+PHELP1260
+Section: 
+ECON 3B
+R
+9:30 am - 10:50am
+NH 1122
+Section: 
+ECON 3B
+R
+11:00am - 12:20pm
+NH 1122
+Section: 
+ECON 3B
+R
+8:00 am - 9:20 am
+NH 1122
+Lecture: 
+ECON 10A
+MTWR
+9:30 am - 10:35am
+HFH 1104
+Section: 
+ECON 10A
+T
+12:30pm - 1:50pm
+NH 1105
+Section: 
+ECON 10A
+T
+3:30pm - 4:50pm
+387 104
+Section: 
+ECON 10A
+T
+2:00pm - 3:20pm
+387 103
+Section: 
+ECON 10A
+T
+2:00pm - 3:20pm
+387 104
+Lecture: 
+ECON 100B
+TWR
+11:00am - 12:20pm
+HSSB 1174
+Section: 
+ECON 100B
+W
+3:30pm - 4:50pm
+SH 1430
+Section: 
+ECON 100B
+W
+2:00pm - 3:20pm
+NH 1109
+Lecture: 
+ECON 101
+MTW
+2:00pm - 3:20pm
+LSB 1001
+Section: 
+ECON 101
+R
+2:00pm - 3:20pm
+GIRV 1119
+Section: 
+ECON 101
+R
+12:30pm - 1:50pm
+GIRV 1115
+Section: 
+ECON 101
+R
+11:00am - 12:20pm
+ARTS 1356
+Lecture: 
+ECON 118
+MTW
+9:30 am - 10:50am
+NH 1110
+Lecture: 
+ECON 118H
+W
+11:30am - 12:25pm
+PHELP2514
+Lecture: 
+ECON 134A
+TWR
+11:00am - 12:25pm
+PHELP3515
+Section: 
+ECON 134A
+F
+11:00am - 12:25pm
+PHELP2514
+Section: 
+ECON 134A
+F
+9:30 am - 10:55am
+NH 1111
+Lecture: 
+ECON 135
+MT RF
+9:30 am - 11:35am
+PHELP1160
+Lecture: 
+ECON 136A
+M W
+8:00 am - 10:10am
+NH 1110
+Section: 
+ECON 136A
+T
+9:00 am - 10:20am
+387 104
+Section: 
+ECON 136A
+T
+10:00am - 11:20am
+NH 1122
+Lecture: 
+ECON 136B
+M W
+9:30 am - 11:40am
+PSYCH1902
+Lecture: 
+ECON 136C
+M W
+11:00am - 1:10pm
+NH 1110
+Lecture: 
+ECON 137A
+M W
+12:30pm - 2:40pm
+NH 1105
+Section: 
+ECON 137A
+T
+12:30pm - 1:50pm
+NH 1122
+Section: 
+ECON 137A
+T
+11:00am - 12:20pm
+PHELP2514
+Lecture: 
+ECON 140A
+MTW
+2:00pm - 3:20pm
+SH 1431
+Section: 
+ECON 140A
+R
+9:30 am - 10:50am
+HSSB 1228
+Section: 
+ECON 140A
+R
+11:00am - 12:20pm
+GIRV 1108
+Section: 
+ECON 140A
+R
+12:30pm - 1:50pm
+HSSB 1210
+Section: 
+ECON 140A
+R
+2:00pm - 3:20pm
+HSSB 1214
+Lecture: 
+ECON 181
+MTW
+3:30pm - 4:50pm
+PHELP2516
+Lecture: 
+ECON 193
+
+
+T B A
+Lecture: 
+ECON 199
+
+
+T B A
+Lecture: 
+ECON 199RA
+
+
+T B A
+Lecture: 
+ED 111
+MT R
+3:30pm - 4:55pm
+ED 1201
+Lecture: 
+ED 111
+T R
+11:00am - 1:20pm
+ED 1215
+Lecture: 
+ED 117M
+T
+2:00pm - 4:30pm
+ED 1207
+Lecture: 
+ED 117M
+T
+2:00pm - 4:30pm
+ED 1215
+Lecture: 
+ED 123
+M W
+9:00 am - 10:50am
+ED 1203
+Lecture: 
+ED 123
+M W
+6:00pm - 8:00pm
+ED 1201
+Lecture: 
+ED 123
+MT R
+9:30 am - 10:55am
+ED 1215
+Lecture: 
+ED 125
+M W F
+12:15pm - 1:35pm
+ED 1213
+Lecture: 
+ED 125
+MT R
+9:30 am - 10:55am
+ED 1217
+Lecture: 
+ED 173
+M W
+2:00pm - 4:05pm
+ED 1215
+Lecture: 
+ED 199
+
+
+T B A
+Lecture: 
+ED 199RA
+
+
+T B A
+Lecture: 
+ECE 152A
+M W
+3:30pm - 4:50pm
+PHELP1437
+Section: 
+ECE 152A
+M W
+6:00pm - 8:50pm
+HFH 1124
+Section: 
+ECE 152A
+T R
+2:00pm - 4:50pm
+HFH 1124
+Lecture: 
+ECE 196
+
+
+T B A
+Lecture: 
+ENGR W 3
+
+
+ONLINE
+Section: 
+ENGR W 3
+
+
+ONLINE
+Section: 
+ENGR W 3
+
+
+ONLINE
+Lecture: 
+ENGR 101
+M W
+2:00pm - 4:05pm
+PHELP1508
+Section: 
+ENGR 101
+M W
+2:00pm - 4:05pm
+PHELP3519
+Lecture: 
+ENGL 10
+MTWR
+2:00pm - 3:25pm
+SH 1609
+Section: 
+ENGL 10
+MTWR
+3:30pm - 4:55pm
+GIRV 2112
+Section: 
+ENGL 10
+MTWR
+9:30 am - 10:55am
+SH 1609
+Section: 
+ENGL 10
+MTWR
+12:30pm - 1:55pm
+GIRV 1112
+Section: 
+ENGL 10
+MTWR
+9:30 am - 10:55am
+HSSB 1206
+Section: 
+ENGL 10
+MTWR
+11:00am - 12:25pm
+HSSB 1206
+Section: 
+ENGL 10
+MTWR
+12:30pm - 1:55pm
+HSSB 1206
+Section: 
+ENGL 10
+MTWR
+2:00pm - 3:25pm
+SH 1609
+Lecture: 
+ENGL 15
+MTWR
+2:00pm - 3:25pm
+GIRV 1115
+Section: 
+ENGL 15
+MTWR
+3:30pm - 4:55pm
+GIRV 1112
+Lecture: 
+ENGL 38B
+MTWR
+9:30 am - 10:55am
+GIRV 1112
+Lecture: 
+ENGL 50
+MTWR
+5:00pm - 6:15pm
+GIRV 1119
+Lecture: 
+ENGL 50
+MTWR
+5:00pm - 6:25pm
+GIRV 1115
+Lecture: 
+ENGL 50
+MTWR
+12:30pm - 1:55pm
+GIRV 1112
+Lecture: 
+ENGL 101
+MTWR
+12:30pm - 1:35pm
+GIRV 1119
+Lecture: 
+ENGL 102
+MTWR
+5:00pm - 6:05pm
+ARTS 1353
+Lecture: 
+ENGL 103A
+MTWR
+3:30pm - 4:35pm
+GIRV 2128
+Lecture: 
+ENGL 103B
+MTWR
+2:00pm - 3:05pm
+GIRV 1115
+Lecture: 
+ENGL 104A
+MTWR
+11:00am - 12:05pm
+GIRV 1115
+Lecture: 
+ENGL 104B
+MTWR
+9:30 am - 10:35am
+GIRV 1115
+Lecture: 
+ENGL 105B
+MTWR
+12:30pm - 1:35pm
+GIRV 2127
+Lecture: 
+ENGL 122LE
+MTWR
+11:00am - 12:05pm
+NH 1111
+Lecture: 
+ENGL 134AA
+MTWR
+2:00pm - 3:05pm
+GIRV 2128
+Lecture: 
+ENGL 134AA
+MTWR
+12:30pm - 1:35pm
+GIRV 1119
+Lecture: 
+ENGL 134XX
+
+
+T B A
+Lecture: 
+ENGL 165WN
+MTWR
+2:00pm - 3:05pm
+NH 1109
+Lecture: 
+ENGL 165XX
+
+
+T B A
+Lecture: 
+ENGL 184
+MTWR
+11:00am - 12:05pm
+SH 2635
+Lecture: 
+ENGL 192
+MTWR
+3:30pm - 4:35pm
+GIRV 1115
+Lecture: 
+ENGL 192
+MTWR
+3:30pm - 4:35pm
+SH 1430
+Lecture: 
+ENGL 193
+MTWR
+5:00pm - 6:05pm
+GIRV 1112
+Lecture: 
+ENGL 195I
+
+
+T B A
+Lecture: 
+ENGL 197
+MTWR
+12:30pm - 1:35pm
+SH 2617
+Lecture: 
+ENV S 1
+MT R
+12:30pm - 1:55pm
+HSSB 1174
+Section: 
+ENV S 1
+W
+12:30pm - 1:55pm
+HSSB 1174
+Lecture: 
+ENV S 2
+MTW
+3:30pm - 4:55pm
+HSSB 1173
+Section: 
+ENV S 2
+R
+3:30pm - 4:55pm
+HSSB 1173
+Lecture: 
+ENV S 3
+MTW
+12:30pm - 1:55pm
+HSSB 1173
+Section: 
+ENV S 3
+R
+12:30pm - 1:55pm
+HSSB 1173
+Lecture: 
+ENV S 15
+MTWR
+11:00am - 12:20pm
+GIRV 1119
+Lecture: 
+ENV S 100
+MTWR
+2:00pm - 3:20pm
+HSSB 1173
+Lecture: 
+ENV S 115
+MTW
+8:00 am - 9:25 am
+BUCHN1930
+Lecture: 
+ENV S 122LE
+MTWR
+11:00am - 12:05pm
+NH 1111
+Lecture: 
+ENV S 130A
+MTWR
+9:30 am - 10:40am
+NH 1111
+Lecture: 
+ENV S 132
+MTWR
+2:00pm - 3:10pm
+PHELP2516
+Lecture: 
+ENV S 147
+MTWR
+9:30 am - 10:40am
+GIRV 2120
+Lecture: 
+ENV S 160
+M W
+5:30pm - 7:35pm
+GIRV 1116
+Lecture: 
+ENV S 167
+MTWR
+11:00am - 12:05pm
+ELLSN3621
+Section: 
+ENV S 167
+W
+12:30pm - 1:50pm
+HSSB 3202
+Lecture: 
+ENV S 183
+T R
+6:30pm - 8:40pm
+GIRV 2128
+Lecture: 
+ENV S 188
+MTWR
+3:30pm - 4:50pm
+PHELP1425
+Lecture: 
+ENV S 196
+
+
+T B A
+Lecture: 
+ENV S 199RA
+
+
+T B A
+Lecture: 
+FEMST 20
+MTWR
+11:00am - 12:20pm
+SH 1609
+Lecture: 
+FEMST 50
+MTWR
+2:00pm - 3:20pm
+BUCHN1934
+Lecture: 
+FEMST 60
+MTWR
+2:00pm - 3:20pm
+BUCHN1934
+Lecture: 
+FEMST 80
+MTWR
+11:00am - 12:20pm
+387 104
+Lecture: 
+FEMST 144
+MTWR
+9:30 am - 10:50am
+HSSB 1207
+Lecture: 
+FEMSTW 150
+
+
+ONLINE
+Section: 
+FEMSTW 150
+
+
+ONLINE
+Section: 
+FEMSTW 150
+
+
+ONLINE
+Section: 
+FEMSTW 150
+
+
+ONLINE
+Section: 
+FEMSTW 150
+
+
+ONLINE
+Section: 
+FEMSTW 150
+
+
+ONLINE
+Section: 
+FEMSTW 150
+
+
+ONLINE
+Section: 
+FEMSTW 150
+
+
+ONLINE
+Lecture: 
+FEMST 151DI
+MTWR
+12:30pm - 1:50pm
+BUCHN1934
+Lecture: 
+FEMST 198
+
+
+T B A
+Lecture: 
+FEMST 199
+
+
+T B A
+Lecture: 
+FEMST 199RA
+
+
+T B A
+Lecture: 
+FAMST 46
+T R
+9:00 am - 11:50am
+PLLOKTHTR
+Section: 
+FAMST 46
+W
+12:00pm - 12:50pm
+SSMS 2013
+Section: 
+FAMST 46
+W
+1:00pm - 1:50pm
+SSMS 2013
+Section: 
+FAMST 46
+W
+2:00pm - 2:50pm
+SSMS 2013
+Section: 
+FAMST 46
+M W
+10:00am - 12:50pm
+BUCHN1930
+Section: 
+FAMST 46
+M
+1:00pm - 1:50pm
+SSMS 2013
+Section: 
+FAMST 46
+M
+2:00pm - 2:50pm
+SSMS 2013
+Section: 
+FAMST 46
+M
+3:00pm - 3:50pm
+SSMS 2013
+Section: 
+FAMST 46
+T
+10:00am - 10:50am
+SSMS 2013
+Section: 
+FAMST 46
+T
+11:00am - 11:50am
+SSMS 2013
+Section: 
+FAMST 46
+T
+12:00pm - 12:50pm
+SSMS 2013
+Lecture: 
+FAMST 70
+T R
+10:00am - 12:50pm
+BUCHN1930
+Section: 
+FAMST 70
+W
+10:00am - 10:50am
+SSMS 2017
+Section: 
+FAMST 70
+W
+11:00am - 11:50am
+SSMS 2017
+Section: 
+FAMST 70
+W
+9:00 am - 9:50 am
+SSMS 2017
+Lecture: 
+FAMST 95
+
+
+T B A
+Lecture: 
+FAMST 96
+M W
+10:00am - 11:50am
+PLLOKTHTR
+Section: 
+FAMST 96
+M
+1:30pm - 3:30pm
+PLLOKTHTR
+Section: 
+FAMST 96
+M
+4:30pm - 6:30pm
+PLLOKTHTR
+Section: 
+FAMST 96
+T
+1:00pm - 1:50pm
+SSMS 2013
+Section: 
+FAMST 96
+T
+2:00pm - 2:50pm
+SSMS 2013
+Section: 
+FAMST 96
+T
+3:00pm - 3:50pm
+SSMS 2013
+Lecture: 
+FAMST 99
+
+
+T B A
+Lecture: 
+FAMST 103
+
+
+T B A
+Lecture: 
+FAMST 104
+T R
+10:00am - 12:50pm
+SSMS 2013
+Lecture: 
+FAMST 109EM
+M W
+9:00 am - 11:50am
+SSMS 2303
+Lecture: 
+FAMST 109EP
+M W
+9:00 am - 11:50am
+SSMS 2303
+Lecture: 
+FAMST 119
+
+
+T B A
+Lecture: 
+FAMST 150CY
+M W
+4:00pm - 6:50pm
+SSMS 2013
+Lecture: 
+FAMST 150SW
+T R
+12:00pm - 2:50pm
+PLLOKTHTR
+Lecture: 
+FAMST 155XX
+
+
+T B A
+Lecture: 
+FAMST 182
+T R
+9:00 am - 11:50am
+SSMS 2303
+Lecture: 
+FAMST 187AR
+T R
+4:00pm - 6:50pm
+SSMS 2303
+Lecture: 
+FAMST 187CP
+M W
+4:00pm - 6:50pm
+SSMS 2303
+Lecture: 
+FAMST 187KW
+
+
+T B A
+Lecture: 
+FAMST 187TM
+T R
+10:00am - 12:50pm
+SSMS 2303
+Lecture: 
+FAMST 187WF
+
+
+T B A
+Lecture: 
+FAMST 187XX
+
+
+T B A
+Lecture: 
+FAMST 188A
+T R
+3:00pm - 5:50pm
+SSMS 2303
+Lecture: 
+FAMST 188A
+T R
+1:00pm - 5:50pm
+SSMS 2017
+Lecture: 
+FAMST 192CT
+M W
+1:00pm - 3:50pm
+BUCHN1940
+Section: 
+FAMST 192CT
+T
+1:00pm - 1:50pm
+SSMS 2013
+Section: 
+FAMST 192CT
+T
+2:00pm - 2:50pm
+SSMS 2013
+Section: 
+FAMST 192CT
+T
+3:00pm - 3:50pm
+SSMS 2013
+Lecture: 
+FAMST 192FT
+T R
+1:00pm - 3:50pm
+PHELP2516
+Section: 
+FAMST 192FT
+W
+2:00pm - 2:50pm
+SSMS 2017
+Section: 
+FAMST 192FT
+W
+12:00pm - 12:50pm
+SSMS 2017
+Section: 
+FAMST 192FT
+W
+1:00pm - 1:50pm
+SSMS 2017
+Lecture: 
+FAMST 195I
+
+
+T B A
+Section: 
+FAMST 195I
+
+
+T B A
+Lecture: 
+FAMST 199
+
+
+T B A
+Lecture: 
+FR 1
+MTWRF
+9:30 am - 11:45am
+PHELP1444
+Lecture: 
+FR 2
+MTWRF
+9:30 am - 11:45am
+GIRV 1108
+Lecture: 
+FR 3
+MTWRF
+9:30 am - 11:45am
+BUCHN1934
+Lecture: 
+FR 4
+MTWRF
+9:30 am - 11:45am
+GIRV 2116
+Lecture: 
+FR 5
+MTWRF
+9:30 am - 11:45am
+GIRV 2116
+Lecture: 
+FR 6
+MTWRF
+9:30 am - 11:45am
+HSSB 1210
+Lecture: 
+FR 50BX
+M W F
+2:00pm - 4:00pm
+GIRV 1119
+Lecture: 
+FR 99
+
+
+T B A
+Lecture: 
+FR 153D
+MTW
+11:00am - 12:25pm
+HSSB 1228
+Lecture: 
+FR 154F
+T R
+2:00pm - 4:10pm
+PHELP1508
+Lecture: 
+GEOG 3A
+MTWR
+9:30 am - 10:35am
+ELLSN3621
+Section: 
+GEOG 3A
+M
+2:00pm - 3:20pm
+ELLSN2610
+Lecture: 
+GEOG 3B
+MTWR
+9:30 am - 10:35am
+ELLSN3621
+Section: 
+GEOG 3B
+M
+2:00pm - 3:20pm
+ELLSN3621
+Lecture: 
+GEOG 5
+MTWR
+11:00am - 12:05pm
+ELLSN3621
+Section: 
+GEOG 5
+W
+2:00pm - 3:20pm
+ELLSN3621
+Lecture: 
+GEOG W 8
+
+
+ONLINE
+Section: 
+GEOG W 8
+
+
+ONLINE
+Lecture: 
+GEOG 12
+MTWR
+12:30pm - 1:35pm
+ELLSN3621
+Section: 
+GEOG 12
+T R
+2:00pm - 3:15pm
+ELLSN2610
+Lecture: 
+GEOG 167
+MTWR
+11:00am - 12:05pm
+ELLSN3621
+Section: 
+GEOG 167
+W
+12:30pm - 1:50pm
+HSSB 3202
+Lecture: 
+GEOG 176A
+MTWR
+12:30pm - 1:35pm
+ELLSN3621
+Section: 
+GEOG 176A
+T
+2:00pm - 4:50pm
+ELLSN2610
+Lecture: 
+GEOG 199
+
+
+T B A
+Lecture: 
+GEOG 199RA
+
+
+T B A
+Lecture: 
+GER 1
+MTWRF
+9:30 am - 11:45am
+PHELP1425
+Lecture: 
+GER 2
+MTWRF
+9:30 am - 11:45am
+PHELP1425
+Lecture: 
+GER 3
+MTWRF
+9:30 am - 11:45am
+PHELP1425
+Lecture: 
+GER 43C
+TWR
+2:00pm - 4:00pm
+HSSB 2202
+Lecture: 
+GER 179B
+TWR
+2:00pm - 3:25pm
+PHELP1445
+Lecture: 
+GER 199
+
+
+T B A
+Lecture: 
+GLOBL 1
+MTWR
+2:00pm - 3:15pm
+GIRV 1004
+Section: 
+GLOBL 1
+T
+12:30pm - 1:20pm
+HSSB 3202
+Section: 
+GLOBL 1
+R
+12:30pm - 1:20pm
+HSSB 3202
+Section: 
+GLOBL 1
+W
+9:30 am - 10:20am
+HSSB 3201
+Section: 
+GLOBL 1
+M
+11:00am - 11:50am
+HSSB 3201
+Section: 
+GLOBL 1
+T
+3:30pm - 4:20pm
+HSSB 3201
+Section: 
+GLOBL 1
+R
+11:00am - 11:50am
+HSSB 3202
+Section: 
+GLOBL 1
+M
+9:30 am - 10:20am
+HSSB 3201
+Section: 
+GLOBL 1
+W
+3:30pm - 4:20pm
+HSSB 3201
+Section: 
+GLOBL 1
+W
+11:00am - 11:50am
+HSSB 3201
+Lecture: 
+GLOBL 110
+MTWR
+11:00am - 12:05pm
+HSSB 1173
+Section: 
+GLOBL 110
+T
+2:00pm - 2:50pm
+HSSB 1207
+Section: 
+GLOBL 110
+W
+9:00 am - 9:50 am
+HSSB 1211
+Section: 
+GLOBL 110
+W
+12:30pm - 1:20pm
+HSSB 1207
+Lecture: 
+GLOBL 158
+MTWR
+9:30 am - 10:35am
+HSSB 1173
+Lecture: 
+GLOBL 199
+
+
+T B A
+Lecture: 
+HIST 2A
+MTWRF
+9:30 am - 10:30am
+BUCHN1920
+Section: 
+HIST 2A
+M
+11:00am - 11:50am
+HSSB 3202
+Section: 
+HIST 2A
+M
+12:00pm - 12:50pm
+HSSB 3201
+Section: 
+HIST 2A
+M
+1:00pm - 1:50pm
+HSSB 2201
+Section: 
+HIST 2A
+W
+11:00am - 11:50am
+HSSB 3202
+Section: 
+HIST 2A
+W
+12:00pm - 12:50pm
+HSSB 3201
+Section: 
+HIST 2A
+W
+1:00pm - 1:50pm
+HSSB 2201
+Lecture: 
+HIST 2C
+MTWR
+11:00am - 12:15pm
+PSYCH1924
+Section: 
+HIST 2C
+M
+1:00pm - 1:50pm
+HSSB 2201
+Section: 
+HIST 2C
+M
+2:00pm - 2:50pm
+HSSB 1215
+Section: 
+HIST 2C
+M
+3:00pm - 3:50pm
+HSSB 2201
+Section: 
+HIST 2C
+W
+1:00pm - 1:50pm
+HSSB 2201
+Section: 
+HIST 2C
+W
+2:00pm - 2:50pm
+HSSB 2201
+Section: 
+HIST 2C
+W
+3:00pm - 3:50pm
+HSSB 2201
+Lecture: 
+HIST 4B
+MTWR
+2:00pm - 3:15pm
+ARTS 1349
+Section: 
+HIST 4B
+T
+10:00am - 10:50am
+HSSB 3202
+Section: 
+HIST 4B
+T
+11:00am - 11:50am
+HSSB 3201
+Section: 
+HIST 4B
+T
+12:00pm - 12:50pm
+HSSB 3201
+Lecture: 
+HIST 4C
+MTWR
+3:30pm - 4:50pm
+PSYCH1924
+Section: 
+HIST 4C
+T
+9:00 am - 9:50 am
+HSSB 2201
+Section: 
+HIST 4C
+T
+10:00am - 10:50am
+HSSB 2201
+Section: 
+HIST 4C
+T
+11:00am - 11:50am
+HSSB 2201
+Section: 
+HIST 4C
+R
+12:00pm - 12:50pm
+HSSB 2201
+Section: 
+HIST 4C
+R
+1:00pm - 1:50pm
+HSSB 2201
+Section: 
+HIST 4C
+R
+2:00pm - 2:50pm
+HSSB 2201
+Lecture: 
+HIST 8
+MTWR
+2:00pm - 3:15pm
+TD-W 1701
+Section: 
+HIST 8
+W
+11:00am - 11:50am
+HSSB 2201
+Section: 
+HIST 8
+W
+12:00pm - 12:50pm
+HSSB 2201
+Section: 
+HIST 8
+W
+10:00am - 10:50am
+HSSB 2201
+Section: 
+HIST 8
+R
+10:00am - 10:50am
+HSSB 2201
+Section: 
+HIST 8
+R
+11:00am - 11:50am
+HSSB 2201
+Section: 
+HIST 8
+R
+12:00pm - 12:50pm
+HSSB 3201
+Lecture: 
+HIST 17A
+MTW
+9:30 am - 10:55am
+ARTS 1356
+Section: 
+HIST 17A
+T
+12:00pm - 12:50pm
+HSSB 2201
+Section: 
+HIST 17A
+T
+1:00pm - 1:50pm
+HSSB 2201
+Section: 
+HIST 17A
+T
+2:00pm - 2:50pm
+HSSB 2201
+Lecture: 
+HIST 17C
+MTWR
+11:00am - 12:15pm
+NH 1006
+Section: 
+HIST 17C
+T
+1:00pm - 1:50pm
+HSSB 2201
+Section: 
+HIST 17C
+T
+2:00pm - 2:50pm
+HSSB 2201
+Section: 
+HIST 17C
+T
+3:00pm - 3:50pm
+HSSB 2201
+Section: 
+HIST 17C
+R
+1:00pm - 1:50pm
+HSSB 2201
+Section: 
+HIST 17C
+R
+2:00pm - 2:50pm
+HSSB 2201
+Section: 
+HIST 17C
+R
+3:00pm - 3:50pm
+HSSB 2201
+Lecture: 
+HIST 20
+MTWR
+3:30pm - 4:50pm
+ARTS 1349
+Section: 
+HIST 20
+R
+10:00am - 10:50am
+HSSB 3201
+Section: 
+HIST 20
+R
+11:00am - 11:50am
+HSSB 3201
+Section: 
+HIST 20
+R
+12:00pm - 12:50pm
+HSSB 3201
+Lecture: 
+HIST 99
+
+
+T B A
+Lecture: 
+HIST 108W
+MTW
+11:00am - 12:25pm
+HSSB 4020
+Lecture: 
+HIST 114A
+MTWR
+3:30pm - 4:45pm
+HSSB 4020
+Lecture: 
+HIST 115
+MTW
+12:30pm - 1:55pm
+HSSB 4080
+Lecture: 
+HIST 141B
+MTWR
+2:00pm - 3:15pm
+HSSB 4020
+Lecture: 
+HIST 159B
+MTWR
+11:00am - 12:15pm
+PHELP1440
+Lecture: 
+HIST 160C
+MTWR
+12:30pm - 1:50pm
+PHELP1448
+Lecture: 
+HIST 176B
+MTW
+12:30pm - 1:55pm
+PHELP1440
+Lecture: 
+HIST 177
+MTWR
+9:30 am - 10:50am
+NH 1109
+Lecture: 
+HIST 184A
+
+
+T B A
+Lecture: 
+HIST 187A
+MTWR
+9:30 am - 10:45am
+HSSB 4020
+Lecture: 
+HIST 192
+MTW
+3:30pm - 4:55pm
+PHELP1448
+Lecture: 
+HIST 195IB
+
+
+T B A
+Lecture: 
+HIST 199
+
+
+T B A
+Lecture: 
+INT 1
+M W
+2:00pm - 2:50pm
+LIB 1312
+Lecture: 
+INT 1
+T R
+11:00am - 11:50am
+LIB 1312
+Lecture: 
+INT 1
+
+
+T B A
+Lecture: 
+INT 1
+M W
+10:00am - 10:50am
+LIB 1312
+Lecture: 
+INT 64
+MTW
+2:00pm - 3:00pm
+599 1109
+Lecture: 
+INT 64
+MTW
+12:50pm - 1:50pm
+599 1109
+Lecture: 
+INT 90M
+T
+9:30 am - 11:00am
+477
+Lecture: 
+INT 90M
+M
+9:30 am - 11:00am
+477
+Lecture: 
+INT 91
+T R
+2:00pm - 5:00pm
+GIRV 2127
+Lecture: 
+INT 93P
+T R
+6:00pm - 9:00pm
+PHELP3515
+Lecture: 
+INT 93R
+M
+8:00 am - 10:50am
+BRDA 1640
+Section: 
+INT 93R
+T
+8:00 am - 8:50 am
+BUCHN1930
+Section: 
+INT 93R
+T
+9:00 am - 10:30am
+GIRV 2129
+Section: 
+INT 93R
+T
+9:00 am - 10:30am
+GIRV 2112
+Section: 
+INT 93R
+T
+9:00 am - 10:30am
+HSSB 3201
+Section: 
+INT 93R
+T
+9:00 am - 10:30am
+GIRV 2119
+Section: 
+INT 93R
+T
+9:00 am - 10:30am
+GIRV 2123
+Lecture: 
+INT 94FC
+M
+3:30pm - 5:00pm
+HSSB 1215
+Lecture: 
+INT 94GZ
+R
+3:30pm - 5:00pm
+HSSB 2001A
+Lecture: 
+INT 94IM
+M
+3:30pm - 5:00pm
+HSSB 1210
+Lecture: 
+INT 94IX
+T R
+3:30pm - 5:00pm
+HSSB 3201
+Lecture: 
+INT 94ZZ
+T
+3:30pm - 5:00pm
+HSSB 1215
+Lecture: 
+INT 184PD
+
+
+T B A
+Lecture: 
+INT 192DC
+
+
+T B A
+Lecture: 
+ITAL 1
+MTWRF
+9:30 am - 11:45am
+GIRV 1108
+Lecture: 
+ITAL 2
+MTWRF
+9:30 am - 11:45am
+PHELP1444
+Lecture: 
+ITAL 3
+MTWRF
+9:30 am - 11:45am
+HSSB 1214
+Lecture: 
+ITAL 20X
+MTW
+2:00pm - 3:55pm
+PHELP1444
+Lecture: 
+JAPAN 1
+MTWRF
+8:30 am - 12:20pm
+HSSB 1210
+Lecture: 
+JAPAN 2
+MTWRF
+8:30 am - 12:20pm
+HSSB 1210
+Lecture: 
+JAPAN 3
+MTWRF
+8:30 am - 12:20pm
+HSSB 1231
+Lecture: 
+JAPAN 198
+
+
+T B A
+Lecture: 
+JAPAN 199
+
+
+T B A
+Lecture: 
+LAIS 195A
+
+
+T B A
+Lecture: 
+LAIS 195B
+
+
+T B A
+Lecture: 
+LAIS 199
+
+
+T B A
+Lecture: 
+LING 20
+MTWR
+9:30 am - 10:35am
+SH 3605
+Section: 
+LING 20
+F
+9:30 am - 10:50am
+SH 3605
+Lecture: 
+LING 70
+MTWR
+12:30pm - 1:35pm
+SH 3605
+Section: 
+LING 70
+F
+12:30pm - 1:35pm
+SH 3605
+Lecture: 
+LING 132
+TWR
+2:00pm - 3:25pm
+SH 3605
+Section: 
+LING 132
+F
+2:00pm - 3:25pm
+SH 3605
+Lecture: 
+LING 191
+
+
+T B A
+Lecture: 
+LING 195B
+
+
+T B A
+Lecture: 
+LING 195C
+
+
+T B A
+Lecture: 
+LING 199
+
+
+T B A
+Lecture: 
+LIT CS 101
+
+
+T B A
+Lecture: 
+LIT CS 102
+MTWR
+3:00pm - 4:25pm
+494 143
+Lecture: 
+LIT CS 101
+
+
+T B A
+Lecture: 
+LIT CS 102
+MTWR
+3:00pm - 4:25pm
+494 143
+Lecture: 
+MATH 3A
+MTWRF
+3:30pm - 4:35pm
+PHELP1444
+Lecture: 
+MATH 3A
+MTWRF
+11:00am - 12:05pm
+PHELP1444
+Lecture: 
+MATH 3B
+MTWRF
+9:00 am - 10:05am
+PHELP1445
+Lecture: 
+MATH 3B
+MTWR
+2:00pm - 3:05pm
+PHELP3515
+Section: 
+MATH 3B
+T R
+3:30pm - 4:20pm
+HSSB 1224
+Section: 
+MATH 3B
+M W
+3:30pm - 4:20pm
+NH 1109
+Section: 
+MATH 3B
+T R
+4:30pm - 5:20pm
+HSSB 1224
+Lecture: 
+MATH 4A
+MTWR
+2:00pm - 3:05pm
+NH 1006
+Section: 
+MATH 4A
+M W
+8:30 am - 9:20 am
+GIRV 2129
+Section: 
+MATH 4A
+M W
+12:30pm - 1:20pm
+HSSB 1206
+Section: 
+MATH 4A
+M W
+9:30 am - 10:20am
+GIRV 2129
+Section: 
+MATH 4A
+M W
+11:30am - 12:20pm
+HSSB 1206
+Section: 
+MATH 4A
+MTWR
+12:30pm - 1:35pm
+CHEM 1171
+Section: 
+MATH 4A
+M W
+3:30pm - 4:20pm
+HSSB 1214
+Section: 
+MATH 4A
+M W
+2:30pm - 3:20pm
+HSSB 1214
+Section: 
+MATH 4A
+T R
+3:30pm - 4:20pm
+NH 1109
+Section: 
+MATH 4A
+T R
+2:30pm - 3:20pm
+HSSB 1215
+Lecture: 
+MATH 4B
+MTWR
+2:00pm - 3:05pm
+TD-W 1701
+Section: 
+MATH 4B
+T R
+8:30 am - 9:20 am
+NH 1111
+Section: 
+MATH 4B
+T R
+9:30 am - 10:20am
+NH 1111
+Section: 
+MATH 4B
+T R
+10:30am - 11:20am
+HSSB 1211
+Section: 
+MATH 4B
+T R
+11:30am - 12:20pm
+NH 1109
+Section: 
+MATH 4B
+MTWR
+11:00am - 12:05pm
+CHEM 1171
+Section: 
+MATH 4B
+T R
+12:30pm - 1:20pm
+HSSB 1232
+Section: 
+MATH 4B
+T R
+3:30pm - 4:20pm
+HSSB 1210
+Section: 
+MATH 4B
+T R
+1:30pm - 2:20pm
+HSSB 1215
+Section: 
+MATH 4B
+T R
+2:30pm - 3:20pm
+NH 1111
+Section: 
+MATH 4B
+MTWR
+2:00pm - 3:05pm
+GIRV 1116
+Lecture: 
+MATH 6A
+MTWR
+8:00 am - 9:10 am
+CHEM 1171
+Section: 
+MATH 6A
+M W
+2:30pm - 3:20pm
+NH 1111
+Section: 
+MATH 6A
+M W
+1:30pm - 2:20pm
+HSSB 1207
+Section: 
+MATH 6A
+T R
+11:30am - 12:20pm
+HSSB 1206
+Section: 
+MATH 6A
+T R
+10:30am - 11:20am
+HSSB 1214
+Section: 
+MATH 6A
+MTWR
+3:30pm - 4:35pm
+CHEM 1171
+Section: 
+MATH 6A
+T R
+10:30am - 11:20am
+HSSB 1232
+Section: 
+MATH 6A
+T R
+12:30pm - 1:20pm
+NH 1109
+Section: 
+MATH 6A
+T R
+11:30am - 12:20pm
+HSSB 1232
+Section: 
+MATH 6A
+T R
+1:30pm - 2:20pm
+NH 1109
+Lecture: 
+MATH 6B
+MTWRF
+2:00pm - 3:10pm
+PHELP1444
+Section: 
+MATH 6B
+MTWR
+12:30pm - 1:35pm
+PHELP3515
+Section: 
+MATH 6B
+T R
+2:30pm - 3:20pm
+NH 1109
+Section: 
+MATH 6B
+T R
+3:30pm - 4:20pm
+HSSB 1211
+Section: 
+MATH 6B
+T R
+4:30pm - 5:20pm
+NH 1109
+Lecture: 
+MATH 8
+M W F
+11:00am - 11:50am
+PHELP3523
+Section: 
+MATH 8
+T R
+11:00am - 11:50am
+HSSB 1233
+Section: 
+MATH 8
+T R
+12:30pm - 1:20pm
+HSSB 1214
+Section: 
+MATH 8
+M W F
+2:00pm - 2:50pm
+387 103
+Section: 
+MATH 8
+T R
+2:00pm - 2:50pm
+HSSB 1210
+Section: 
+MATH 8
+T R
+3:30pm - 4:20pm
+HSSB 1207
+Lecture: 
+MATH 34A
+MTWR
+12:30pm - 1:35pm
+SH 1430
+Section: 
+MATH 34A
+M W
+3:30pm - 4:20pm
+NH 1111
+Section: 
+MATH 34A
+M W
+2:30pm - 3:20pm
+HSSB 1207
+Section: 
+MATH 34A
+MTWRF
+12:30pm - 1:35pm
+PHELP1440
+Lecture: 
+MATH 34B
+MTWRF
+12:30pm - 1:35pm
+PHELP1444
+Section: 
+MATH 34B
+MTWRF
+9:30 am - 10:35am
+PHELP3519
+Lecture: 
+MATH 100A
+MTWRF
+9:00 am - 11:00am
+ED 1215
+Lecture: 
+MATH 100B
+MTWRF
+1:45pm - 3:35pm
+ED 1215
+Lecture: 
+MATH 104A
+MTWR
+12:30pm - 1:35pm
+NH 1111
+Lecture: 
+MATH 104B
+MTWR
+12:30pm - 1:35pm
+PHELP1445
+Lecture: 
+MATH 117
+MTWR
+12:30pm - 1:35pm
+GIRV 2108
+Lecture: 
+MATH 117
+MTWR
+12:30pm - 1:35pm
+NH 1111
+Lecture: 
+MATH 122A
+MTWR
+9:30 am - 10:35am
+PHELP1160
+Lecture: 
+MATH 122B
+MTWR
+9:30 am - 10:35am
+387 103
+Lecture: 
+MATH 124A
+MTWR
+11:00am - 12:05pm
+NH 1111
+Lecture: 
+MATH 124B
+MTWR
+11:00am - 12:05pm
+GIRV 1116
+Lecture: 
+MATH 193
+
+
+T B A
+Lecture: 
+MATH 197A
+
+
+T B A
+Lecture: 
+MATH 197B
+
+
+T B A
+Lecture: 
+MATH 199
+
+
+T B A
+Lecture: 
+MATH 199RA
+
+
+T B A
+Lecture: 
+ME 14
+MTWR
+11:00am - 12:20pm
+ENGR22243
+Section: 
+ME 14
+F
+11:00am - 12:20pm
+ENGR22243
+Lecture: 
+ME 15
+MTWR
+11:00am - 12:20pm
+PHELP1440
+Section: 
+ME 15
+F
+11:00am - 12:20pm
+PHELP1440
+Lecture: 
+ME 16
+MTWR
+2:00pm - 3:20pm
+ENGR22243
+Section: 
+ME 16
+F
+2:00pm - 3:20pm
+ENGR22243
+Lecture: 
+ME 95
+
+
+T B A
+Lecture: 
+ME 97
+
+
+T B A
+Lecture: 
+ME 99
+
+
+T B A
+Lecture: 
+ME 179L
+MTWRF
+10:30am - 12:20pm
+ENGR22133
+Lecture: 
+ME 197
+
+
+T B A
+Lecture: 
+ME 199
+
+
+T B A
+Lecture: 
+MCDB 1A
+MTWR
+12:30pm - 1:55pm
+BUCHN1910
+Lecture: 
+MCDB 1AL
+T R
+9:00 am - 11:50am
+BSIF 2211
+Lecture: 
+MCDB 1AL
+T R
+9:00 am - 11:50am
+BSIF 2112
+Lecture: 
+MCDB 1AL
+T R
+2:30pm - 5:20pm
+BSIF 2211
+Lecture: 
+MCDB 1AL
+T R
+2:30pm - 5:20pm
+BSIF 2112
+Lecture: 
+MCDB 1AL
+T R
+5:30pm - 8:20pm
+BSIF 2211
+Lecture: 
+MCDB 1AL
+T R
+5:30pm - 8:20pm
+BSIF 2112
+Lecture: 
+MCDB 1AL
+T R
+2:30pm - 5:20pm
+LSB 1007
+Lecture: 
+MCDB 1AL
+T R
+5:30pm - 8:20pm
+LSB 1007
+Lecture: 
+MCDB 1B
+MTW
+12:30pm - 1:55pm
+BUCHN1910
+Lecture: 
+MCDB 1BL
+T R
+9:00 am - 11:50am
+BSIF 2211
+Lecture: 
+MCDB 1BL
+T R
+9:00 am - 11:50am
+BSIF 2112
+Lecture: 
+MCDB 1BL
+T R
+3:30pm - 6:20pm
+BSIF 2112
+Lecture: 
+MCDB 1BL
+T R
+3:30pm - 6:20pm
+BSIF 2211
+Lecture: 
+MCDB 1BL
+T R
+6:30pm - 9:20pm
+BSIF 2112
+Lecture: 
+MCDB 1BL
+T R
+6:30pm - 9:20pm
+BSIF 2211
+Lecture: 
+MCDB 1BL
+M W
+5:00pm - 7:50pm
+BSIF 2211
+Lecture: 
+MCDB 1BL
+M W
+5:00pm - 7:50pm
+BSIF 2112
+Lecture: 
+MCDB 23
+MTW
+11:00am - 12:25pm
+LSB 1001
+Lecture: 
+MCDB 84
+
+
+T B A
+Lecture: 
+MCDB 92
+
+
+T B A
+Lecture: 
+MCDB 99
+
+
+T B A
+Lecture: 
+MCDB 101A
+MTWR
+9:30 am - 10:35am
+LSB 1001
+Section: 
+MCDB 101A
+T
+12:30pm - 1:50pm
+BUCHN1934
+Section: 
+MCDB 101A
+W
+2:00pm - 3:20pm
+LSB 1101
+Section: 
+MCDB 101A
+W
+12:30pm - 1:50pm
+BUCHN1934
+Section: 
+MCDB 101A
+R
+12:30pm - 1:50pm
+BUCHN1934
+Section: 
+MCDB 101A
+M
+12:30pm - 1:50pm
+BUCHN1934
+Section: 
+MCDB 101A
+M
+2:00pm - 3:20pm
+LSB 1101
+Lecture: 
+MCDB 101B
+MTWR
+9:30 am - 10:35am
+LSB 1001
+Section: 
+MCDB 101B
+M
+12:30pm - 1:50pm
+BSIF 1217
+Section: 
+MCDB 101B
+W
+11:00am - 12:20pm
+BSIF 1217
+Section: 
+MCDB 101B
+M
+2:00pm - 3:20pm
+BSIF 1217
+Section: 
+MCDB 101B
+T
+12:30pm - 1:50pm
+BSIF 1217
+Lecture: 
+MCDB 108A
+MTWR
+12:30pm - 1:35pm
+PHELP3515
+Section: 
+MCDB 108A
+R
+2:00pm - 3:20pm
+LSB 1101
+Section: 
+MCDB 108A
+R
+3:30pm - 4:40pm
+LSB 1101
+Lecture: 
+MCDB W 108A
+
+
+ONLINE
+Section: 
+MCDB W 108A
+
+
+ONLINE
+Lecture: 
+MCDB 111
+MTW
+12:30pm - 1:55pm
+HFH 1104
+Section: 
+MCDB 111
+R
+9:30 am - 10:50am
+LSB 1101
+Section: 
+MCDB 111
+R
+12:30pm - 1:50pm
+LSB 1101
+Section: 
+MCDB 111
+R
+2:00pm - 3:20pm
+LSB 1101
+Section: 
+MCDB 111
+R
+3:30pm - 4:50pm
+LSB 1101
+Section: 
+MCDB 111
+R
+11:00am - 12:20pm
+LSB 1101
+Section: 
+MCDB 111
+W
+2:00pm - 3:20pm
+LSB 1101
+Section: 
+MCDB 111
+W
+11:00am - 12:20pm
+387 104
+Lecture: 
+MCDB W 138
+
+
+ONLINE
+Section: 
+MCDB W 138
+
+
+ONLINE
+Lecture: 
+MCDB 161L
+MTWR
+9:00 am - 1:50pm
+BSIF 2239
+Section: 
+MCDB 161L
+MTWR
+2:00pm - 2:50pm
+BSIF 2239
+Lecture: 
+MCDB 183
+
+
+T B A
+Lecture: 
+MCDB 184
+
+
+T B A
+Lecture: 
+MCDB 197
+
+
+T B A
+Lecture: 
+MCDB 198
+
+
+T B A
+Lecture: 
+MCDB 199
+
+
+T B A
+Lecture: 
+MUS 11
+MTWR
+9:30 am - 10:50am
+MUSIC1145
+Section: 
+MUS 11
+F
+9:30 am - 10:50am
+MUSIC1232
+Section: 
+MUS 11
+F
+11:00am - 12:20pm
+MUSIC1232
+Section: 
+MUS 11
+MTWR
+12:30pm - 1:50pm
+MUSIC2224
+Section: 
+MUS 11
+F
+12:30pm - 1:50pm
+MUSIC1232
+Section: 
+MUS 11
+F
+2:00pm - 3:20pm
+MUSIC1232
+Lecture: 
+MUS 15
+MTWR
+12:30pm - 1:35pm
+MUSIC1145
+Section: 
+MUS 15
+F
+9:30 am - 10:50am
+MUSIC1207
+Section: 
+MUS 15
+F
+11:00am - 12:20pm
+MUSIC1207
+Section: 
+MUS 15
+F
+12:30pm - 1:50pm
+MUSIC1207
+Section: 
+MUS 15
+F
+2:00pm - 3:20pm
+MUSIC1207
+Section: 
+MUS 15
+MTWR
+9:30 am - 10:35am
+MUSIC1145
+Section: 
+MUS 15
+F
+9:30 am - 10:50am
+MUSIC1207
+Section: 
+MUS 15
+F
+11:00am - 12:20pm
+MUSIC1207
+Section: 
+MUS 15
+F
+12:30pm - 1:50pm
+MUSIC1207
+Section: 
+MUS 15
+F
+2:00pm - 3:20pm
+MUSIC1207
+Lecture: 
+MUS 17
+MTWR
+11:00am - 12:05pm
+MUSIC1145
+Section: 
+MUS 17
+F
+11:00am - 12:20pm
+MUSIC1145
+Section: 
+MUS 17
+F
+9:30 am - 10:50am
+MUSIC1145
+Section: 
+MUS 17
+MTWR
+11:00am - 12:05pm
+MUSIC1145
+Section: 
+MUS 17
+F
+11:00am - 12:20pm
+MUSIC1145
+Section: 
+MUS 17
+F
+9:30 am - 10:50am
+MUSIC1145
+Lecture: 
+MUS 114
+MTWR
+2:00pm - 3:05pm
+MUSIC1145
+Section: 
+MUS 114
+F
+1:00pm - 2:20pm
+MUSIC1145
+Section: 
+MUS 114
+F
+2:30pm - 3:50pm
+MUSIC1145
+Section: 
+MUS 114
+MTWR
+2:00pm - 3:05pm
+MUSIC1145
+Section: 
+MUS 114
+F
+1:00pm - 2:20pm
+MUSIC1145
+Section: 
+MUS 114
+F
+2:30pm - 3:50pm
+MUSIC1145
+Lecture: 
+MUS 199
+
+
+T B A
+Lecture: 
+PHIL 1
+MTWR
+9:30 am - 10:35am
+NH 1105
+Section: 
+PHIL 1
+T
+12:30pm - 1:50pm
+HSSB 1210
+Section: 
+PHIL 1
+R
+11:00am - 12:20pm
+HSSB 1215
+Lecture: 
+PHIL 3
+MTWR
+9:30 am - 10:35am
+TD-W 2600
+Section: 
+PHIL 3
+W
+4:00pm - 5:20pm
+HSSB 1206
+Section: 
+PHIL 3
+T
+4:00pm - 5:20pm
+HSSB 1211
+Lecture: 
+PHIL 4
+MTWR
+11:00am - 12:05pm
+NH 1006
+Section: 
+PHIL 4
+M
+2:00pm - 3:20pm
+HSSB 1210
+Section: 
+PHIL 4
+T
+2:00pm - 3:20pm
+HSSB 1211
+Section: 
+PHIL 4
+M
+12:30pm - 1:50pm
+HSSB 1207
+Section: 
+PHIL 4
+T
+12:30pm - 1:50pm
+HSSB 1211
+Lecture: 
+PHIL 100A
+TWR
+11:00am - 12:20pm
+PHELP2516
+Section: 
+PHIL 100A
+W
+4:00pm - 5:20pm
+HSSB 1210
+Section: 
+PHIL 100A
+R
+4:00pm - 5:20pm
+BUCHN1934
+Lecture: 
+PHIL 100B
+TWR
+12:30pm - 1:50pm
+ARTS 1349
+Section: 
+PHIL 100B
+W
+9:30 am - 10:50am
+HSSB 1224
+Section: 
+PHIL 100B
+R
+11:00am - 12:20pm
+HSSB 1228
+Lecture: 
+PHIL 100E
+TWR
+12:30pm - 1:50pm
+PHELP2524
+Section: 
+PHIL 100E
+W
+2:00pm - 3:20pm
+HSSB 1214
+Section: 
+PHIL 100E
+W
+3:30pm - 4:50pm
+BUCHN1934
+Lecture: 
+PHIL 145
+TWR
+2:00pm - 3:20pm
+SH 1430
+Lecture: 
+PHYS 2
+MTW
+2:00pm - 3:20pm
+BRDA 1640
+Section: 
+PHYS 2
+R
+11:00am - 12:20pm
+PHELP3519
+Section: 
+PHYS 2
+R
+12:30pm - 1:50pm
+PHELP3519
+Lecture: 
+PHYS 6A
+MTW
+11:00am - 12:20pm
+BRDA 1610
+Lecture: 
+PHYS 6AL
+T
+2:00pm - 3:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+T
+4:00pm - 5:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+T
+6:00pm - 7:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+W
+2:00pm - 3:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+W
+4:00pm - 5:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+W
+6:00pm - 7:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+R
+2:00pm - 3:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+R
+4:00pm - 5:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+R
+6:00pm - 7:50pm
+BRDA 2324
+Lecture: 
+PHYS 6AL
+M
+4:00pm - 5:50pm
+BRDA 2324
+Lecture: 
+PHYS 6B
+MTW
+11:00am - 12:20pm
+BRDA 1610
+Lecture: 
+PHYS 6BL
+T
+2:00pm - 3:50pm
+BRDA 2334
+Lecture: 
+PHYS 6BL
+T
+4:00pm - 5:50pm
+BRDA 2334
+Lecture: 
+PHYS 6BL
+W
+2:00pm - 3:50pm
+BRDA 2334
+Lecture: 
+PHYS 6BL
+W
+4:00pm - 5:50pm
+BRDA 2334
+Lecture: 
+PHYS 6BL
+R
+2:00pm - 3:50pm
+BRDA 2334
+Lecture: 
+PHYS 6BL
+R
+4:00pm - 5:50pm
+BRDA 2334
+Lecture: 
+PHYS 6BL
+T
+6:00pm - 7:50pm
+BRDA 2334
+Lecture: 
+PHYS 6BL
+W
+6:00pm - 7:50pm
+BRDA 2334
+Lecture: 
+PHYS 6C
+MTW
+9:30 am - 10:50am
+BRDA 1610
+Lecture: 
+PHYS 6CL
+T
+1:00pm - 2:50pm
+BRDA 2334
+Lecture: 
+PHYS 6CL
+T
+3:00pm - 4:50pm
+BRDA 2334
+Lecture: 
+PHYS 6CL
+W
+1:00pm - 2:50pm
+BRDA 2334
+Lecture: 
+PHYS 6CL
+W
+3:00pm - 4:50pm
+BRDA 2334
+Lecture: 
+PHYS 6CL
+R
+1:00pm - 2:50pm
+BRDA 2334
+Lecture: 
+PHYS 6CL
+R
+3:00pm - 4:50pm
+BRDA 2334
+Lecture: 
+PHYS 6CL
+T
+5:00pm - 6:50pm
+BRDA 2334
+Lecture: 
+PHYS 6CL
+W
+5:00pm - 6:50pm
+BRDA 2334
+Lecture: 
+PHYS 99
+
+
+T B A
+Lecture: 
+PHYS 101
+MTW
+9:30 am - 10:50am
+PHELP1508
+Section: 
+PHYS 101
+R
+9:30 am - 10:50am
+PHELP1508
+Lecture: 
+PHYS 103
+M W F
+11:00am - 12:20pm
+PHELP3519
+Section: 
+PHYS 103
+F
+9:30 am - 10:50am
+PHELP3519
+Section: 
+PHYS 103
+MTW
+9:30 am - 10:50am
+PHELP1508
+Section: 
+PHYS 103
+R
+9:30 am - 10:50am
+PHELP1508
+Lecture: 
+PHYS 115A
+M W F
+11:00am - 12:20pm
+PHELP3519
+Section: 
+PHYS 115A
+F
+9:30 am - 10:50am
+PHELP3523
+Lecture: 
+PHYS 119A
+MTW
+9:30 am - 10:50am
+PHELP3523
+Section: 
+PHYS 119A
+R
+9:30 am - 10:50am
+PHELP3523
+Lecture: 
+PHYS 127AL
+T R
+11:00am - 12:20pm
+PHELP3523
+Section: 
+PHYS 127AL
+M W
+1:00pm - 4:20pm
+BRDA 3233
+Section: 
+PHYS 127AL
+T R
+1:00pm - 4:20pm
+BRDA 3233
+Lecture: 
+PHYS 128AL
+MT
+1:00pm - 5:50pm
+BRDA 3223
+Lecture: 
+PHYS 142L
+
+
+T B A
+Lecture: 
+PHYS 143L
+
+
+T B A
+Lecture: 
+PHYS 144L
+
+
+T B A
+Lecture: 
+PHYS 145L
+
+
+T B A
+Lecture: 
+PHYS 150
+MTW
+12:30pm - 1:45pm
+SSMS 1304
+Section: 
+PHYS 150
+M
+2:00pm - 4:30pm
+BRDA 5207
+Section: 
+PHYS 150
+T
+2:00pm - 4:30pm
+BRDA 5207
+Lecture: 
+PHYS 198
+
+
+T B A
+Lecture: 
+POL S 1
+MTWR
+9:30 am - 10:35am
+PHELP3505
+Section: 
+POL S 1
+R
+4:00pm - 5:20pm
+SH 1609
+Section: 
+POL S 1
+R
+2:00pm - 3:20pm
+PHELP1440
+Section: 
+POL S 1
+F
+9:00 am - 10:20am
+SH 1609
+Section: 
+POL S 1
+F
+11:00am - 12:20pm
+SH 1609
+Lecture: 
+POL S 6
+MTWR
+9:30 am - 10:35am
+TD-W 2600
+Section: 
+POL S 6
+R
+11:00am - 12:20pm
+PHELP1445
+Section: 
+POL S 6
+R
+2:00pm - 3:20pm
+HSSB 3201
+Section: 
+POL S 6
+F
+9:30 am - 10:50am
+PHELP1448
+Section: 
+POL S 6
+F
+11:00am - 12:20pm
+SH 1609
+Lecture: 
+POL S 7
+MTWR
+12:30pm - 1:35pm
+NH 1105
+Section: 
+POL S 7
+W
+5:00pm - 6:20pm
+SH 1609
+Section: 
+POL S 7
+R
+11:00am - 12:20pm
+HSSB 4201
+Section: 
+POL S 7
+W
+3:00pm - 4:20pm
+PHELP1440
+Section: 
+POL S 7
+R
+9:30 am - 10:50am
+HSSB 3202
+Lecture: 
+POL S 12
+MTWR
+11:00am - 12:05pm
+PHELP3505
+Section: 
+POL S 12
+F
+9:00 am - 10:20am
+HSSB 1233
+Section: 
+POL S 12
+R
+12:30pm - 1:50pm
+SH 1609
+Section: 
+POL S 12
+F
+11:00am - 12:20pm
+PHELP1445
+Section: 
+POL S 12
+R
+2:00pm - 3:20pm
+HSSB 3202
+Lecture: 
+POL S 15
+TWR
+12:30pm - 1:55pm
+PHELP3523
+Section: 
+POL S 15
+M
+9:30 am - 10:55am
+HSSB 1211
+Section: 
+POL S 15
+M
+3:30pm - 4:55pm
+HSSB 1207
+Section: 
+POL S 15
+T
+9:30 am - 10:55am
+HSSB 1224
+Section: 
+POL S 15
+R
+3:30pm - 4:55pm
+HSSB 1214
+Lecture: 
+POL S 109
+MTWR
+2:00pm - 3:05pm
+PHELP2514
+Lecture: 
+POL S 110PO
+MTWR
+11:00am - 12:05pm
+NH 1109
+Lecture: 
+POL S 121
+MTWR
+9:30 am - 10:35am
+PHELP1448
+Lecture: 
+POL S 146
+MTWR
+3:30pm - 4:35pm
+PHELP1508
+Lecture: 
+POL S 150A
+MTWR
+11:00am - 12:05pm
+SH 1430
+Section: 
+POL S 150A
+R
+12:30pm - 1:50pm
+PHELP1440
+Section: 
+POL S 150A
+R
+3:30pm - 4:50pm
+PHELP1440
+Section: 
+POL S 150A
+W
+12:30pm - 1:50pm
+HSSB 1210
+Section: 
+POL S 150A
+W
+3:30pm - 4:50pm
+HSSB 1214
+Lecture: 
+POL S 151
+T R
+6:30pm - 8:40pm
+GIRV 1119
+Lecture: 
+POL S 153
+MTWR
+12:30pm - 1:35pm
+PHELP3519
+Lecture: 
+POL S 158
+T R
+3:30pm - 5:40pm
+GIRV 2116
+Lecture: 
+POL S 161
+MTWR
+12:30pm - 1:35pm
+PHELP1508
+Lecture: 
+POL S 171
+MTWR
+2:00pm - 3:05pm
+PHELP1440
+Lecture: 
+POL S 186
+MTWR
+11:00am - 12:05pm
+PHELP1448
+Lecture: 
+PORT 16A
+MTWRF
+9:30 am - 10:45am
+PHELP2514
+Lecture: 
+PORT 16B
+MTWRF
+9:30 am - 10:45am
+PHELP1445
+Lecture: 
+PORT 195
+
+
+T B A
+Lecture: 
+PSY 1
+MTW
+11:00am - 12:25pm
+HFH 1104
+Section: 
+PSY 1
+T
+12:30pm - 1:55pm
+GIRV 2108
+Section: 
+PSY 1
+T
+2:00pm - 3:25pm
+GIRV 2108
+Section: 
+PSY 1
+T
+3:30pm - 4:55pm
+GIRV 2108
+Section: 
+PSY 1
+W
+12:30pm - 1:55pm
+GIRV 2108
+Section: 
+PSY 1
+W
+2:00pm - 3:25pm
+GIRV 2108
+Section: 
+PSY 1
+W
+3:30pm - 4:55pm
+GIRV 2108
+Lecture: 
+PSY 3
+T R
+2:00pm - 4:05pm
+PSYCH1924
+Section: 
+PSY 3
+MTW
+12:30pm - 1:55pm
+PSYCH1924
+Lecture: 
+PSY 7
+MTW
+11:00am - 12:25pm
+CHEM 1171
+Section: 
+PSY 7
+MTW
+2:00pm - 3:25pm
+BUCHN1920
+Lecture: 
+PSY 98
+
+
+T B A
+Lecture: 
+PSY 99
+
+
+T B A
+Lecture: 
+PSY 99P
+
+
+T B A
+Lecture: 
+PSY 101
+MTW
+9:30 am - 10:55am
+BRDA 1640
+Lecture: 
+PSY 102
+MTW
+12:30pm - 1:55pm
+PSYCH1902
+Lecture: 
+PSY 102
+MTW
+3:30pm - 4:45pm
+BRDA 1640
+Lecture: 
+PSY 105
+MTW
+3:30pm - 4:45pm
+WEBB 1100
+Lecture: 
+PSY 105
+MTW
+2:00pm - 3:25pm
+BUCHN1930
+Lecture: 
+PSY 108
+MTW
+12:30pm - 1:45pm
+HSSB 1174
+Lecture: 
+PSY 111
+MTW
+5:00pm - 6:45pm
+BRDA 1640
+Lecture: 
+PSY 119
+MTW
+11:00am - 12:25pm
+PSYCH1902
+Lecture: 
+PSY 120L
+M
+2:00pm - 4:30pm
+NH 1105
+Section: 
+PSY 120L
+T R
+9:00 am - 12:00pm
+PSY-E2822
+Section: 
+PSY 120L
+T R
+12:00pm - 3:00pm
+PSY-E2822
+Lecture: 
+PSY 122
+MTW
+9:30 am - 10:55am
+WEBB 1100
+Lecture: 
+PSY 123
+MTW
+11:00am - 12:25pm
+SH 1431
+Lecture: 
+PSY 134
+MTW
+2:00pm - 3:25pm
+PSYCH1924
+Lecture: 
+PSY 138
+MTW
+11:00am - 12:20pm
+WEBB 1100
+Lecture: 
+PSY 142
+MTW
+2:00pm - 3:25pm
+HSSB 1174
+Lecture: 
+PSY 145
+T R
+2:00pm - 4:05pm
+PSYCH1902
+Lecture: 
+PSY 157
+MTW
+12:30pm - 1:55pm
+WEBB 1100
+Lecture: 
+PSY 158
+MTW
+12:30pm - 1:55pm
+BUCHN1920
+Lecture: 
+PSY 166
+MTW
+12:30pm - 1:55pm
+PSYCH1924
+Lecture: 
+PSY 199
+
+
+T B A
+Lecture: 
+PSY 199P
+
+
+T B A
+Lecture: 
+RG ST 1
+MTWR
+9:30 am - 10:50am
+HSSB 2201
+Lecture: 
+RG ST 1
+MTWR
+12:30pm - 1:50pm
+GIRV 1108
+Lecture: 
+RG ST 3
+MTWR
+2:00pm - 3:20pm
+HSSB 3001E
+Lecture: 
+RG ST 4
+MTWR
+2:00pm - 3:20pm
+HSSB 4080
+Lecture: 
+RG ST 4
+MTWR
+9:30 am - 10:50am
+HSSB 1207
+Lecture: 
+RG ST 6
+MTWR
+2:00pm - 3:20pm
+HSSB 1207
+Lecture: 
+RG ST 7
+MTWR
+11:00am - 12:20pm
+HSSB 2201
+Lecture: 
+RG ST 7
+MTWR
+5:00pm - 6:20pm
+GIRV 1108
+Lecture: 
+RG ST 12
+MTWR
+9:30 am - 10:50am
+HSSB 1206
+Lecture: 
+RG ST 21
+T R
+8:00 am - 10:45am
+HSSB 3041
+Lecture: 
+RG ST 47
+MTWR
+11:00am - 12:20pm
+HSSB 3001E
+Lecture: 
+RG ST 113
+MTWR
+12:30pm - 1:40pm
+HSSB 3041
+Section: 
+RG ST 113
+T
+5:00pm - 8:00pm
+BUCHN1920
+Lecture: 
+RG ST 140A
+MTWR
+11:00am - 12:20pm
+BUCHN1934
+Lecture: 
+RG ST 190RB
+MTWR
+12:30pm - 1:50pm
+HSSB 3001E
+Lecture: 
+RG ST 195
+
+
+T B A
+Lecture: 
+RG ST 199
+
+
+T B A
+Lecture: 
+RG ST 199RA
+
+
+T B A
+Lecture: 
+SLAV 192
+
+
+T B A
+Lecture: 
+SLAV 199
+
+
+T B A
+Lecture: 
+SOC 1
+MTWR
+12:30pm - 1:50pm
+PHELP3505
+Section: 
+SOC 1
+F
+9:30 am - 10:20am
+PHELP1440
+Section: 
+SOC 1
+F
+11:00am - 11:50am
+PHELP1440
+Section: 
+SOC 1
+MTWR
+2:00pm - 3:20pm
+PHELP3505
+Section: 
+SOC 1
+F
+9:00 am - 9:50 am
+PHELP2514
+Section: 
+SOC 1
+F
+10:00am - 10:50am
+PHELP2514
+Lecture: 
+SOC 99
+
+
+T B A
+Lecture: 
+SOC 108ST
+MTW
+11:00am - 12:25pm
+GIRV 2119
+Section: 
+SOC 108ST
+R
+10:00am - 10:50am
+GIRV 1106
+Section: 
+SOC 108ST
+R
+11:00am - 11:50am
+GIRV 1106
+Section: 
+SOC 108ST
+R
+9:00 am - 9:50 am
+GIRV 1106
+Section: 
+SOC 108ST
+MTW
+11:00am - 12:25pm
+PHELP1445
+Section: 
+SOC 108ST
+R
+11:00am - 11:50am
+GIRV 1106
+Section: 
+SOC 108ST
+R
+10:00am - 10:50am
+GIRV 1106
+Lecture: 
+SOC 130ST
+MTW
+2:00pm - 3:15pm
+PHELP3515
+Lecture: 
+SOC 134
+MTW
+11:00am - 12:25pm
+BUCHN1920
+Lecture: 
+SOC 142
+MTWR
+11:00am - 12:20pm
+BUCHN1930
+Lecture: 
+SOC 144LI
+MTW
+12:30pm - 1:55pm
+BRDA 1640
+Lecture: 
+SOC 144S
+MTW
+3:30pm - 4:45pm
+PHELP1260
+Lecture: 
+SOC 145
+MTW
+3:30pm - 4:45pm
+SH 1431
+Lecture: 
+SOC 152A
+MTWR
+12:30pm - 1:50pm
+BUCHN1930
+Lecture: 
+SOC 153
+MTW
+9:30 am - 10:50am
+PHELP3515
+Lecture: 
+SOC 173
+MTW
+9:30 am - 10:50am
+BUCHN1930
+Lecture: 
+SOC 174
+MTW
+12:30pm - 1:55pm
+WEBB 1100
+Lecture: 
+SOC 185S
+MTW
+2:00pm - 3:25pm
+WEBB 1100
+Lecture: 
+SOC 185S
+MTW
+2:00pm - 3:15pm
+PHELP1260
+Lecture: 
+SOC 190A
+
+
+T B A
+Lecture: 
+SOC 191CA
+
+
+T B A
+Lecture: 
+SOC 198
+
+
+T B A
+Lecture: 
+SOC 199
+
+
+T B A
+Lecture: 
+SOC 199RA
+
+
+T B A
+Lecture: 
+SPAN 1
+MTWRF
+9:30 am - 10:45am
+GIRV 2124
+Lecture: 
+SPAN 1
+MTWRF
+9:30 am - 10:45am
+PHELP1440
+Lecture: 
+SPAN 2
+MTWRF
+9:30 am - 10:45am
+PHELP1448
+Lecture: 
+SPAN 2
+MTWRF
+9:30 am - 10:45am
+PHELP1444
+Lecture: 
+SPAN 3
+MTWRF
+9:30 am - 10:45am
+BUCHN1934
+Lecture: 
+SPAN 3
+MTWRF
+9:30 am - 10:45am
+SH 1609
+Lecture: 
+SPAN 100
+MTWR
+9:30 am - 10:35am
+PHELP1440
+Lecture: 
+SPAN 102L
+MTWR
+2:00pm - 3:05pm
+GIRV 1108
+Lecture: 
+SPAN 110C
+MTWR
+11:00am - 12:05pm
+PHELP2516
+Lecture: 
+SPAN 110D
+MTWR
+11:00am - 12:05pm
+PHELP2514
+Lecture: 
+SPAN 111C
+MTWR
+9:30 am - 10:35am
+HSSB 1215
+Lecture: 
+SPAN 135
+MTWR
+3:30pm - 4:35pm
+NH 1109
+Lecture: 
+SPAN 147
+MTWR
+2:00pm - 3:05pm
+GIRV 2112
+Lecture: 
+SPAN 195
+
+
+T B A
+Lecture: 
+SPAN 199
+
+
+T B A
+Lecture: 
+SHS 194
+
+
+T B A
+Lecture: 
+SHS 199
+
+
+T B A
+Lecture: 
+PSTAT 5A
+MTWR
+9:30 am - 10:50am
+HSSB 1174
+Section: 
+PSTAT 5A
+T
+12:00pm - 12:50pm
+HSSB 1224
+Section: 
+PSTAT 5A
+W
+12:00pm - 12:50pm
+SSMS 1005
+Section: 
+PSTAT 5A
+T
+1:00pm - 1:50pm
+HSSB 1210
+Section: 
+PSTAT 5A
+W
+1:00pm - 1:50pm
+SSMS 1303
+Section: 
+PSTAT 5A
+T
+11:00am - 11:50am
+HSSB 1224
+Section: 
+PSTAT 5A
+W
+11:00am - 11:50am
+SSMS 1303
+Section: 
+PSTAT 5A
+T
+2:00pm - 2:50pm
+HSSB 1211
+Section: 
+PSTAT 5A
+W
+2:00pm - 2:50pm
+SSMS 1304
+Section: 
+PSTAT 5A
+MTWR
+12:30pm - 1:50pm
+GIRV 2128
+Section: 
+PSTAT 5A
+T
+2:00pm - 2:50pm
+HSSB 1214
+Section: 
+PSTAT 5A
+W
+2:00pm - 2:50pm
+SSMS 1303
+Section: 
+PSTAT 5A
+T
+3:00pm - 3:50pm
+HSSB 1214
+Section: 
+PSTAT 5A
+W
+3:00pm - 3:50pm
+SSMS 1303
+Lecture: 
+PSTAT 109
+MTWR
+11:00am - 12:20pm
+GIRV 2128
+Section: 
+PSTAT 109
+T
+3:00pm - 3:50pm
+HSSB 1210
+Section: 
+PSTAT 109
+W
+3:00pm - 3:50pm
+SSMS 1303
+Section: 
+PSTAT 109
+T
+4:00pm - 4:50pm
+HSSB 1206
+Section: 
+PSTAT 109
+W
+4:00pm - 4:50pm
+SSMS 1303
+Section: 
+PSTAT 109
+MTWR
+11:00am - 12:20pm
+ARTS 1349
+Section: 
+PSTAT 109
+T
+4:00pm - 4:50pm
+HSSB 1223
+Section: 
+PSTAT 109
+R
+4:00pm - 4:50pm
+SSMS 1304
+Section: 
+PSTAT 109
+T
+5:00pm - 5:50pm
+HSSB 1206
+Section: 
+PSTAT 109
+R
+5:00pm - 5:50pm
+SSMS 1303
+Lecture: 
+PSTAT 120A
+MTWR
+9:30 am - 10:50am
+PHELP3515
+Section: 
+PSTAT 120A
+T R
+6:00pm - 6:50pm
+HSSB 1210
+Section: 
+PSTAT 120A
+T R
+5:00pm - 5:50pm
+HSSB 1206
+Section: 
+PSTAT 120A
+T R
+4:00pm - 4:50pm
+HSSB 1210
+Lecture: 
+PSTATW 120A
+
+
+ONLINE
+Section: 
+PSTATW 120A
+
+
+ONLINE
+Section: 
+PSTATW 120A
+
+
+ONLINE
+Lecture: 
+PSTAT 120B
+MTWR
+9:30 am - 10:50am
+NH 1105
+Section: 
+PSTAT 120B
+T R
+5:00pm - 5:50pm
+HSSB 1207
+Section: 
+PSTAT 120B
+M W
+4:00pm - 4:50pm
+SH 1609
+Section: 
+PSTAT 120B
+MTWR
+2:00pm - 3:20pm
+HSSB 1173
+Section: 
+PSTAT 120B
+M W
+4:00pm - 4:50pm
+HSSB 1223
+Section: 
+PSTAT 120B
+M W
+5:00pm - 5:50pm
+HSSB 1207
+Lecture: 
+PSTAT 120C
+MTWR
+2:00pm - 3:20pm
+ARTS 1349
+Section: 
+PSTAT 120C
+M W
+4:00pm - 4:50pm
+HSSB 1224
+Section: 
+PSTAT 120C
+M W
+5:00pm - 5:50pm
+HSSB 1224
+Lecture: 
+PSTAT 130
+MTWR
+12:30pm - 1:50pm
+SSMS 1302
+Section: 
+PSTAT 130
+M W
+5:00pm - 5:50pm
+SSMS 1303
+Section: 
+PSTAT 130
+M W
+6:00pm - 6:50pm
+SSMS 1303
+Section: 
+PSTAT 130
+MTWR
+9:30 am - 10:50am
+SSMS 1303
+Section: 
+PSTAT 130
+M W
+6:00pm - 6:50pm
+SSMS 1304
+Section: 
+PSTAT 130
+T R
+5:00pm - 5:50pm
+SSMS 1304
+Lecture: 
+PSTAT 140
+MTWRF
+2:00pm - 3:50pm
+PHELP3505
+Section: 
+PSTAT 140
+T R
+5:00pm - 5:50pm
+GIRV 2115
+Section: 
+PSTAT 140
+T R
+6:00pm - 6:50pm
+HSSB 1211
+Lecture: 
+PSTAT 171
+MTWR
+8:00 am - 9:20 am
+PSYCH1902
+Section: 
+PSTAT 171
+T R
+4:00pm - 4:50pm
+HSSB 1214
+Section: 
+PSTAT 171
+T R
+6:00pm - 6:50pm
+HSSB 1211
+Section: 
+PSTAT 171
+T R
+6:00pm - 6:50pm
+HSSB 1224
+Lecture: 
+PSTATW 182T
+
+
+ONLINE
+Section: 
+PSTATW 182T
+
+
+ONLINE
+Lecture: 
+PSTAT 193
+
+
+T B A
+Lecture: 
+PSTAT 199
+
+
+T B A
+Lecture: 
+TMP 120
+MTW
+3:30pm - 4:45pm
+PHELP3519
+Lecture: 
+TMP 122
+T R
+1:00pm - 2:40pm
+PHELP1420
+Lecture: 
+THTR 5
+MTW
+2:00pm - 4:20pm
+HSSB 1143
+Lecture: 
+THTR 5
+MTW
+2:00pm - 4:20pm
+TD-W 1507
+Lecture: 
+THTR W 19
+
+
+ONLINE
+Lecture: 
+THTR 43
+TWRF
+2:30pm - 5:50pm
+TD-E 1101
+Section: 
+THTR 43
+TWRF
+2:30pm - 5:50pm
+TD-W 1507
+Lecture: 
+THTR 49
+
+
+T B A
+Lecture: 
+THTR 143
+TWRF
+2:30pm - 5:50pm
+TD-E 1101
+Section: 
+THTR 143
+TWRF
+2:30pm - 5:50pm
+TD-W 1507
+Lecture: 
+THTR 144A
+MTWRF
+6:00pm - 11:00pm
+TD-W 1507
+Lecture: 
+THTR 144B
+M
+6:00pm - 10:00pm
+TD-W 1507
+Section: 
+THTR 144B
+TWRF
+7:00pm - 11:00pm
+TD-W 1507
+Lecture: 
+THTR 146
+MTWR
+6:00pm - 10:00pm
+TD-W 1507
+Section: 
+THTR 146
+R
+1:00pm - 5:00pm
+TD-W 1507
+Lecture: 
+THTR 149
+
+
+T B A
+Lecture: 
+THTR 194A
+MTWRF
+10:00am - 12:20pm
+TD-W 1507
+Lecture: 
+THTR 194T
+MTWRF
+1:00pm - 5:00pm
+TD-W 1101
+Lecture: 
+THTR 199
+
+
+T B A
+Lecture: 
+WRIT 1
+MTWR
+9:30 am - 10:55am
+PHELP1529
+Lecture: 
+WRIT 1
+MTWR
+11:00am - 12:25pm
+PHELP1529
+Lecture: 
+WRIT 1
+MTWR
+11:00am - 12:25pm
+HSSB 2251
+Lecture: 
+WRIT 2
+MTWR
+8:00 am - 9:25 am
+PHELP1530
+Lecture: 
+WRIT 2
+MTWR
+11:00am - 12:25pm
+PHELP1525
+Lecture: 
+WRIT 2
+MTWR
+9:30 am - 10:55am
+SSMS 1007
+Lecture: 
+WRIT 2
+MTWR
+11:00am - 12:25pm
+SH 1609
+Lecture: 
+WRIT 2
+MTWR
+11:00am - 12:25pm
+HSSB 1224
+Lecture: 
+WRIT 2
+MTWR
+11:00am - 12:25pm
+GIRV 2112
+Lecture: 
+WRIT 2
+MTWR
+9:30 am - 10:55am
+HSSB 1211
+Lecture: 
+WRIT 2
+MTWR
+9:30 am - 10:55am
+HSSB 1223
+Lecture: 
+WRIT 2
+MTWR
+11:00am - 12:25pm
+HSSB 1227
+Lecture: 
+WRIT 2
+MTWR
+12:30pm - 1:55pm
+PHELP1529
+Lecture: 
+WRIT 2
+MTWR
+12:30pm - 1:55pm
+HSSB 1211
+Lecture: 
+WRIT 2
+MTWR
+11:00am - 12:25pm
+SSMS 1007
+Lecture: 
+WRIT 2
+MTWR
+2:00pm - 3:25pm
+SSMS 1007
+Lecture: 
+WRIT 2
+MTWR
+5:00pm - 6:25pm
+SSMS 1005
+Lecture: 
+WRIT 2
+MTWR
+12:30pm - 1:55pm
+387 104
+Lecture: 
+WRIT 2
+MTWR
+11:00am - 12:25pm
+PHELP1530
+Lecture: 
+WRIT 50
+MTW
+2:00pm - 3:55pm
+GIRV 2124
+Lecture: 
+WRIT 50
+MTW
+2:00pm - 3:55pm
+PHELP1529
+Lecture: 
+WRIT 50
+MTW
+2:00pm - 3:55pm
+HSSB 1223
+Lecture: 
+WRIT 105C
+MTW
+11:00am - 12:25pm
+GIRV 2124
+Lecture: 
+WRIT 105G
+M W
+2:00pm - 4:05pm
+GIRV 2127
+Lecture: 
+WRIT 105PS
+M W
+2:00pm - 4:05pm
+387 104
+Lecture: 
+WRIT 105PS
+M W
+5:30pm - 7:35pm
+GIRV 2108
+Lecture: 
+WRIT 105R
+M W
+5:30pm - 7:35pm
+HSSB 1210
+Lecture: 
+WRIT 105SW
+MT R
+11:00am - 12:25pm
+SSMS 1005
+Lecture: 
+WRIT 107B
+T R
+5:30pm - 7:35pm
+NH 1109
+Lecture: 
+WRIT 107B
+MTW
+11:00am - 12:25pm
+HSSB 1236
+Lecture: 
+WRIT 107B
+MT R
+11:00am - 12:25pm
+SSMS 1005
+Lecture: 
+WRIT 107B
+M W
+2:00pm - 4:05pm
+387 104
+Lecture: 
+WRIT 107B
+M W
+5:30pm - 7:35pm
+PHELP1448
+Lecture: 
+WRIT 107B
+MTW
+11:00am - 12:25pm
+HSSB 1236
+Lecture: 
+WRIT 107G
+MT R
+12:30pm - 1:55pm
+SSMS 1007
+Lecture: 
+WRIT 107G
+T R
+2:00pm - 4:05pm
+SSMS 1007
+Lecture: 
+WRIT 107G
+MTW
+9:30 am - 10:55am
+HSSB 1215
+Lecture: 
+WRIT 107L
+MTW
+11:00am - 12:25pm
+PHELP1529
+Lecture: 
+WRIT 107WC
+MTW
+11:00am - 12:25pm
+PHELP1518
+Lecture: 
+WRIT 109F
+T R
+5:30pm - 7:35pm
+SSMS 1007
+Lecture: 
+WRIT 109F
+T R
+2:00pm - 4:05pm
+HSSB 1206
+Lecture: 
+WRIT 109F
+M W
+2:00pm - 4:05pm
+HSSB 1206
+Lecture: 
+WRIT 109HP
+MTW
+2:00pm - 3:25pm
+SSMS 1005
+Lecture: 
+WRIT 109HP
+M W
+2:00pm - 4:05pm
+SSMS 1005
+Lecture: 
+WRIT 109HU
+M W
+2:00pm - 4:05pm
+HSSB 1211
+Lecture: 
+WRIT 109SS
+MTW
+9:30 am - 10:55am
+387 103
+Lecture: 
+WRIT 199
+
+
+T B A
