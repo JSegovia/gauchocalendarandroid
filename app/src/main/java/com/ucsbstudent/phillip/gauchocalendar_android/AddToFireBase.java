@@ -91,7 +91,8 @@ public class AddToFireBase extends AppCompatActivity {
         //String attempt = stringListTest.get(5);
         // String est = lectures.get(5);
         //test = stringListTest.get(0);
-        String attempt = "Loaded Strings arraylist ";
+       // String attempt = "Loaded Strings arraylist ";
+        String attempt = Float.toString(coursesFall2016.get(0).getStartTime());
         attempt += stringListTest.get(0);
         TextView tester = (TextView) findViewById(R.id.testfirebase);
         tester.setText(attempt);
