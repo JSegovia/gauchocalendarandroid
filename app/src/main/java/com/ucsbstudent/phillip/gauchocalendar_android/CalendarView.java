@@ -1,26 +1,13 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
-import android.content.DialogInterface;
-import android.graphics.Color;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-import java.util.Random;
 
 import java.util.ArrayList;
-import java.util.concurrent.locks.ReadWriteLock;
-
-import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
-import static android.widget.LinearLayout.LayoutParams.*;
 
 
 public class CalendarView extends AppCompatActivity implements View.OnClickListener {
@@ -57,136 +44,65 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
         RelativeLayout useit = (RelativeLayout) findViewById(R.id.relativeLayout242);
 
 
-        int bw = width/6;
-        int bh = width/3;
-        RelativeLayout.LayoutParams testparam = new RelativeLayout.LayoutParams(bw, bh);
+        int bw = width/8;
+        int min30 = height/30;
+        int min15 = height/60;
+        int hour = height/15;
 
-
-        testparam.leftMargin = bw;
-        testparam.addRule(RelativeLayout.BELOW, R.id.line1am);
-
-        Button myButton = new Button(this);
-        myButton.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-
-
-        useit.addView(myButton, testparam);
 
         for (int i = 0; i < customarray.size(); i++) {
 
-            String personal = "Pers";
             String name = customarray.get(i).getEventTitle();
             Button btn = new Button(this);
-            btn.setText(name);
-            btn.setTextColor(Color.parseColor("White"));
+
             btn.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-
-
-            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(
-                    ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-
-
-            int starthour = customarray.get(i).getShour();
-            int endhour = customarray.get(i).getEhour();
-
-            String sampm = customarray.get(i).getSampm();
-            String eampm = customarray.get(i).getEampm();
 
             int weeknumber = customarray.get(i).getWeekdayInt();
             weeknumber++;
 
-            weeknumber = weeknumber + width;
-            paramss.leftMargin = weeknumber;
-            paramss.addRule(RelativeLayout.BELOW, R.id.line1am);
+            float hournumber = customarray.get(i).getStartime();
+            int start = (int) hournumber;
+            int theShiftL = weeknumber * bw;
+            int theShiftT = (hour * (start)) + (start*2) + hour;
+
+            if (start == 11) {
+                theShiftT = 0;
+            }
+            if (start == 23) {
+                theShiftT = 12 * hour + 24;
+            }
+
+            double minS = (double) customarray.get(i).getSmin();
+            int pixel =(int) (height / (minS*2));
+
+            theShiftT = theShiftT + pixel;
+
+            //Finding endtime location.
+            float hournumberF = customarray.get(i).getEndtime();
+            int end = (int) hournumber;
+            int theShiftB = (hour * (start)) + (start*2) + hour;
+
+            if (end == 11) {
+                theShiftB = 0;
+            }
+            if (end == 23) {
+                theShiftB = 12 * hour + 24;
+            }
+
+            double minE = (double) customarray.get(i).getSmin();
+            int pixelE =(int) (height / (minS*2));
+
+            theShiftT = theShiftT + pixelE;
+
+
+
+            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, min15);
+            paramss.leftMargin = theShiftL;
+            paramss.topMargin = theShiftT;
 
             useit.addView(btn, paramss);
 
 
-            /*
-            if (starthour == 12) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line12am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line12pm);
-                }
-            }
-            if (starthour == 11) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line11am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line11pm);
-                }
-            }
-            if (starthour == 10) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line10am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line10pm);
-                }
-            }
-            if (starthour == 9) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line9am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line9pm);
-                }
-            }
-            if (starthour == 8) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line8am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line8pm);
-                }
-            }
-            if (starthour == 7) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line7am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line7pm);
-                }
-            }
-            if (starthour == 6) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line6am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line6pm);
-                }
-            }
-            if (starthour == 5) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line5am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line5pm);
-                }
-            }
-            if (starthour == 4) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line4am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line4pm);
-                }
-            }
-            if (starthour == 3) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line3am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line3pm);
-                }
-            }
-            if (starthour == 2) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line2am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line2pm);
-                }
-            }
-            if (starthour == 1) {
-                if (sampm.equals("AM")) {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line1am);
-                } else {
-                    paramss.addRule(RelativeLayout.BELOW, R.id.line1pm);
-                }
-            }
-            */
 /*
             int weeknumber = customarray.get(i).getWeekdayInt();
             weeknumber++;

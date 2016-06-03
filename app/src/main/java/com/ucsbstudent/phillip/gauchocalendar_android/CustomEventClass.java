@@ -18,6 +18,8 @@ public class CustomEventClass implements Parcelable {
     public int Ehour;
     public int Emin;
     public String Eampm;
+    public float startime;
+    public float endtime;
 
     public CustomEventClass(String EventTitle, String Location, String Weekday,
                             int weekdayInt, int hour, int min, String ampm,
@@ -32,6 +34,49 @@ public class CustomEventClass implements Parcelable {
         this.Ehour = hourE;
         this.Emin = minE;
         this.Eampm = ampmE;
+
+        float tempHourStart = 0;
+
+        if (ampm.equals("PM")) {
+            if (hour == 12) {
+                hour = 0;
+            }
+            tempHourStart = hour + 12;
+        }
+
+        if (ampm.equals("AM")) {
+            if (hour == 12) {
+                tempHourStart = 0;
+            } else {
+                tempHourStart = hour;
+            }
+        }
+
+
+        float tempHourEnd = 0;
+
+        if (ampmE.equals("PM")) {
+            if (hourE == 12) {
+                hourE = 0;
+            }
+            tempHourEnd = hourE + 12;
+        }
+
+        if (ampmE.equals("AM")) {
+            if (hourE == 12) {
+                tempHourEnd = 0;
+            } else {
+                tempHourEnd = hourE;
+            }
+        }
+
+        float tempMinS = min / 60;
+        float tempMinE = minE / 60;
+
+        this.startime = tempHourStart + tempMinS;
+        this.endtime = tempHourEnd + tempMinE;
+
+
     }
 
     public static final Creator<CustomEventClass> CREATOR = new Creator<CustomEventClass>() {
@@ -68,7 +113,10 @@ public class CustomEventClass implements Parcelable {
     public String getSampm(){return Sampm;}
     public int getEhour() {return Ehour;}
     public int getEmin(){ return Emin;}
-    public String getEampm(){return Eampm;}
+    public String getEampm() {return Eampm;}
+    public float getStartime() {return startime;}
+    public float getEndtime() {return endtime;}
+
 
 
     public CustomEventClass(Parcel in){
@@ -83,6 +131,8 @@ public class CustomEventClass implements Parcelable {
         Ehour = in.readInt();
         Emin = in.readInt();
         Eampm = in.readString();
+        startime = in.readFloat();
+        endtime = in.readFloat();
     }
 
     @Override
@@ -102,5 +152,7 @@ public class CustomEventClass implements Parcelable {
         dest.writeInt(Ehour);
         dest.writeInt(Emin);
         dest.writeString(Eampm);
+        dest.writeFloat(startime);
+        dest.writeFloat(endtime);
     }
 }

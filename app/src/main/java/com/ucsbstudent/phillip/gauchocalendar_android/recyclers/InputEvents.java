@@ -2,9 +2,9 @@ package com.ucsbstudent.phillip.gauchocalendar_android.recyclers;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -21,7 +21,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.firebase.client.Firebase;
 import com.ucsbstudent.phillip.gauchocalendar_android.CalendarView;
 import com.ucsbstudent.phillip.gauchocalendar_android.CustomEventClass;
 import com.ucsbstudent.phillip.gauchocalendar_android.LectureOrSection;
@@ -32,13 +31,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class InputEvents extends AppCompatActivity {
 
-    private static final String FIREBASE_URL = "https://sizzling-inferno-7789.firebaseIO.com";
-    private Firebase firebaseRef;
+    //private static final String FIREBASE_URL = "https://sizzling-inferno-7789.firebaseIO.com";
+    //private Firebase firebaseRef;
     public int globali;
 
 
@@ -78,7 +76,7 @@ public class InputEvents extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_events);
-        firebaseRef = new Firebase(FIREBASE_URL);
+        //firebaseRef = new Firebase(FIREBASE_URL);
         //Toolbar toolbar = (Toolbar) findViewById(R.id.);
         //getSupportActionBar(toolbar);
 
@@ -606,10 +604,10 @@ public class InputEvents extends AppCompatActivity {
             }
         }
         linearLayoutEvents.removeView((View) v.getParent());
-        firebaseRef.child("TestCustomEvent").removeValue();
+        //firebaseRef.child("TestCustomEvent").removeValue();
 
         for (int i = 0; i < customE.size(); i++) {
-            firebaseRef.child("TestCustomEvent").push().setValue(customE.get(i));
+        //    firebaseRef.child("TestCustomEvent").push().setValue(customE.get(i));
         }
     }
 
