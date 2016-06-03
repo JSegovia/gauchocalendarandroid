@@ -22,158 +22,271 @@ public class LectureOrSection {
                             String NumEnrolled){
         this.NameofLS = Name;
         this.DaysOfWeek = DaysOfWeek;
-        this.TimeOfDay = TimeOfDay;
+
         this.ClassRoom = ClassRoom;
+        this.TimeOfDay = TimeOfDay;
+        //If ampm = 0 then its AM
+        //If ampm = 1 then its PM
+        int ampmS = 0;
 
-        String newStart;
-        String newEnd;
-        float numStart;
-        float numEnd;
-
-        //split start and end time at '-'
-        StringTokenizer tokenTime = new StringTokenizer(TimeOfDay, "-");
-        String startTime = tokenTime.nextToken();
-        String endTime = tokenTime.nextToken();
-
-        //split start hr and min at ':'
-        StringTokenizer tokenStartHr = new StringTokenizer(startTime, ":");
-        String startHr = tokenStartHr.nextToken();
-        String startMin = tokenStartHr.nextToken();
-
-        //case: 1:00am to 9:00am
-        if (startHr.length() == 1 && startMin.charAt(2) == 'a'){
-            newStart = "0" + startHr + "." + startMin.charAt(0) + startMin.charAt(1);
-            this.StartTime = Float.parseFloat(newStart);
+        String[] temp = TimeOfDay.split("\\s+");  // gets start time
+        String startTime = temp[0];               //start time string in startTime "10:00am"
+        String start = "";
+        if(startTime.contains("a")){              // "start" gets value before am  "10:00"
+            ampmS = 0;                            // set int ampmS = 0 for "am"
+            String[] onlycolonStartAM = startTime.split("a");
+            start = onlycolonStartAM[0];
         }
-
-        //case: 12:00am and 12:00pm
-        else if (startHr.length() == 2 && startHr.charAt(1) == '2') {
-                if (startMin.charAt(2) == 'a') {
-                    newStart = "00.00";
-                } else {
-                    newStart = "12.00";
-                }
-            this.StartTime = Float.parseFloat(newStart);
-            }
-
-        //case: 10:00am and 11:00am
-        else if (startHr.length() == 2 && startMin.charAt(2) == 'a') {
-                if (startHr.charAt(1) != '2') {
-                    newStart = startHr + "." + startMin.charAt(0) + startMin.charAt(1);
-                    this.StartTime = Float.parseFloat(newStart);
-                }
-            }
-
-        else{
-
-            //case: 1:00pm through 9:00pm
-            if ((startHr.length() == 1) && startMin.charAt(2) == 'p') {
-                int hour = Integer.parseInt(startHr);
-                hour = hour + 12;
-                String hr = Integer.toString(hour);
-                newStart = hr + "." + startMin.charAt(0) + startMin.charAt(1);
-                this.StartTime = Float.parseFloat(newStart);
-            }
-            //case: 11:00pm and 10:00pm
-            if (startHr.length() == 2 && startHr.charAt(1) != '2') {
-                if (startMin.charAt(2) == 'p') {
-                    int hour2 = Integer.parseInt(startHr);
-                    hour2 = hour2 + 12;
-                    String hr2 = Integer.toString(hour2);
-                    newStart = hr2 + "." + startMin.charAt(0) + startMin.charAt(1);
-                    this.StartTime = Float.parseFloat(newStart);
-                }
-            }
+        if(startTime.contains("p")){              // "start" gets value before pm  "10:00"
+            ampmS = 1;                            // set int ampm@ = 1 for "pm"
+            String[] onlycolonPM = startTime.split("p");
+            start = onlycolonPM[0];
         }
+        String[] starthour3 = start.split(":");
+        String starthour2 = starthour3[0];           // starthour2 = string of hour "10"
+        String startmin1 = start.substring(start.lastIndexOf(":")+1);  // startmin = string of min "00"
 
+        String starttrimhr = starthour2.trim();
+        String starttrimmin = startmin1.trim();
 
-        //now same thing for end time
+        float starthour=0;
+                float startmin=0;
 
-        //split end time at ':'
-        StringTokenizer tokenEndHr = new StringTokenizer(startTime, ":");
-        String endHr = tokenEndHr.nextToken();
-        String endMin = tokenEndHr.nextToken();
-
-        if (endHr.length() == 1 && endMin.charAt(2) == 'a'){
-            newEnd = "0" + endHr + "." + endMin.charAt(0) + endMin.charAt(1);
-            this.EndTime = Float.parseFloat(newEnd);
-        }
-        else if (endHr.length() == 2 && endHr.charAt(1) == '2') {
-            if (endMin.charAt(2) == 'a') {
-                newEnd = "00.00";
-            } else {
-                newEnd = "12.00";
+                if(ampmS == 0){
+                    if(starttrimhr.equals("1")){
+                        starthour = 1;
+                    }
+                    if(starttrimhr.equals("2")){
+                        starthour = 2;
+                    }
+                    if(starttrimhr.equals("3")){
+                        starthour = 3;
+                    }
+                    if(starttrimhr.equals("4")){
+                        starthour = 4;
+                    }
+                    if(starttrimhr.equals("5")){
+                        starthour = 5;
             }
-            this.EndTime = Float.parseFloat(newEnd);
-        }
-        else if (endHr.length() == 2 && endMin.charAt(2) == 'a') {
-            if (endHr.charAt(1) != '2') {
-                newEnd = endHr + "." + endMin.charAt(0) + endMin.charAt(1);
-                this.EndTime = Float.parseFloat(newEnd);
+            if(starttrimhr.equals("6")){
+                starthour = 6;
+            }
+            if(starttrimhr.equals("7")){
+                starthour = 7;
+            }
+            if(starttrimhr.equals("8")){
+                starthour = 8;
+            }
+            if(starttrimhr.equals("9")){
+                starthour = 9;
+            }
+            if(starttrimhr.equals("10")){
+                starthour = 10;
+            }
+            if(starttrimhr.equals("11")){
+                starthour = 11;
+            }
+            if(starttrimhr.equals("12")){
+                starthour = 0;
             }
         }
 
-        else{
-            if ((endHr.length() == 1) && endMin.charAt(2) == 'p') {
-                int hour3 = Integer.parseInt(endHr);
-                hour3 = hour3 + 12;
-                String hr3 = Integer.toString(hour3);
-                newEnd = hr3 + "." + endMin.charAt(0) + endMin.charAt(1);
-                this.EndTime = Float.parseFloat(newEnd);
+        if(ampmS == 1){
+            if(starttrimhr.equals("12")){
+                starthour = 12;
             }
-            if (endHr.length() == 2 && endHr.charAt(1) != '2') {
-                if (endMin.charAt(2) == 'p') {
-                    int hour4 = Integer.parseInt(endHr);
-                    hour4 = hour4 + 12;
-                    String hr4 = Integer.toString(hour4);
-                    newEnd = hr4 + "." + endMin.charAt(0) + endMin.charAt(1);
-                    this.EndTime = Float.parseFloat(newEnd);
-                }
+            if(starttrimhr.equals("1")){
+                starthour = 13;
+            }
+            if(starttrimhr.equals("2")){
+                starthour = 14;
+            }
+            if(starttrimhr.equals("3")){
+                starthour = 15;
+            }
+            if(starttrimhr.equals("4")){
+                starthour = 16;
+            }
+            if(starttrimhr.equals("5")){
+                starthour = 17;
+            }
+            if(starttrimhr.equals("6")){
+                starthour = 18;
+            }
+            if(starttrimhr.equals("7")){
+                starthour = 19;
+            }
+            if(starttrimhr.equals("8")){
+                starthour = 20;
+            }
+            if(starttrimhr.equals("9")){
+                starthour = 21;
+            }
+            if(starttrimhr.equals("10")){
+                starthour = 22;
+            }
+            if(starttrimhr.equals("11")){
+                starthour = 23;
             }
         }
 
-        //now numStart and numEnd are 24 hr floating point versions of
-        //the start time and the end time
+        if(starttrimmin.equals("00")){
+            startmin = 0;
+        }
+        if(starttrimmin.equals("10")){
+            startmin = 10/60;
+        }
+        if(starttrimmin.equals("15")){
+            startmin = 15/60;
+        }
+        if(starttrimmin.equals("30")){
+            startmin = 30/60;
+        }
+        if(starttrimmin.equals("45")){
+            startmin = 45/60;
+        }
+        if(starttrimmin.equals("50")){
+            startmin = 50/60;
+        }
 
-
-        //String startTime = tokens[0];
-        //String endTime   = tokens[1];
-
-        //String[] valuesS = startTime.split(":",2);
-        //String[] valuesE = endTime.split(":",2);
-
-        //float starthour = Float.parseFloat(valuesS[0]);
-        //float endhour   = Float.parseFloat(valuesE[0]);
-
-        //String startmin  = valuesS[1].substring(1,2);
-        //String startampm = valuesS[1].substring(3,4);
-
-        //String endmin  = valuesE[1].substring(1,2);
-        //String endampm = valuesE[1].substring(3,4);
-
-        //float Smin = Float.parseFloat(startmin);
-        //float Emin = Float.parseFloat(endmin);
-
-        //if (startampm.equals("pm")){
-        //    starthour = starthour*2;
-        //}
-        //if (endampm.equals("pm")){
-        //    endhour = endhour*2;
-        //}
-
-        //Float startingtime = starthour + Smin;
-        //Float endingtime = endhour + Emin;
-
-        //String[][] arr = new String[numl]
+        float finalstarttime = starthour + startmin;
+        this.StartTime = finalstarttime;
 
 
 
+        // begin same process for end time
+        //If ampm = 0 then its AM
+        //If ampm = 1 then its PM
+        int ampmF = 0;
 
-        // gonna use military time and keep track as a float
-       // this.StartTime = 0;
-        // this.EndTime   = 0;
+        String endTime = TimeOfDay.substring(TimeOfDay.lastIndexOf(" ")+1);   // string endtime = "10"00pm"
 
-        //not going to be used
+        String end = "";
+        if(endTime.contains("a")){                  // gets value before am "10:00"
+            ampmF = 0;                              // set int ampmF = 0 for "am"
+            String[] endmin = endTime.split("a");
+            end = endmin[0];
+        }
+        if(endTime.contains("p")){                  // gets value before pm "10:00"
+            ampmF = 1;                              // set int ampmF = 1 for "pm"
+            String[] endmin = endTime.split("p");
+            end = endmin[0];
+        }
+        String[] endhour3 = end.split(":");
+        String endhour2 = endhour3[0];              // endhour2 = string of hour "10"
+
+        String endmin1 = end.substring(end.lastIndexOf(":")+1);    // endmin = string of min "00"
+
+        String endtrimhr = endhour2.trim();
+        String endtrimmin = endmin1.trim();
+
+        float endhour=0;
+        float endmin=0;
+
+        if(ampmF == 0){
+            if(endtrimhr.equals("1")){
+                endhour = 1;
+            }
+            if(endtrimhr.equals("2")){
+                endhour = 2;
+            }
+            if(endtrimhr.equals("3")){
+                endhour = 3;
+            }
+            if(endtrimhr.equals("4")){
+                endhour = 4;
+            }
+            if(endtrimhr.equals("5")){
+                endhour = 5;
+            }
+            if(endtrimhr.equals("6")){
+                endhour = 6;
+            }
+            if(endtrimhr.equals("7")){
+                endhour = 7;
+            }
+            if(endtrimhr.equals("8")){
+                endhour = 8;
+            }
+            if(endtrimhr.equals("9")){
+                endhour = 9;
+            }
+            if(endtrimhr.equals("10")){
+                endhour = 10;
+            }
+            if(endtrimhr.equals("11")){
+                endhour = 11;
+            }
+            if(endtrimhr.equals("12")){
+                endhour = 0;
+            }
+        }
+
+        if(ampmF == 1){
+            if(endtrimhr.equals("12")){
+                endhour = 12;
+            }
+            if(endtrimhr.equals("1")){
+                endhour = 13;
+            }
+            if(endtrimhr.equals("2")){
+                endhour= 14;
+            }
+            if(endtrimhr.equals("3")){
+                endhour = 15;
+            }
+            if(endtrimhr.equals("4")){
+                endhour = 16;
+            }
+            if(endtrimhr.equals("5")){
+                endhour = 17;
+            }
+            if(endtrimhr.equals("6")){
+                endhour = 18;
+            }
+            if(endtrimhr.equals("7")){
+                endhour = 19;
+            }
+            if(endtrimhr.equals("8")){
+                endhour = 20;
+            }
+            if(endtrimhr.equals("9")){
+                endhour = 21;
+            }
+            if(endtrimhr.equals("10")){
+                endhour = 22;
+            }
+            if(endtrimhr.equals("11")){
+                endhour = 23;
+            }
+        }
+
+        if(endtrimmin.equals("00")){
+            endmin = 0;
+        }
+        if(endtrimmin.equals("10")){
+            endmin = 10/60;
+        }
+        if(endtrimmin.equals("15")){
+            endmin = 15/60;
+        }
+        if(endtrimmin.equals("30")){
+            endmin = 30/60;
+        }
+        if(endtrimmin.equals("45")){
+            endmin = 45/60;
+        }
+        if(endtrimmin.equals("50")){
+            endmin = 50/60;
+        }
+
+        float finalendtime = starthour + startmin;
+        this.StartTime = finalendtime;
+
+
+        this.EndTime = finalendtime;
+
+
         this.NumEnrolled = NumEnrolled;
     }
 
@@ -192,6 +305,8 @@ public class LectureOrSection {
     public float getStartTime(){return StartTime;}
     public float getEndTime(){return EndTime;}
     public String getNumEnroled(){return NumEnrolled;}
+
+
 
 
 

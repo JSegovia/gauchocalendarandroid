@@ -81,19 +81,8 @@ public class AddToFireBase extends AppCompatActivity {
 
     public void makeit(View view) {
 
-/*
-        String attempt = "";
-        for (int i = 0; i < stringListTest.size(); i++){
-            attempt += stringListTest.get(i);
-            attempt += " ";
-        }
-*/
-        //String attempt = stringListTest.get(5);
-        // String est = lectures.get(5);
-        //test = stringListTest.get(0);
-       // String attempt = "Loaded Strings arraylist ";
+
         String attempt = Float.toString(coursesFall2016.get(0).getStartTime());
-        attempt += stringListTest.get(0);
         TextView tester = (TextView) findViewById(R.id.testfirebase);
         tester.setText(attempt);
 
@@ -115,10 +104,10 @@ public class AddToFireBase extends AppCompatActivity {
         }
 
 
-        TextView tester2 = (TextView)findViewById(R.id.testfirebase);
-        Float start = coursesFall2016.get(0).getStartTime();
-        String time = Float.toString(start);
-        tester2.setText(time);
+        //TextView tester2 = (TextView)findViewById(R.id.testfirebase);
+        //Float start = coursesFall2016.get(0).getStartTime();
+        //String time = Float.toString(start);
+        //tester2.setText(time);
 /*
         String pray;
         TextView tester2 = (TextView)findViewById(R.id.testfirebase);

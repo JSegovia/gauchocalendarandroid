@@ -73,6 +73,7 @@ private Firebase firebaseRef;
             return;
         }
 
+
         Intent intent = new Intent(this, Information.class);
         startActivity(intent);
 
