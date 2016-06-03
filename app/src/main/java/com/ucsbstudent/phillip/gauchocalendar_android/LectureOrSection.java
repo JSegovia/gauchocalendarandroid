@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
  */
 public class LectureOrSection {
 
+
     public String NameofLS;
     public String DaysOfWeek;
     public String TimeOfDay;
