@@ -63,6 +63,9 @@ public class InputEvents extends AppCompatActivity {
     classAdapter adapter123;
     StringBuffer sb=null;
 
+    String Department;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,11 +81,11 @@ public class InputEvents extends AppCompatActivity {
 
         String filePath = context.getFilesDir().getAbsolutePath();
 
-        File fileName = new File(filePath, "courses");
+        File fileName = new File(filePath, "fall2016");
         try {
 
             BufferedReader bufferedReader =
-                    new BufferedReader(new InputStreamReader(getAssets().open("courses.txt")));
+                    new BufferedReader(new InputStreamReader(getAssets().open("fall2016.txt")));
 
             // This puts all the strings into an array of strings
             String temp;
@@ -144,13 +147,20 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                String temp = parent.getSelectedItem().toString();
+                Department = temp;
+                TextView test = (TextView)findViewById(R.id.isitloaded);
+                test.setText(Department);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
+
+
         });
+
 
 
         //Spinner for quarter
@@ -161,7 +171,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -177,7 +187,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -193,7 +203,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -209,7 +219,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -225,7 +235,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -242,7 +252,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -258,7 +268,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -274,7 +284,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+               //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -287,7 +297,19 @@ public class InputEvents extends AppCompatActivity {
 
     }
 
+/*
+    public void dosomething(View v){
+        Spinner depart = (Spinner)findViewById(R.id.spinnersubject);
+        Department = spinner.getSelectedItem().toString();
+    }
+*/
+
     public void showclasses(View v){
+
+        if((coursesFall2016.get(0).getNamofLS()).equals(Department)) {
+            TextView test = (TextView) findViewById(R.id.isitloaded);
+            test.setText("works");
+        }
 
         Button fail = (Button)findViewById(R.id.buttonsearch);
         if(coursesFall2016.size() == 0) {
@@ -328,14 +350,15 @@ public class InputEvents extends AppCompatActivity {
         if (coursesFall2016.size() ==0) {
 
             for (int i = 0; i < (stringListF16.size() - 1); i += 5) {
-                String coursename = stringListF16.get(i);
-                String weekdays = stringListF16.get(i + 1);
-                String time = stringListF16.get(i + 2);
-                String location = stringListF16.get(i + 3);
-                String enrolled = stringListF16.get(i + 4);
+                String lectsect = stringListF16.get(i);
+                String coursename = stringListF16.get(i+1);
+                String weekdays = stringListF16.get(i + 2);
+                String time = stringListF16.get(i + 3);
+                String location = stringListF16.get(i + 4);
 
-                LectureOrSection temporary = new LectureOrSection(coursename, weekdays,
-                        time, location, enrolled);
+
+                LectureOrSection temporary = new LectureOrSection(lectsect,coursename, weekdays,
+                        time, location);
 
                 coursesFall2016.add(temporary);
             }
@@ -510,8 +533,10 @@ public class InputEvents extends AppCompatActivity {
     public ArrayList<LectureOrSection> getClasses() {
         ArrayList<LectureOrSection> courses = new ArrayList<>();
 
-        for(int i=0; i < 6; i++){
-            courses.add(coursesFall2016.get(i));
+        for(int i=0; i < 100 ; i++){
+            if(coursesFall2016.get(i).getNamofLS().equals(Department)) {
+                courses.add(coursesFall2016.get(i));
+            }
         }
         return courses;
 

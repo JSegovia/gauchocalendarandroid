@@ -165,10 +165,31 @@
                 android:background="#aaa" />
 
             <View
+                android:id="@+id/twoam"
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="80dp"
                 android:background="#aaa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/test"
+                android:text="csssss"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/twoam"
+                android:background="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/test1"
+                android:text="csssss"
+                android:layout_marginLeft="97dp"
+                android:layout_below="@+id/twoam"
+                android:background="@color/com_facebook_blue"
+                />
 
             <View
                 android:layout_width="fill_parent"
@@ -704,6 +725,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="0.2" >
+
 
                             <View
                                 android:layout_width="1dp"

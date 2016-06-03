@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 public class LectureOrSection {
 
 
+    public String LectorSect;
     public String NameofLS;
     public String DaysOfWeek;
     public String TimeOfDay;
@@ -16,10 +17,10 @@ public class LectureOrSection {
     public float EndTime;
 
     // never going to be printed since no real time update
-    public String NumEnrolled;
 
-    public LectureOrSection(String Name, String DaysOfWeek, String TimeOfDay, String ClassRoom,
-                            String NumEnrolled){
+
+    public LectureOrSection(String LectoSect, String Name, String DaysOfWeek, String TimeOfDay, String ClassRoom){
+        this.LectorSect = LectoSect;
         this.NameofLS = Name;
         this.DaysOfWeek = DaysOfWeek;
 
@@ -286,30 +287,23 @@ public class LectureOrSection {
 
         this.EndTime = finalendtime;
 
-
-        this.NumEnrolled = NumEnrolled;
     }
 
+    public void setLectorSect(String ls){ this.LectorSect = ls;}
     public void setNamofLS(String name){ this.NameofLS = name;}
     public void setDaysOfWeek(String weekday){this.DaysOfWeek = weekday;}
     public void setTimeofDay(String time){this.TimeOfDay = time;}
     public void setClassRoom(String classroom){this.ClassRoom = classroom;}
     public void setStartTime(int start){this.StartTime = start;}
     public void setEndTime(int end){this.EndTime = end;}
-    public void setNumEnroled(String enroll){this.NumEnrolled = enroll;}
 
+    public String getLectorSect(){return LectorSect;}
     public String  getNamofLS(){return NameofLS; }
     public String getDaysOfWeek(){return DaysOfWeek;}
     public String getTimeofDay(){return TimeOfDay;}
     public String getClassRoom(){return ClassRoom;}
     public float getStartTime(){return StartTime;}
     public float getEndTime(){return EndTime;}
-    public String getNumEnroled(){return NumEnrolled;}
-
-
-
-
-
 
 
 }

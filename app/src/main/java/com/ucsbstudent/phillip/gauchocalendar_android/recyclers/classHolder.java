@@ -12,7 +12,7 @@ import com.ucsbstudent.phillip.gauchocalendar_android.R;
  */
 public class classHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-    TextView name,days,time,location;
+    TextView lectsect, name,days,time,location;
     CheckBox chk;
 
     com.ucsbstudent.phillip.gauchocalendar_android.recyclers.classClickListener classClickListener;
@@ -20,6 +20,7 @@ public class classHolder extends RecyclerView.ViewHolder implements View.OnClick
     public classHolder(View itemView){
         super(itemView);
 
+        lectsect = (TextView)itemView.findViewById(R.id.LectorSect);
         name = (TextView)itemView.findViewById(R.id.NameCourse);
         days = (TextView)itemView.findViewById(R.id.weekdays);
         time = (TextView)itemView.findViewById(R.id.timeDay);

@@ -36,6 +36,7 @@ public class classAdapter extends RecyclerView.Adapter<classHolder> {
     //DATA IS BOUND TO VIEWS
     @Override
     public void onBindViewHolder(classHolder holder, int postion){
+        holder.lectsect.setText(classes.get(postion).getLectorSect());
         holder.name.setText(classes.get(postion).getNamofLS());
         holder.days.setText(classes.get(postion).getDaysOfWeek());
         holder.time.setText(classes.get(postion).getTimeofDay());
