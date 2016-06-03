@@ -54,30 +54,22 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
         RelativeLayout Sat = (RelativeLayout) findViewById(R.id.relativeLayoutSatDay);
         */
 
-        RelativeLayout heightsetter = (RelativeLayout) findViewById(R.id.relativeLayout242);
-
-        RelativeLayout.LayoutParams testparam = new RelativeLayout.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        RelativeLayout useit = (RelativeLayout) findViewById(R.id.relativeLayout242);
 
 
+        int bw = width/6;
+        int bh = width/3;
+        RelativeLayout.LayoutParams testparam = new RelativeLayout.LayoutParams(bw, bh);
 
 
-
-        int tr = width/8;
-        int half = tr*2;
-        int fi = tr/8;
-
-        testparam.leftMargin = half;
+        testparam.leftMargin = bw;
         testparam.addRule(RelativeLayout.BELOW, R.id.line1am);
-
 
         Button myButton = new Button(this);
         myButton.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
-        myButton.setWidth(fi);
-        myButton.setHeight(fi);
 
 
-        heightsetter.addView(myButton, testparam);
+        useit.addView(myButton, testparam);
 
         for (int i = 0; i < customarray.size(); i++) {
 
@@ -106,7 +98,7 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             paramss.leftMargin = weeknumber;
             paramss.addRule(RelativeLayout.BELOW, R.id.line1am);
 
-            heightsetter.addView(btn, paramss);
+            useit.addView(btn, paramss);
 
 
             /*
