@@ -20,6 +20,7 @@ import android.support.v4.app.FragmentActivity;
 
 /**
  * Created by Phillip on 5/5/2016.
+ * Edited by Chritian on 6/2/2016.
  */
 public class  StudentLogin extends AppCompatActivity {
 private static final String FIREBASE_URL="https://sizzling-inferno-7789.firebaseIO.com";
