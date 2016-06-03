@@ -290,6 +290,13 @@
             android:layout_below="@+id/btnAddCustom"
             android:layout_alignParentEnd="true" />
 
+        <!-- CardView -->
+        <include layout="@layout/content"
+            android:id="@+id/cardviewcustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gocalendar"/>
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

@@ -67,7 +67,8 @@
         <activity
             android:name=".CalendarView"
             android:parentActivityName=".recyclers.InputEvents"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".recyclers.InputEvents" />

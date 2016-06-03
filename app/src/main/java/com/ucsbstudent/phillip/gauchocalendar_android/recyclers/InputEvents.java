@@ -32,6 +32,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class InputEvents extends AppCompatActivity {
@@ -42,6 +43,10 @@ public class InputEvents extends AppCompatActivity {
 
 
     public ArrayList<CustomEventClass> customE = new ArrayList<>();
+
+    public static ArrayList< ArrayList<LectureOrSection> > departments =
+            new ArrayList<ArrayList<LectureOrSection>>();
+
 
     ArrayList<LectureOrSection> coursesFall2016 = new ArrayList<LectureOrSection>();
     ArrayList<String> stringListF16 = new ArrayList<String>();
@@ -62,6 +67,9 @@ public class InputEvents extends AppCompatActivity {
 
     classAdapter adapter123;
     StringBuffer sb=null;
+
+    customAdapter adapter321;
+    StringBuffer bsc=null;
 
     String Department;
 
@@ -306,11 +314,6 @@ public class InputEvents extends AppCompatActivity {
 
     public void showclasses(View v){
 
-        if((coursesFall2016.get(0).getNamofLS()).equals(Department)) {
-            TextView test = (TextView) findViewById(R.id.isitloaded);
-            test.setText("works");
-        }
-
         Button fail = (Button)findViewById(R.id.buttonsearch);
         if(coursesFall2016.size() == 0) {
             fail.setError("Please load classes");
@@ -345,6 +348,37 @@ public class InputEvents extends AppCompatActivity {
 
     }
 
+
+    public ArrayList<LectureOrSection> getClasses() {
+        ArrayList<LectureOrSection> courses = new ArrayList<>();
+
+        Spinner dept = (Spinner)findViewById(R.id.spinnersubject);
+        //int index = dept.getSelectedItemPosition();
+
+        String d = dept.getSelectedItem().toString();
+
+        String currentclass= d;
+        //coursesFall2016.get(0).getNamofLS();
+
+        int i = 0;
+        while(!(coursesFall2016.get(i).getNamofLS().contains(currentclass))) {
+            i++;
+
+        }
+
+
+        int index = i;
+        while(coursesFall2016.get(index).getNamofLS().contains(currentclass)){
+            courses.add(coursesFall2016.get(index));
+            index++;
+        }
+
+        return courses;
+
+
+    }
+
+
     public void loadinArray(View v){
 
         if (coursesFall2016.size() ==0) {
@@ -363,11 +397,15 @@ public class InputEvents extends AppCompatActivity {
                 coursesFall2016.add(temporary);
             }
 
+
+
             TextView test = (TextView) findViewById(R.id.isitloaded);
             test.setText("Done:" + coursesFall2016.get(5).NameofLS);
 
         }
         else {
+
+
             AlertDialog alertDialog = new AlertDialog.Builder(this).create(); //Read Update
             alertDialog.setTitle("Already Loaded");
             alertDialog.setMessage("You don't need to load classes again");
@@ -377,12 +415,44 @@ public class InputEvents extends AppCompatActivity {
     }
 
 
-
     public void goCalendar(View view) {
 
         Intent intent = new Intent(this, CalendarView.class);
         Button butn = (Button) findViewById(R.id.gocalendar);
+/*
+        ArrayList<Float> starttime = new ArrayList<>();
+        ArrayList<Float> endtime = new ArrayList<>();
 
+        for(int i=0; i < customE.size(); i++) {
+            float smin = (customE.get(i).getSmin())/60;
+            float emin = (customE.get(i).getEmin())/60;
+
+            float shour = customE.get(i).getShour();
+            float ehour = customE.get(i).getEhour();
+
+            float starting = shour + smin;
+            float ending   = ehour + emin;
+
+            if (starttime.size() == 0) {
+                starttime.add(starting);
+                endtime.add(ending);
+            } else{
+                int previous = starttime.size();
+                for (int j=0; j < previous; j++){
+                    if (starttime.get(j) < starting && starting < endtime.get(j) &&
+                        starttime.get(j) < ending && ending < endtime.get(j)){
+                        //throw exception
+
+                        butn.setError("events conflict");
+
+                    } else{
+                        starttime.add(starting);
+                        starttime.add(ending);
+                    }
+                }
+            }
+        }
+*/
         if (customE.isEmpty()){
 
                 butn.setError("Conflicts in your schedule");
@@ -421,6 +491,8 @@ public class InputEvents extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
+
                 String nameEvent = EditEventName.getText().toString();
                 String nameLocation = EditLocation.getText().toString();
 
@@ -448,8 +520,6 @@ public class InputEvents extends AppCompatActivity {
                     return;
                 }
 
-                inflatedEditRow(nameEvent, nameLocation, weekdaytext, hour, min, ampm, hourF, minF, ampmF);
-                v.setVisibility(View.VISIBLE);
 
                 int weekdayInt = spinner.getSelectedItemPosition();
                 int hourInt = spinner1.getSelectedItemPosition();
@@ -459,16 +529,68 @@ public class InputEvents extends AppCompatActivity {
                 int minIntF = spinner6.getSelectedItemPosition();
                 int ampmIntF = spinner7.getSelectedItemPosition();
 
-
                 CustomEventClass temp = new CustomEventClass(nameEvent, nameLocation,
                         weekdaytext, weekdayInt, hourInt, minInt, ampm, hourIntF, minIntF, ampmF);
-                //firebaseRef.child("TestCustomEvent").push().setValue(temp);
+
                 customE.add(temp);
+
+                /*
+                RecyclerView recyclerView = (RecyclerView)findViewById(R.id.classRecycler2);
+                recyclerView.setHasFixedSize(true);
+
+                LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+                recyclerView.setLayoutManager(layoutManager);
+                recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+                adapter321 = new customAdapter(this, getPersonalEvents());
+                recyclerView.setAdapter(adapter321);
+*/
+/*
+                adapter321 = new customAdapter(this, getPersonalEvents());
+
+                bsc = new StringBuffer();
+                for (CustomEventClass p : adapter321.personalevents){
+                    sb.append(p.getEventTitle());
+                    sb.append("\n");
+                }
+
+                if(adapter321.personalevents.size() > 0){
+                    Toast.makeText(InputEvents.this,bsc.toString(),Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(InputEvents.this,"PLease check classes",Toast.LENGTH_SHORT).show();
+                }
+
+                //RECYCLER
+                RecyclerView rv = (RecyclerView)findViewById(R.id.classRecycler2);
+                rv.setLayoutManager(new LinearLayoutManager(this));
+                rv.setItemAnimator(new DefaultItemAnimator());
+
+                //SET ADAPTER
+                rv.setAdapter(adapter321);
+*/
+
+
+                inflatedEditRow(nameEvent, nameLocation, weekdaytext, hour, min, ampm, hourF, minF, ampmF);
+                v.setVisibility(View.VISIBLE);
+
+
+                //firebaseRef.child("TestCustomEvent").push().setValue(temp);
+
                 //firebaseRef.child("tester").push().setValue(customEvents.get(0));
 
             }
         };
     }
+
+    public ArrayList<CustomEventClass> getPersonalEvents(){
+        ArrayList<CustomEventClass> temp = new ArrayList<>();
+
+        temp = customE;
+
+        return temp;
+    }
+
+
 
     // onClick handler for the "X" button of each row
     public void onDeleteClicked(View v) {
@@ -528,20 +650,6 @@ public class InputEvents extends AppCompatActivity {
 
     }
 
-
-
-    public ArrayList<LectureOrSection> getClasses() {
-        ArrayList<LectureOrSection> courses = new ArrayList<>();
-
-        for(int i=0; i < 100 ; i++){
-            if(coursesFall2016.get(i).getNamofLS().equals(Department)) {
-                courses.add(coursesFall2016.get(i));
-            }
-        }
-        return courses;
-
-
-    }
 
 
 }
