@@ -82,8 +82,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/isitloaded"
             android:layout_toEndOf="@+id/loadClasses"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            android:layout_toRightOf="@+id/loadClasses" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

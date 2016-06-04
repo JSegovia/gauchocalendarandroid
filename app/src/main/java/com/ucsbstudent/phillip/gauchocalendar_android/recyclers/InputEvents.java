@@ -401,7 +401,7 @@ public class InputEvents extends AppCompatActivity {
 
 
             TextView test = (TextView) findViewById(R.id.isitloaded);
-            test.setText("Done:" + coursesFall2016.get(5).NameofLS);
+            test.setText("Done");
 
         }
         else {
@@ -461,6 +461,7 @@ public class InputEvents extends AppCompatActivity {
 
         }
         intent.putParcelableArrayListExtra("custom", customE);
+        intent.putParcelableArrayListExtra("classes",transfer);
         //gives array of customEvent objects
         startActivity(intent);
 

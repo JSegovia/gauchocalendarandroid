@@ -1,12 +1,14 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
 import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by Phillip on 6/2/2016.
  */
-public class LectureOrSection {
+public class LectureOrSection implements Parcelable {
 
 
     public String LectorSect;
@@ -289,6 +291,44 @@ public class LectureOrSection {
         this.EndTime = finalendtime;
 
     }
+
+    protected LectureOrSection(Parcel in) {
+        LectorSect = in.readString();
+        NameofLS = in.readString();
+        DaysOfWeek = in.readString();
+        TimeOfDay = in.readString();
+        ClassRoom = in.readString();
+        StartTime = in.readFloat();
+        EndTime = in.readFloat();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(LectorSect);
+        dest.writeString(NameofLS);
+        dest.writeString(DaysOfWeek);
+        dest.writeString(TimeOfDay);
+        dest.writeString(ClassRoom);
+        dest.writeFloat(StartTime);
+        dest.writeFloat(EndTime);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<LectureOrSection> CREATOR = new Creator<LectureOrSection>() {
+        @Override
+        public LectureOrSection createFromParcel(Parcel in) {
+            return new LectureOrSection(in);
+        }
+
+        @Override
+        public LectureOrSection[] newArray(int size) {
+            return new LectureOrSection[size];
+        }
+    };
 
     public void setLectorSect(String ls){ this.LectorSect = ls;}
     public void setNamofLS(String name){ this.NameofLS = name;}

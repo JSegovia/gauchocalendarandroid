@@ -104,8 +104,6 @@
         <item>ESS</item>
         <item>ES</item>
         <item>FEMST</item>
-        <item>FAMST</item>
-        <item>FLMST</item>
         <item>FR</item>
         <item>GEN S</item>
         <item>GEN SCS</item>
@@ -113,6 +111,7 @@
         <item>GER</item>
         <item>GPS</item>
         <item>GLOBL</item>
+        <item>FAMST</item>
         <item>GREEK</item>
         <item>HEB</item>
         <item>HIST</item>
@@ -154,9 +153,6 @@
         <item>STAT</item>
         <item>TMP</item>
         <item>THTR</item>
-        <item>WRIT</item>
-        <item>WL</item>
-        <item>WL CS</item>
     </string-array>
 
     <string-array name="Quarter">
