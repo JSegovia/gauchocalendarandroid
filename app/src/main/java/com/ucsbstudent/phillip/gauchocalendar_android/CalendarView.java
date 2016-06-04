@@ -55,6 +55,7 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             String name = customarray.get(i).getEventTitle();
             Button btn = new Button(this);
 
+            btn.setText(name);
             btn.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
 
             int weeknumber = customarray.get(i).getWeekdayInt();
@@ -63,7 +64,7 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             float hournumber = customarray.get(i).getStartime();
             int start = (int) hournumber;
             int theShiftL = weeknumber * bw;
-            int theShiftT = (hour * (start)) + (start*2) + hour;
+            int theShiftT = (hour * (start)) + (start * 2) + hour;
 
             if (start == 11) {
                 theShiftT = 0;
@@ -72,15 +73,29 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
                 theShiftT = 12 * hour + 24;
             }
 
-            double minS = (double) customarray.get(i).getSmin();
-            int pixel =(int) (height / (minS*2));
-
+            int pixel;
+            int minS = customarray.get(i).getSmin();
+            if(minS == 0){
+                pixel = 0;
+            }
+            else if (minS != 0 && minS < 15) {
+                pixel = (((height/30)/2)/2);
+            }else if (15 <= minS && minS < 30){
+                pixel = ((height/30)/2);
+            }else if(30 <= minS && minS <45){
+                pixel = (height/30);
+            }else if (45 <= minS && minS <55){
+                pixel = ((3*(height/30))/4);
+            }else{
+                pixel = hour;
+            }
             theShiftT = theShiftT + pixel;
 
-            //Finding endtime location.
-            float hournumberF = customarray.get(i).getEndtime();
-            int end = (int) hournumber;
-            int theShiftB = (hour * (start)) + (start*2) + hour;
+
+            //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6
+            float hourend = customarray.get(i).getEndtime();
+            int end = (int) hourend;
+            int theShiftB = (hour * (end)) + (end * 2) + hour;
 
             if (end == 11) {
                 theShiftB = 0;
@@ -89,14 +104,29 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
                 theShiftB = 12 * hour + 24;
             }
 
-            double minE = (double) customarray.get(i).getSmin();
-            int pixelE =(int) (height / (minS*2));
+            int pixelB;
+            int minE = customarray.get(i).getEmin();
+            if(minE ==0){
+                pixelB =0;
+            }
+            else if (minE != 0 && minE <= 15) {
+                pixelB = (((height/30)/2)/2);
+            }else if (15 < minE && minE < 30){
+                pixelB = ((height/30)/2);
+            }else if(30 <= minE && minE <=45){
+                pixelB = (height/30);
+            }else if (45 < minE && minE <=55){
+                pixelB = ((3*(height/30))/4);
+            }else{
+                pixelB = hour;
+            }
 
-            theShiftT = theShiftT + pixelE;
+            theShiftB = theShiftB + pixelB - hour;
+
+            int please = theShiftB - theShiftL;
 
 
-
-            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, hour);
+            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, please);
             paramss.leftMargin = theShiftL;
             paramss.topMargin = theShiftT;
 

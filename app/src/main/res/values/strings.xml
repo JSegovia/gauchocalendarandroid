@@ -6,6 +6,7 @@
     <string name="time">10am - 12pm</string>
     <string name="location">PHELPS</string>
     <string name="loadItall">Load Courses</string>
+    <string name="addtoclassslist">Add to Class list</string>
 
 
     <string name="button_delete_row_description">Delete</string>

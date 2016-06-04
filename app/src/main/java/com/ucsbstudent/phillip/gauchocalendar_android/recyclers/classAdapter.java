@@ -19,7 +19,7 @@ public class classAdapter extends RecyclerView.Adapter<classHolder> {
 
     Context c;
     ArrayList<LectureOrSection> classes;
-    ArrayList<LectureOrSection> checkedclasses = new ArrayList<>();
+    public static ArrayList<LectureOrSection> checkedclasses = new ArrayList<>();
 
     public classAdapter(Context c, ArrayList<LectureOrSection> classes){
         this.c = c;

@@ -319,6 +319,8 @@ public class InputEvents extends AppCompatActivity {
             return;
         }
 
+        Button find = (Button)findViewById(R.id.addtoclasslist);
+        find.setVisibility(View.VISIBLE);
         TextView clear = (TextView)findViewById(R.id.isitloaded);
         clear.setText("");
 
@@ -649,6 +651,21 @@ public class InputEvents extends AppCompatActivity {
 
     }
 
+    ArrayList<LectureOrSection> transfer = new ArrayList<LectureOrSection>();
+
+    public void insertclasses(View viewit){
+        for (int i=0; i < classAdapter.checkedclasses.size(); i++){
+            transfer.add(classAdapter.checkedclasses.get(i));
+
+            String name = classAdapter.checkedclasses.get(i).getNamofLS();
+            String classrom = classAdapter.checkedclasses.get(i).getClassRoom();
+            String weekdays = classAdapter.checkedclasses.get(i).getDaysOfWeek();
+            String time = classAdapter.checkedclasses.get(i).getTimeofDay();
+            String empty = "";
+            inflatedEditRow(name,classrom,weekdays,time,empty,empty,empty,empty,empty);
+            viewit.setVisibility(View.VISIBLE);
+        }
+    }
 
 
 }

@@ -121,6 +121,17 @@
 
 
 <!--Start Custom Event-->
+
+        <!-- this button puts checked classes into an arraylist -->
+        <Button
+            android:id="@+id/addtoclasslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addtoclassslist"
+            android:layout_below="@+id/cardview"
+            android:visibility="gone"
+            android:onClick="insertclasses" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
