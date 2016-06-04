@@ -71,7 +71,7 @@ public class InputEvents extends AppCompatActivity {
     StringBuffer bsc=null;
 
     String Department;
-
+    String user_name = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +85,9 @@ public class InputEvents extends AppCompatActivity {
 
         // Make ArrayList stringListF16
         Context context = getApplicationContext();
+        Intent intent = getIntent();
+        String user = intent.getExtras().getString("username");
+        user_name = user;
 
         String filePath = context.getFilesDir().getAbsolutePath();
 

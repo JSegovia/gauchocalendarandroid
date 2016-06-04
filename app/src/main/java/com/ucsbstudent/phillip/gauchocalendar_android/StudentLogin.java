@@ -50,6 +50,7 @@ public class  StudentLogin extends AppCompatActivity {
                         firebaseRef.child("Users").child(user_name).child("courseCalendar").child("0").child("ClassRoom").setValue("Broida");
                         Toast.makeText(StudentLogin.this, "Login Successful", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(v.getContext(), Information.class);
+                        intent.putExtra("username",user_name);
                         startActivity(intent);
 
                     }
