@@ -1,8 +1,6 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
 import com.firebase.client.Firebase;
-import com.firebase.client.AuthData;
-import com.firebase.client.FirebaseError;
 
 import java.util.ArrayList;
 
@@ -12,22 +10,22 @@ import java.util.ArrayList;
 
 public class StudentProfile {
     private static final String FIREBASE_URL = "https://sizzling-inferno-7789.firebaseIO.com";
-    private Firebase firebaseRef;
+    private Firebase firebaseRef = new Firebase(FIREBASE_URL);
     public String username;
     public String password;
     public String email;
 
-    public ArrayList<CustomEventClass> calendarcustom1 = new ArrayList<>();
-    public ArrayList<LectureOrSection> calendarclass1 = new ArrayList<>();
-
-    public ArrayList<CustomEventClass> calendarcustom2 = new ArrayList<>();
-    public ArrayList<LectureOrSection> calendarclass2 = new ArrayList<>();
+    public ArrayList<CustomEventClass> customCalendar = new ArrayList<>();
+    public ArrayList<LectureOrSection> courseCalendar= new ArrayList<>();
 
 
-    public StudentProfile(String username, String password, String email,){
+    public StudentProfile(String username, String password, String email, ArrayList<CustomEventClass> customCalendar,
+                          ArrayList<LectureOrSection> courseCalendar) {
         this.username = username;
         this.password = password;
         this.email = email;
+        this.customCalendar = customCalendar;
+        this.courseCalendar = courseCalendar;
     }
 
     public String getUsername() {
@@ -40,12 +38,12 @@ public class StudentProfile {
         return email;
     }
 
-    public ArrayList<CustomEventClass> getCalendarcustom1() {
-        ;
+    public ArrayList<CustomEventClass> getCustomCalendar() {
+        return customCalendar;
     }
 
-    public ArrayList<LectureOrSection> getCalendarclass1() {
-        return calendarclass1;
+    public ArrayList<LectureOrSection> getCourseCalendar() {
+        return courseCalendar;
     }
 
 

@@ -35,13 +35,11 @@ public class  StudentLogin extends AppCompatActivity {
             public void onClick(final View v) {
                 EditText username = (EditText) findViewById(R.id.TextFieldUSERNAME);
                 EditText password = (EditText) findViewById(R.id.TextFieldPASSWORD);
-                String user_name = username.getText().toString();
-                String pass_word = password.getText().toString();
-                String email = user_name + "@umail.ucsb.edu";
-                final StudentProfile student = new StudentProfile(user_name, pass_word, email);
+                final String user_name = username.getText().toString();
+                final String pass_word = password.getText().toString();
+                final String email = user_name + "@umail.ucsb.edu";
 
-
-                firebaseRef.authWithPassword(student.email, student.password, new Firebase.AuthResultHandler() {
+                firebaseRef.authWithPassword(email, pass_word, new Firebase.AuthResultHandler() {
                     @Override
                     public void onAuthenticated(AuthData authData) {
                         Map<String, String> map = new HashMap<String, String>();
@@ -49,7 +47,7 @@ public class  StudentLogin extends AppCompatActivity {
                         if (authData.getProviderData().containsKey("email")) {
                             map.put("email", authData.getProviderData().get("email").toString());
                         }
-                        firebaseRef.child("Users").child(authData.getUid()).setValue(student);
+                        firebaseRef.child("Users").child(user_name).child("courseCalendar").child("0").child("ClassRoom").setValue("Broida");
                         Toast.makeText(StudentLogin.this, "Login Successful", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(v.getContext(), Information.class);
                         startActivity(intent);
@@ -82,16 +80,27 @@ public class  StudentLogin extends AppCompatActivity {
             public void onClick(final View v) {
                 EditText username = (EditText) findViewById(R.id.TextFieldUSERNAME);
                 EditText password = (EditText) findViewById(R.id.TextFieldPASSWORD);
-                String user_name = username.getText().toString();
-                String pass_word = password.getText().toString();
-                String email = user_name + "@umail.ucsb.edu";
-                final StudentProfile student = new StudentProfile(user_name, pass_word, email);
+                final String user_name = username.getText().toString();
+                final String pass_word = password.getText().toString();
+                final String email = user_name + "@umail.ucsb.edu";
+                int testInt = 0;
+                String testString = "test";
+                CustomEventClass testEvent = new CustomEventClass(testString, testString, testString, testInt, testInt, testInt, testString, testInt, testInt, testString);
+                LectureOrSection testLect = new LectureOrSection(testString, testString,testString, testString, testString);
+
+                final ArrayList<CustomEventClass> customCalendar = new ArrayList<CustomEventClass>() {};
+                final ArrayList<LectureOrSection> courseCalendar = new ArrayList<LectureOrSection>() {};
+                customCalendar.add(testEvent);
+                courseCalendar.add(testLect);
+
+                final StudentProfile student = new StudentProfile(user_name, pass_word, email, customCalendar, courseCalendar);
+
 
                 firebaseRef.createUser(student.email, student.password, new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override
                     public void onSuccess(Map<String, Object> result) {
+                        firebaseRef.child("Users").child(user_name).setValue(student);
                         Toast.makeText(StudentLogin.this, "Account Created!", Toast.LENGTH_LONG).show();
-                        Toast.makeText(StudentLogin.this, "UID: " + result.get("uid"), Toast.LENGTH_SHORT).show();
 
                     }
                     @Override
