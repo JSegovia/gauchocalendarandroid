@@ -21,6 +21,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
 import com.ucsbstudent.phillip.gauchocalendar_android.CalendarView;
 import com.ucsbstudent.phillip.gauchocalendar_android.CustomEventClass;
 import com.ucsbstudent.phillip.gauchocalendar_android.LectureOrSection;
@@ -35,8 +36,8 @@ import java.util.ArrayList;
 
 public class InputEvents extends AppCompatActivity {
 
-    //private static final String FIREBASE_URL = "https://sizzling-inferno-7789.firebaseIO.com";
-    //private Firebase firebaseRef;
+    private static final String FIREBASE_URL = "https://sizzling-inferno-7789.firebaseIO.com";
+    private Firebase firebaseRef;
     public int globali;
 
 

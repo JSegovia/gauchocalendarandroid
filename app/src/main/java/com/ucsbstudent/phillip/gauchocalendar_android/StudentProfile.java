@@ -1,7 +1,5 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
-import com.ucsbstudent.phillip.gauchocalendar_android.notinuse.Lecture;
-
 import java.util.ArrayList;
 
 /**
@@ -20,10 +18,13 @@ public class StudentProfile {
     public ArrayList<LectureOrSection> calendarclass2 = new ArrayList<>();
 
 
-    public StudentProfile(String username, String password, String email){
+    public StudentProfile(String username, String password, String email,
+                          ArrayList<CustomEventClass> calendarcustom1, ArrayList<LectureOrSection> calendarclass1){
         this.username = username;
         this.password = password;
         this.email = email;
+        this.calendarclass1 = calendarclass1;
+        this.calendarcustom1 = calendarcustom1;
     }
 
     public String getUsername() {
@@ -34,6 +35,14 @@ public class StudentProfile {
     }
     public  String getEmail(){
         return email;
+    }
+
+    public ArrayList<CustomEventClass> getCalendarcustom1() {
+        return calendarcustom1;
+    }
+
+    public ArrayList<LectureOrSection> getCalendarclass1() {
+        return calendarclass1;
     }
 
 

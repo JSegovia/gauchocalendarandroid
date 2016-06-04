@@ -96,7 +96,7 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
 
 
-            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, min15);
+            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, hour);
             paramss.leftMargin = theShiftL;
             paramss.topMargin = theShiftT;
 
