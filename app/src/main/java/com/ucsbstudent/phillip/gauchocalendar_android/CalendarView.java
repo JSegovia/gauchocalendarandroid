@@ -1,7 +1,9 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
@@ -11,6 +13,9 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.ucsbstudent.phillip.gauchocalendar_android.recyclers.InputEvents;
 
 import java.util.ArrayList;
@@ -19,6 +24,9 @@ import java.util.ArrayList;
 public class CalendarView extends AppCompatActivity implements View.OnClickListener {
 
     //private static final int MY_BUTTON = 9000;
+    ArrayList<CustomEventClass> customarraypass = new ArrayList<>();
+    ArrayList<LectureOrSection> classarraypass = new ArrayList<>();
+
 
 
     @Override
@@ -33,17 +41,20 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
         int width = displaymetrics.widthPixels;
 
 
-        ArrayList<CustomEventClass> customarray = getIntent().getParcelableArrayListExtra("custom");
+        final ArrayList<CustomEventClass> customarray = getIntent().getParcelableArrayListExtra("custom");
         ArrayList<LectureOrSection> classarray = getIntent().getParcelableArrayListExtra("classes");
         //To-DO get array from class selection
+
+        customarraypass = customarray;
+        classarraypass = classarray;
 
         RelativeLayout useit = (RelativeLayout) findViewById(R.id.relativeLayout242);
 
 
-        int bw = width/8;
-        int min30 = height/30;
-        int min15 = height/60;
-        int hour = height/15;
+        int bw = width / 8;
+        int min30 = height / 30;
+        int min15 = height / 60;
+        int hour = height / 15;
 
 
         for (int i = 0; i < customarray.size(); i++) {
@@ -51,8 +62,16 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             String name = customarray.get(i).getEventTitle();
             Button btn = new Button(this);
 
-            btn.setText(name);
+
+            String init = "";
+            if(name.length() > 2){
+                init = name.substring(0,1);
+            }else{
+                init = name;
+            }
+            btn.setText(init);
             btn.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+
 
             int weeknumber = customarray.get(i).getWeekdayInt();
             weeknumber++;
@@ -71,18 +90,17 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
             int pixel;
             int minS = customarray.get(i).getSmin();
-            if(minS == 0){
+            if (minS == 0) {
                 pixel = 0;
-            }
-            else if (minS != 0 && minS < 15) {
-                pixel = (((height/30)/2)/2);
-            }else if (15 <= minS && minS < 30){
-                pixel = ((height/30)/2);
-            }else if(30 <= minS && minS <45){
-                pixel = (height/30);
-            }else if (45 <= minS && minS <55){
-                pixel = ((3*(height/30))/4);
-            }else{
+            } else if (minS != 0 && minS < 15) {
+                pixel = (((height / 30) / 2) / 2);
+            } else if (15 <= minS && minS < 30) {
+                pixel = ((height / 30) / 2);
+            } else if (30 <= minS && minS < 45) {
+                pixel = (height / 30);
+            } else if (45 <= minS && minS < 55) {
+                pixel = ((3 * (height / 30)) / 4);
+            } else {
                 pixel = hour;
             }
             theShiftT = theShiftT + pixel;
@@ -102,22 +120,21 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
             int pixelB;
             int minE = customarray.get(i).getEmin();
-            if(minE ==0){
-                pixelB =0;
-            }
-            else if (minE != 0 && minE <= 15) {
-                pixelB = (((height/30)/2)/2);
-            }else if (15 < minE && minE < 30){
-                pixelB = ((height/30)/2);
-            }else if(30 <= minE && minE <=45){
-                pixelB = (height/30);
-            }else if (45 < minE && minE <=55){
-                pixelB = ((3*(height/30))/4);
-            }else{
+            if (minE == 0) {
+                pixelB = 0;
+            } else if (minE != 0 && minE <= 15) {
+                pixelB = (((height / 30) / 2) / 2);
+            } else if (15 < minE && minE < 30) {
+                pixelB = ((height / 30) / 2);
+            } else if (30 <= minE && minE <= 45) {
+                pixelB = (height / 30);
+            } else if (45 < minE && minE <= 55) {
+                pixelB = ((3 * (height / 30)) / 4);
+            } else {
                 pixelB = hour;
             }
 
-            theShiftB = theShiftB + pixelB ;
+            theShiftB = theShiftB + pixelB;
 
             //int please = theShiftB - theShiftL;
 
@@ -133,78 +150,83 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
         }
 
 
-
-
-        for(int j=0; j < classarray.size(); j++){
+        for (int j = 0; j < classarray.size(); j++) {
 
             String name = classarray.get(j).getNamofLS();
+            String init = "";
+            if(name.length() > 2){
+                init = name.substring(0,1);
+            }else{
+                init = name;
+            }
+
+
+            String name1 = classarray.get(j).getNamofLS();
             Button btn = new Button(this);
-            btn.setText(name);
+            btn.setText(init);
             btn.setBackgroundColor(getResources().getColor(R.color.red));
 
             String name2 = classarray.get(j).getNamofLS();
             Button btn2 = new Button(this);
-            btn2.setText(name);
+            btn2.setText(init);
             btn2.setBackgroundColor(getResources().getColor(R.color.colorAccent));
 
             String name3 = classarray.get(j).getNamofLS();
             Button btn3 = new Button(this);
-            btn3.setText(name);
+            btn3.setText(init);
             btn3.setBackgroundColor(getResources().getColor(R.color.strong_blue));
 
             String name4 = classarray.get(j).getNamofLS();
             Button btn4 = new Button(this);
-            btn4.setText(name);
+            btn4.setText(init);
             btn4.setBackgroundColor(getResources().getColor(R.color.gold));
 
             String name5 = classarray.get(j).getNamofLS();
             Button btn5 = new Button(this);
-            btn5.setText(name);
+            btn5.setText(init);
             btn5.setBackgroundColor(getResources().getColor(R.color.orange));
 
 
             String weekdays = classarray.get(j).getDaysOfWeek();
 
-            int theShiftL=0;
-            int theShiftL2=0;
-            int theShiftL3=0;
-            int theShiftL4=0;
-            int theShiftL5=0;
+            int theShiftL = 0;
+            int theShiftL2 = 0;
+            int theShiftL3 = 0;
+            int theShiftL4 = 0;
+            int theShiftL5 = 0;
 
 
-            int theShiftB=0;
-            int theShiftT=0;
+            int theShiftB = 0;
+            int theShiftT = 0;
 
-            int weeknumber1=0;
-            int weeknumber2=0;
-            int weeknumber3=0;
-            int weeknumber4=0;
-            int weeknumber5=0;
+            int weeknumber1 = 0;
+            int weeknumber2 = 0;
+            int weeknumber3 = 0;
+            int weeknumber4 = 0;
+            int weeknumber5 = 0;
 
-            if( weekdays.contains("M")){
+            if (weekdays.contains("M")) {
                 weeknumber1 = 2;
             }
-            if( weekdays.contains("T")){
+            if (weekdays.contains("T")) {
                 weeknumber2 = 3;
             }
-            if( weekdays.contains("W")){
+            if (weekdays.contains("W")) {
                 weeknumber3 = 4;
             }
-            if( weekdays.contains("R")){
+            if (weekdays.contains("R")) {
                 weeknumber4 = 5;
             }
-            if( weekdays.contains("F")){
+            if (weekdays.contains("F")) {
                 weeknumber5 = 6;
             }
 
 
-
-            theShiftL  = weeknumber1 * bw;
+            theShiftL = weeknumber1 * bw;
             theShiftL2 = weeknumber2 * bw;
             theShiftL3 = weeknumber3 * bw;
             theShiftL4 = weeknumber4 * bw;
             theShiftL5 = weeknumber5 * bw;
-
 
 
             float hournumber = classarray.get(j).getStartTime();
@@ -214,9 +236,8 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
                 theShiftT = 0;
             }
             if (start == 23) {
-                    theShiftT = 12 * hour + 24;
+                theShiftT = 12 * hour + 24;
             }
-
 
 
             //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -274,9 +295,8 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             }
 
 
-
-
         }
+
 
     }
 
@@ -285,10 +305,13 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    public void reschedule(View v){
+    public void reschedule(View v) {
         Intent intent = new Intent(this, InputEvents.class);
+        intent.putParcelableArrayListExtra("custom", customarraypass);
+        intent.putParcelableArrayListExtra("classes", classarraypass);
         startActivity(intent);
     }
+
 
 }
 

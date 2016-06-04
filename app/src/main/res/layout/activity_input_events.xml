@@ -82,7 +82,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/isitloaded"
             android:layout_toEndOf="@+id/loadClasses"
-            android:layout_toRightOf="@+id/loadClasses" />
+            android:layout_toRightOf="@+id/loadClasses"
+            android:layout_below="@+id/spinnerQuarter" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -285,16 +286,24 @@
             android:layout_below="@+id/spinnerAmPm1" />
 
         <Button
-            android:id="@+id/SaveSchedule1"
+            android:id="@+id/EraseClasses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/spinnerAmPm1"
-            android:text="Save"
-            android:onClick="saveSchedule"
+            android:layout_marginTop="10dp"
+            android:text="Clear Classes"
+            android:onClick="clearclasses"
             />
 
-
+        <Button
+            android:id="@+id/EraseCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/EraseClasses"
+            android:text="Clear Custom"
+            android:onClick="clearcustom"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -303,7 +312,7 @@
             android:text="@string/gocalendar"
             android:id="@+id/gocalendar"
             android:onClick="goCalendar"
-            android:layout_below="@+id/btnAddCustom"
+            android:layout_below="@+id/EraseCustom"
             android:layout_alignParentEnd="true" />
 
         <!-- CardView -->
@@ -318,6 +327,7 @@
     android:layout_height="match_parent"
     android:id="@+id/listEvents"
     android:layout_below="@+id/gocalendar"
+    android:orientation="horizontal"
     android:background="@null">
 
     <!--added events should be put in a list below see calendar button-->

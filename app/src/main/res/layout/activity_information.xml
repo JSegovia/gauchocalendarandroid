@@ -28,10 +28,9 @@
         android:paddingLeft="3dp"
         android:id="@+id/start"
         android:onClick="start"
-        android:layout_marginBottom="37dp"
         android:background="@color/com_facebook_blue"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,19 +40,8 @@
         android:text="This application was created to make creating class schedules easy.
         \n You can add any personal events or courses to your agenda and the app will make a non-conflicting schedule for you. You can also choose whether you prefer earlier or later courses. Click the button below to get started."
         android:id="@+id/description"
-        android:layout_below="@+id/makearray"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Make Array"
-        android:id="@+id/makearray"
-        android:layout_below="@+id/textView"
-        android:layout_alignEnd="@+id/description"
-        android:onClick="makeArrayList"
-        android:visibility="visible"/>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView" />
 
 
 </RelativeLayout>

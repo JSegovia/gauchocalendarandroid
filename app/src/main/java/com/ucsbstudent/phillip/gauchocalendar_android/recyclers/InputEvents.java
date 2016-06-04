@@ -1,7 +1,9 @@
 package com.ucsbstudent.phillip.gauchocalendar_android.recyclers;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -50,6 +52,8 @@ public class InputEvents extends AppCompatActivity {
     ArrayList<LectureOrSection> coursesFall2016 = new ArrayList<LectureOrSection>();
     ArrayList<String> stringListF16 = new ArrayList<String>();
 
+    ArrayList<String> stringListS16 = new ArrayList<String>();
+    ArrayList<LectureOrSection> coursesSummer2016 = new ArrayList<LectureOrSection>();
 
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
@@ -126,6 +130,40 @@ public class InputEvents extends AppCompatActivity {
 
         //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+        File fileName1 = new File(filePath, "summer2016");
+        try {
+
+            BufferedReader bufferedReader1 =
+                    new BufferedReader(new InputStreamReader(getAssets().open("summer2016.txt")));
+
+            // This puts all the strings into an array of strings
+            String temp;
+            while ((temp = bufferedReader1.readLine()) != null) {
+                try {
+                    stringListS16.add(temp);
+                    stringListS16.add(bufferedReader1.readLine());
+
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+            // Always close files.
+            bufferedReader1.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println(
+                    "Unable to open fileTHISTHITHITHIEHGEITH '" +
+                            fileName1 + "'");
+        } catch (IOException ex) {
+            System.out.println(
+                    "Error reading file '"
+                            + fileName1 + "'");
+            // Or we could just do this:
+            // ex.printStackTrace();
+        }
+
 
         //adapter123 = new classAdapter(this, getClasses());
 
@@ -154,8 +192,7 @@ public class InputEvents extends AppCompatActivity {
                 //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
                 String temp = parent.getSelectedItem().toString();
                 Department = temp;
-                TextView test = (TextView) findViewById(R.id.isitloaded);
-                test.setText(Department);
+
             }
 
             @Override
@@ -357,19 +394,37 @@ public class InputEvents extends AppCompatActivity {
         String currentclass = d;
         //coursesFall2016.get(0).getNamofLS();
 
-        int i = 0;
-        while (!(coursesFall2016.get(i).getNamofLS().contains(currentclass))) {
-            i++;
+        Spinner quarter = (Spinner) findViewById(R.id.spinnerQuarter);
+        int index = quarter.getSelectedItemPosition();
 
+        if(index == 0) {
+            int i = 0;
+            while (!(coursesFall2016.get(i).getNamofLS().contains(currentclass))) {
+                i++;
+
+            }
+
+
+            int ind = i;
+            while (coursesFall2016.get(index).getNamofLS().contains(currentclass)) {
+                courses.add(coursesFall2016.get(ind));
+                index++;
+            }
         }
+        if (index == 1){
+            int i = 0;
+            while (!(coursesSummer2016.get(i).getNamofLS().contains(currentclass))) {
+                i++;
+
+            }
 
 
-        int index = i;
-        while (coursesFall2016.get(index).getNamofLS().contains(currentclass)) {
-            courses.add(coursesFall2016.get(index));
-            index++;
+            int ind = i;
+            while (coursesSummer2016.get(index).getNamofLS().contains(currentclass)) {
+                courses.add(coursesSummer2016.get(ind));
+                index++;
+            }
         }
-
         return courses;
 
 
@@ -407,6 +462,36 @@ public class InputEvents extends AppCompatActivity {
 
             alertDialog.show();  //<-- See This!
         }
+
+        if (coursesSummer2016.size() == 0) {
+
+            for (int i = 0; i < (stringListS16.size() - 1); i += 5) {
+                String lectsect = stringListS16.get(i);
+                String coursename = stringListS16.get(i + 1);
+                String weekdays = stringListS16.get(i + 2);
+                String time = stringListS16.get(i + 3);
+                String location = stringListS16.get(i + 4);
+
+
+                LectureOrSection temporary = new LectureOrSection(lectsect, coursename, weekdays,
+                        time, location);
+
+                coursesSummer2016.add(temporary);
+            }
+
+
+            TextView test = (TextView) findViewById(R.id.isitloaded);
+            test.setText("Done");
+
+        } else {
+
+
+            AlertDialog alertDialog = new AlertDialog.Builder(this).create(); //Read Update
+            alertDialog.setTitle("Already Loaded");
+            alertDialog.setMessage("You don't need to load classes again");
+
+            alertDialog.show();  //<-- See This!
+        }
     }
 
 
@@ -422,14 +507,16 @@ public class InputEvents extends AppCompatActivity {
         }
 
 **/
+        /*
         ArrayList<CustomEventClass> customTest = customE;
         ArrayList<LectureOrSection> classTest = transfer;
 
         firebaseRef.child("Users").child(user_name).updateChildren("customCalendar")
         firebaseRef.child("Users").child(user_name).child("courseCalendar").push(classTest);
-
+*/
         Intent intent = new Intent(this, CalendarView.class);
         Button butn = (Button) findViewById(R.id.gocalendar);
+
 /*
         ArrayList<Float> starttime = new ArrayList<>();
         ArrayList<Float> endtime = new ArrayList<>();
@@ -464,7 +551,7 @@ public class InputEvents extends AppCompatActivity {
             }
         }
 */
-        if (customE.isEmpty()) {
+        if (customE.isEmpty() && transfer.isEmpty()) {
 
             butn.setError("Conflicts in your schedule");
             return;
@@ -676,5 +763,14 @@ public class InputEvents extends AppCompatActivity {
             viewit.setVisibility(View.VISIBLE);
         }
     }
+
+    public void clearclasses(View v){
+        transfer.clear();
+    }
+
+    public void clearcustom(View v){
+        customE.clear();
+    }
+
 
 }

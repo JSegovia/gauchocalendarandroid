@@ -24,7 +24,8 @@
             android:name=".OpenScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/GC"
-            android:theme="@style/Theme.AppCompat" >
+            android:theme="@style/Theme.AppCompat"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +34,8 @@
         </activity>
         <activity
             android:name=".notinuse.LoginActivity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
         <activity android:name=".LectureOrSection$HomeScreen" />
         <activity
             android:name=".recyclers.InputEvents"
@@ -66,14 +68,12 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".CalendarView"
-            android:parentActivityName=".recyclers.InputEvents"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".recyclers.InputEvents" />
+            android:screenOrientation="portrait"
+            >
+
         </activity>
-        <activity android:name=".AddToFireBase" />
+
     </application>
 
 </manifest>
