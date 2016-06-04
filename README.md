@@ -18,21 +18,12 @@ possible.
 
 ## How to get this app running
 ### Step 1
-As of this moement, we have been working only with Android Studio so you will need to install everything necessary to run android studio. This means that if you have a Macbook you will need to download Xcode. Windows, Linux, and Apple all require you to download the latest SDK. This README will constantly be updated when we figure out other ways to run the app like using Eclipse. You can read more about what your computer will need for Android Studio here:
+As of this moement, we have been working only with Android Studio so you will need to install everything necessary to run android studio. This means that if you have a Macbook you will need to download Xcode. Windows, Linux, and Apple all require you to download the latest SDK. This README will constantly be updated when we figure out other ways to run the app like using Eclipse. You can download Android Studio here:
 http://developer.android.com/sdk/installing/index.html
 
 ### Step 2
-When you open up Android Studio for the first time it will provide you with multiple options for getting started.
-If you already have worked with Android Studio you should just go to File > close project.
-It will take you to a page like this:
-![Alt tag](https://github.com/JSegovia/gauchocalendarandroid/blob/master/app/src/main/res/drawable/studio-welcomeReadme.png)
-
-You will want to click on the option "Import project (Eclipse ADT, Gradle, etc)"
-You will be walked through on how to import the project. 
-Here is a video you can follow along with:
+Here is a youtube video that gives you a step by step instructions on how to import a project from GitHub to Android Studio:
 https://www.youtube.com/watch?v=E0MjorpDWxc
-And here is the link to our project:
-https://github.com/JSegovia/gauchocalendarandroid
 
 ### Step 3
 Once you have the project up in your Android Studio then click the play button to run it. If you do not have an android device you will need to create an emulator and run it on that. Just as a note, the smaller the emulator phone the better it will run. 
