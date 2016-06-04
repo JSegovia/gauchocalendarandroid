@@ -12,8 +12,13 @@ public class StudentProfile {
     public String username;
     public String password;
     public String email;
-    public ArrayList<CustomEventClass> calendar1 = new ArrayList<>();
-    public ArrayList<LectureOrSection> calendar2 = new ArrayList<>();
+
+    public ArrayList<CustomEventClass> calendarcustom1 = new ArrayList<>();
+    public ArrayList<LectureOrSection> calendarclass1 = new ArrayList<>();
+
+    public ArrayList<CustomEventClass> calendarcustom2 = new ArrayList<>();
+    public ArrayList<LectureOrSection> calendarclass2 = new ArrayList<>();
+
 
     public StudentProfile(String username, String password, String email){
         this.username = username;
@@ -24,13 +29,12 @@ public class StudentProfile {
     public String getUsername() {
         return username;
     }
-
     public String getPassword() {
         return password;
     }
-
     public  String getEmail(){
         return email;
     }
+
 
 }

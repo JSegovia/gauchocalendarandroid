@@ -34,7 +34,7 @@
         <activity
             android:name=".notinuse.LoginActivity"
             android:label="@string/app_name" />
-        <activity android:name=".notinuse.HomeScreen" />
+        <activity android:name=".LectureOrSection$HomeScreen" />
         <activity
             android:name=".recyclers.InputEvents"
             android:parentActivityName=".Information"

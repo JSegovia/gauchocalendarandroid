@@ -1,6 +1,7 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
-import java.util.StringTokenizer;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by Phillip on 6/2/2016.
@@ -306,4 +307,12 @@ public class LectureOrSection {
     public float getEndTime(){return EndTime;}
 
 
+    public static class HomeScreen extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_home_screen);
+        }
+    }
 }
