@@ -395,9 +395,9 @@ public class InputEvents extends AppCompatActivity {
         //coursesFall2016.get(0).getNamofLS();
 
         Spinner quarter = (Spinner) findViewById(R.id.spinnerQuarter);
-        int index = quarter.getSelectedItemPosition();
+        int pos = quarter.getSelectedItemPosition();
 
-        if(index == 0) {
+        if(pos == 0) {
             int i = 0;
             while (!(coursesFall2016.get(i).getNamofLS().contains(currentclass))) {
                 i++;
@@ -406,12 +406,12 @@ public class InputEvents extends AppCompatActivity {
 
 
             int ind = i;
-            while (coursesFall2016.get(index).getNamofLS().contains(currentclass)) {
+            while (coursesFall2016.get(ind).getNamofLS().contains(currentclass)) {
                 courses.add(coursesFall2016.get(ind));
-                index++;
+                ind++;
             }
         }
-        if (index == 1){
+        if (pos == 1){
             int i = 0;
             while (!(coursesSummer2016.get(i).getNamofLS().contains(currentclass))) {
                 i++;
@@ -420,9 +420,9 @@ public class InputEvents extends AppCompatActivity {
 
 
             int ind = i;
-            while (coursesSummer2016.get(index).getNamofLS().contains(currentclass)) {
+            while (coursesSummer2016.get(ind).getNamofLS().contains(currentclass)) {
                 courses.add(coursesSummer2016.get(ind));
-                index++;
+                ind++;
             }
         }
         return courses;

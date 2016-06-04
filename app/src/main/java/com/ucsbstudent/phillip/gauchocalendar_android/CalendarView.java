@@ -72,10 +72,19 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             final String name = customarray.get(i).getEventTitle();
             Button btn = new Button(this);
 
+            String init = "";
+            if(name.length() > 2){
+                init = name.substring(0,1);
+            }else{
+                init = name;
+            }
+            btn.setText(init);
+
             final String location = customarray.get(i).getLocation();
             final String weekday = customarray.get(i).getWeekday();
             final int shr = (customarray.get(i).getShour())+1;
             final int smin = customarray.get(i).getSmin();
+
             final String sampm = customarray.get(i).getSampm();
             final int ehr = (customarray.get(i).getEhour())+1;
             final int emin = customarray.get(i).getEmin();
@@ -84,11 +93,23 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
                 //AlertDialog.Builder alertbox = new AlertDialog.Builder(CalendarView.this);
                 @Override
                 public void onClick(View v) {
+                    String mins;
+                    if (smin == 0){
+                        mins = "00";
+                    }else{
+                        mins = Integer.toString(smin);
+                    }
+                    String mine;
+                    if (emin == 0){
+                        mine = "00";
+                    }else {
+                        mine = Integer.toString(emin);
+                    }
                     AlertDialog alertDialog = new AlertDialog.Builder(CalendarView.this).create(); //Read Update
                     alertDialog.setTitle(name);
                     alertDialog.setMessage(location + "\n" + weekday + "\n"
-                    + "Start: " + shr +":" + smin + " " + sampm + "\n"
-                    + "End: " + ehr + ":" + emin + " " + eampm);
+                    + "Start: " + shr +":" + mins + " " + sampm + "\n"
+                    + "End: " + ehr + ":" + mine + " " + eampm);
 
                     alertDialog.show();
                 }
@@ -172,10 +193,10 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
             theShiftB = theShiftB + pixelB;
 
-            int please = theShiftB - theShiftT;
+            int sizeb = theShiftB - theShiftT;
 
 
-            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, please);
+            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, sizeb);
             paramss.leftMargin = theShiftL;
             paramss.topMargin = theShiftT;
             paramss.bottomMargin = theShiftB;
@@ -191,6 +212,13 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
         for (int j = 0; j < classarray.size(); j++) {
 
+            Random rand = new Random();
+            int r = rand.nextInt(255);
+            int g = rand.nextInt(255);
+            int b = rand.nextInt(255);
+            int randomColor = Color.rgb(r,g,b);
+
+
             String name = classarray.get(j).getNamofLS();
             String init = "";
             if(name.length() > 2){
@@ -203,27 +231,27 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             String name1 = classarray.get(j).getNamofLS();
             Button btn = new Button(this);
             btn.setText(init);
-            btn.setBackgroundColor(getResources().getColor(R.color.red));
+            btn.setBackgroundColor(randomColor);
 
             String name2 = classarray.get(j).getNamofLS();
             Button btn2 = new Button(this);
             btn2.setText(init);
-            btn2.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            btn2.setBackgroundColor(randomColor);
 
             String name3 = classarray.get(j).getNamofLS();
             Button btn3 = new Button(this);
             btn3.setText(init);
-            btn3.setBackgroundColor(getResources().getColor(R.color.strong_blue));
+            btn3.setBackgroundColor(randomColor);
 
             String name4 = classarray.get(j).getNamofLS();
             Button btn4 = new Button(this);
             btn4.setText(init);
-            btn4.setBackgroundColor(getResources().getColor(R.color.gold));
+            btn4.setBackgroundColor(randomColor);
 
             String name5 = classarray.get(j).getNamofLS();
             Button btn5 = new Button(this);
             btn5.setText(init);
-            btn5.setBackgroundColor(getResources().getColor(R.color.orange));
+            btn5.setBackgroundColor(randomColor);
 
 
             String weekdays = classarray.get(j).getDaysOfWeek();
@@ -316,20 +344,96 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             params5.topMargin = theShiftT;
             params5.bottomMargin = theShiftB;
 
+            final String LectorSect = classarray.get(j).getLectorSect();
+            final String coursename = classarray.get(j).getNamofLS();
+            final String classroom  = classarray.get(j).getClassRoom();
+            final String daysofweek = classarray.get(j).getDaysOfWeek();
+            final String timeofday  = classarray.get(j).getTimeofDay();
+
+
+
+            String text = LectorSect + " " + coursename + "\n"
+                    + daysofweek + " " + timeofday + "\n"
+                    + classroom;
+            Button big = new Button(this);
+            big.setText(text);
+            big.setBackgroundColor(randomColor);
+
+            LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT);
+            ist.addView(big,p);
+
+            btn.setBackgroundColor(randomColor);
+
 
             if (weeknumber1 != 0) {
+                btn.setText(init);
+                btn.setOnClickListener(new View.OnClickListener() {
+                    //AlertDialog.Builder alertbox = new AlertDialog.Builder(CalendarView.this);
+                    @Override
+                    public void onClick(View v) {
+                        AlertDialog alertDialog = new AlertDialog.Builder(CalendarView.this).create(); //Read Update
+                        alertDialog.setTitle(LectorSect + coursename);
+                        alertDialog.setMessage(daysofweek + timeofday + "\n" + classroom);
+                        alertDialog.show();
+                    }
+                });
                 useit.addView(btn, params1);
             }
             if (weeknumber2 != 0) {
+                btn2.setText(init);
+                btn2.setOnClickListener(new View.OnClickListener() {
+                    //AlertDialog.Builder alertbox = new AlertDialog.Builder(CalendarView.this);
+                    @Override
+                    public void onClick(View v) {
+                        AlertDialog alertDialog = new AlertDialog.Builder(CalendarView.this).create(); //Read Update
+                        alertDialog.setTitle(LectorSect + coursename);
+                        alertDialog.setMessage(daysofweek + timeofday + "\n" + classroom);
+                        alertDialog.show();
+                    }
+                });
                 useit.addView(btn2, params2);
             }
             if (weeknumber3 != 0) {
+                btn3.setText(init);
+                btn3.setOnClickListener(new View.OnClickListener() {
+                    //AlertDialog.Builder alertbox = new AlertDialog.Builder(CalendarView.this);
+                    @Override
+                    public void onClick(View v) {
+                        AlertDialog alertDialog = new AlertDialog.Builder(CalendarView.this).create(); //Read Update
+                        alertDialog.setTitle(LectorSect + coursename);
+                        alertDialog.setMessage(daysofweek + timeofday + "\n" + classroom);
+                        alertDialog.show();
+                    }
+                });
                 useit.addView(btn3, params3);
             }
             if (weeknumber4 != 0) {
+                btn4.setText(init);
+                btn4.setOnClickListener(new View.OnClickListener() {
+                    //AlertDialog.Builder alertbox = new AlertDialog.Builder(CalendarView.this);
+                    @Override
+                    public void onClick(View v) {
+                        AlertDialog alertDialog = new AlertDialog.Builder(CalendarView.this).create(); //Read Update
+                        alertDialog.setTitle(LectorSect + coursename);
+                        alertDialog.setMessage(daysofweek + timeofday + "\n" + classroom);
+                        alertDialog.show();
+                    }
+                });
                 useit.addView(btn4, params4);
             }
             if (weeknumber5 != 0) {
+                btn5.setText(init);
+                btn5.setOnClickListener(new View.OnClickListener() {
+                    //AlertDialog.Builder alertbox = new AlertDialog.Builder(CalendarView.this);
+                    @Override
+                    public void onClick(View v) {
+                        AlertDialog alertDialog = new AlertDialog.Builder(CalendarView.this).create(); //Read Update
+                        alertDialog.setTitle(LectorSect + ": " + coursename);
+                        alertDialog.setMessage(daysofweek + timeofday + "\n" + classroom);
+                        alertDialog.show();
+                    }
+                });
                 useit.addView(btn5, params5);
             }
 
