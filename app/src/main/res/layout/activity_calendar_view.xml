@@ -467,12 +467,24 @@
 
 
             <Button
+                android:id="@+id/resched"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="960dp"
                 android:background="@color/lightblue"
                 android:text="reschedule"
                 android:onClick="reschedule"/>
+
+            <LinearLayout
+                android:id="@+id/listeventsboxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resched"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/linearLayout2"

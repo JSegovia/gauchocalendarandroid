@@ -1,15 +1,18 @@
 package com.ucsbstudent.phillip.gauchocalendar_android;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -19,6 +22,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.ucsbstudent.phillip.gauchocalendar_android.recyclers.InputEvents;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 
 public class CalendarView extends AppCompatActivity implements View.OnClickListener {
@@ -49,7 +53,7 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
         classarraypass = classarray;
 
         RelativeLayout useit = (RelativeLayout) findViewById(R.id.relativeLayout242);
-
+        LinearLayout ist = (LinearLayout)findViewById(R.id.listeventsboxes);
 
         int bw = width / 8;
         int min30 = height / 30;
@@ -58,19 +62,51 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
 
         for (int i = 0; i < customarray.size(); i++) {
+            Random rand = new Random();
+            int r = rand.nextInt(255);
+            int g = rand.nextInt(255);
+            int b = rand.nextInt(255);
+            int randomColor = Color.rgb(r,g,b);
 
-            String name = customarray.get(i).getEventTitle();
+
+            final String name = customarray.get(i).getEventTitle();
             Button btn = new Button(this);
 
+            final String location = customarray.get(i).getLocation();
+            final String weekday = customarray.get(i).getWeekday();
+            final int shr = (customarray.get(i).getShour())+1;
+            final int smin = customarray.get(i).getSmin();
+            final String sampm = customarray.get(i).getSampm();
+            final int ehr = (customarray.get(i).getEhour())+1;
+            final int emin = customarray.get(i).getEmin();
+            final String eampm = customarray.get(i).getEampm();
+            btn.setOnClickListener(new View.OnClickListener() {
+                //AlertDialog.Builder alertbox = new AlertDialog.Builder(CalendarView.this);
+                @Override
+                public void onClick(View v) {
+                    AlertDialog alertDialog = new AlertDialog.Builder(CalendarView.this).create(); //Read Update
+                    alertDialog.setTitle(name);
+                    alertDialog.setMessage(location + "\n" + weekday + "\n"
+                    + "Start: " + shr +":" + smin + " " + sampm + "\n"
+                    + "End: " + ehr + ":" + emin + " " + eampm);
 
-            String init = "";
-            if(name.length() > 2){
-                init = name.substring(0,1);
-            }else{
-                init = name;
-            }
-            btn.setText(init);
-            btn.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+                    alertDialog.show();
+                }
+            });
+
+            String text = location + "\n" + weekday + "\n"
+                    + "Start: " + shr +":" + smin + " " + sampm + "\n"
+                    + "End: " + ehr + ":" + emin + " " + eampm;
+            Button big = new Button(this);
+            big.setText(text);
+            big.setBackgroundColor(randomColor);
+
+            LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT);
+            ist.addView(big,p);
+
+
+            btn.setBackgroundColor(randomColor);
 
 
             int weeknumber = customarray.get(i).getWeekdayInt();
@@ -136,10 +172,10 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
 
             theShiftB = theShiftB + pixelB;
 
-            //int please = theShiftB - theShiftL;
+            int please = theShiftB - theShiftT;
 
 
-            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, ViewGroup.LayoutParams.WRAP_CONTENT);
+            RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(bw, please);
             paramss.leftMargin = theShiftL;
             paramss.topMargin = theShiftT;
             paramss.bottomMargin = theShiftB;
@@ -148,6 +184,9 @@ public class CalendarView extends AppCompatActivity implements View.OnClickListe
             useit.addView(btn, paramss);
 
         }
+
+
+
 
 
         for (int j = 0; j < classarray.size(); j++) {
