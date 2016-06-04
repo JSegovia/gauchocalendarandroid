@@ -9,7 +9,7 @@ import com.ucsbstudent.phillip.gauchocalendar_android.recyclers.InputEvents;
 
 public class Information extends AppCompatActivity {
 
-    String user_name = "";
+    String user_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

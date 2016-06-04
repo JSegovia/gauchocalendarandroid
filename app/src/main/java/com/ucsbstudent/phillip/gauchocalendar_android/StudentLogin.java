@@ -28,7 +28,8 @@ public class  StudentLogin extends AppCompatActivity {
         Firebase.setAndroidContext(this);
         firebaseRef = new Firebase(FIREBASE_URL);
         Firebase.setAndroidContext(this);
-
+        EditText user = (EditText) findViewById(R.id.TextFieldUSERNAME);
+        final String use = user.getText().toString();
 
         findViewById(R.id.loginbtn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +51,7 @@ public class  StudentLogin extends AppCompatActivity {
                         firebaseRef.child("Users").child(user_name).child("courseCalendar").child("0").child("ClassRoom").setValue("Broida");
                         Toast.makeText(StudentLogin.this, "Login Successful", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(v.getContext(), Information.class);
-                        intent.putExtra("username",user_name);
+                        intent.putExtra("username",use);
                         startActivity(intent);
 
                     }
