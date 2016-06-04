@@ -21,8 +21,8 @@ public class Information extends AppCompatActivity {
 
     public void start(View view){
         Intent intent = new Intent(this, InputEvents.class);
-        startActivity(intent);
         intent.putExtra("username", user_name);
+        startActivity(intent);
     }
 
 }

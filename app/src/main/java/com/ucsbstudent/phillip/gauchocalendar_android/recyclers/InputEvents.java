@@ -43,7 +43,7 @@ public class InputEvents extends AppCompatActivity {
 
     public ArrayList<CustomEventClass> customE = new ArrayList<>();
 
-    public static ArrayList< ArrayList<LectureOrSection> > departments =
+    public static ArrayList<ArrayList<LectureOrSection>> departments =
             new ArrayList<ArrayList<LectureOrSection>>();
 
 
@@ -65,10 +65,10 @@ public class InputEvents extends AppCompatActivity {
 
 
     classAdapter adapter123;
-    StringBuffer sb=null;
+    StringBuffer sb = null;
 
     customAdapter adapter321;
-    StringBuffer bsc=null;
+    StringBuffer bsc = null;
 
     String Department;
     String user_name = "";
@@ -80,7 +80,6 @@ public class InputEvents extends AppCompatActivity {
         //firebaseRef = new Firebase(FIREBASE_URL);
         //Toolbar toolbar = (Toolbar) findViewById(R.id.);
         //getSupportActionBar(toolbar);
-
 
 
         // Make ArrayList stringListF16
@@ -111,8 +110,6 @@ public class InputEvents extends AppCompatActivity {
             }
 
 
-
-
             // Always close files.
             bufferedReader.close();
         } catch (FileNotFoundException ex) {
@@ -128,9 +125,6 @@ public class InputEvents extends AppCompatActivity {
         }
 
         //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
 
 
         //adapter123 = new classAdapter(this, getClasses());
@@ -160,7 +154,7 @@ public class InputEvents extends AppCompatActivity {
                 //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
                 String temp = parent.getSelectedItem().toString();
                 Department = temp;
-                TextView test = (TextView)findViewById(R.id.isitloaded);
+                TextView test = (TextView) findViewById(R.id.isitloaded);
                 test.setText(Department);
             }
 
@@ -170,7 +164,6 @@ public class InputEvents extends AppCompatActivity {
 
 
         });
-
 
 
         //Spinner for quarter
@@ -294,7 +287,7 @@ public class InputEvents extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-               //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getBaseContext(), parent.getItemIdAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -314,35 +307,35 @@ public class InputEvents extends AppCompatActivity {
     }
 */
 
-    public void showclasses(View v){
+    public void showclasses(View v) {
 
-        Button fail = (Button)findViewById(R.id.buttonsearch);
-        if(coursesFall2016.size() == 0) {
+        Button fail = (Button) findViewById(R.id.buttonsearch);
+        if (coursesFall2016.size() == 0) {
             fail.setError("Please load classes");
             return;
         }
 
-        Button find = (Button)findViewById(R.id.addtoclasslist);
+        Button find = (Button) findViewById(R.id.addtoclasslist);
         find.setVisibility(View.VISIBLE);
-        TextView clear = (TextView)findViewById(R.id.isitloaded);
+        TextView clear = (TextView) findViewById(R.id.isitloaded);
         clear.setText("");
 
         adapter123 = new classAdapter(this, getClasses());
 
         sb = new StringBuffer();
-        for (LectureOrSection p : adapter123.checkedclasses){
+        for (LectureOrSection p : adapter123.checkedclasses) {
             sb.append(p.getNamofLS());
             sb.append("\n");
         }
 
-        if(adapter123.checkedclasses.size() > 0){
-            Toast.makeText(InputEvents.this,sb.toString(),Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(InputEvents.this,"PLease check classes",Toast.LENGTH_SHORT).show();
+        if (adapter123.checkedclasses.size() > 0) {
+            Toast.makeText(InputEvents.this, sb.toString(), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(InputEvents.this, "PLease check classes", Toast.LENGTH_SHORT).show();
         }
 
         //RECYCLER
-        RecyclerView rv = (RecyclerView)findViewById(R.id.classRecycler);
+        RecyclerView rv = (RecyclerView) findViewById(R.id.classRecycler);
         rv.setLayoutManager(new LinearLayoutManager(this));
         rv.setItemAnimator(new DefaultItemAnimator());
 
@@ -356,23 +349,23 @@ public class InputEvents extends AppCompatActivity {
     public ArrayList<LectureOrSection> getClasses() {
         ArrayList<LectureOrSection> courses = new ArrayList<>();
 
-        Spinner dept = (Spinner)findViewById(R.id.spinnersubject);
+        Spinner dept = (Spinner) findViewById(R.id.spinnersubject);
         //int index = dept.getSelectedItemPosition();
 
         String d = dept.getSelectedItem().toString();
 
-        String currentclass= d;
+        String currentclass = d;
         //coursesFall2016.get(0).getNamofLS();
 
         int i = 0;
-        while(!(coursesFall2016.get(i).getNamofLS().contains(currentclass))) {
+        while (!(coursesFall2016.get(i).getNamofLS().contains(currentclass))) {
             i++;
 
         }
 
 
         int index = i;
-        while(coursesFall2016.get(index).getNamofLS().contains(currentclass)){
+        while (coursesFall2016.get(index).getNamofLS().contains(currentclass)) {
             courses.add(coursesFall2016.get(index));
             index++;
         }
@@ -383,31 +376,29 @@ public class InputEvents extends AppCompatActivity {
     }
 
 
-    public void loadinArray(View v){
+    public void loadinArray(View v) {
 
-        if (coursesFall2016.size() ==0) {
+        if (coursesFall2016.size() == 0) {
 
             for (int i = 0; i < (stringListF16.size() - 1); i += 5) {
                 String lectsect = stringListF16.get(i);
-                String coursename = stringListF16.get(i+1);
+                String coursename = stringListF16.get(i + 1);
                 String weekdays = stringListF16.get(i + 2);
                 String time = stringListF16.get(i + 3);
                 String location = stringListF16.get(i + 4);
 
 
-                LectureOrSection temporary = new LectureOrSection(lectsect,coursename, weekdays,
+                LectureOrSection temporary = new LectureOrSection(lectsect, coursename, weekdays,
                         time, location);
 
                 coursesFall2016.add(temporary);
             }
 
 
-
             TextView test = (TextView) findViewById(R.id.isitloaded);
             test.setText("Done");
 
-        }
-        else {
+        } else {
 
 
             AlertDialog alertDialog = new AlertDialog.Builder(this).create(); //Read Update
@@ -420,6 +411,22 @@ public class InputEvents extends AppCompatActivity {
 
 
     public void goCalendar(View view) {
+/*
+        for (int i=0; i < customE.size(); i++) {
+            String temp = customE.get(i).getEventTitle();
+            firebaseRef.child("Users").child(user_name).child("customCalendar").setValue(temp);
+        }
+        for (int j=0; j < transfer.size(); j++) {
+            String temp2 = transfer.get(j).getNamofLS();
+            firebaseRef.child("Users").child(user_name).child("courseCgalendar").setValue(temp2);
+        }
+
+**/
+        ArrayList<CustomEventClass> customTest = customE;
+        ArrayList<LectureOrSection> classTest = transfer;
+
+        firebaseRef.child("Users").child(user_name).updateChildren("customCalendar")
+        firebaseRef.child("Users").child(user_name).child("courseCalendar").push(classTest);
 
         Intent intent = new Intent(this, CalendarView.class);
         Button butn = (Button) findViewById(R.id.gocalendar);
@@ -457,14 +464,14 @@ public class InputEvents extends AppCompatActivity {
             }
         }
 */
-        if (customE.isEmpty()){
+        if (customE.isEmpty()) {
 
-                butn.setError("Conflicts in your schedule");
-                return;
+            butn.setError("Conflicts in your schedule");
+            return;
 
         }
         intent.putParcelableArrayListExtra("custom", customE);
-        intent.putParcelableArrayListExtra("classes",transfer);
+        intent.putParcelableArrayListExtra("classes", transfer);
         //gives array of customEvent objects
         startActivity(intent);
 
@@ -587,14 +594,13 @@ public class InputEvents extends AppCompatActivity {
         };
     }
 
-    public ArrayList<CustomEventClass> getPersonalEvents(){
+    public ArrayList<CustomEventClass> getPersonalEvents() {
         ArrayList<CustomEventClass> temp = new ArrayList<>();
 
         temp = customE;
 
         return temp;
     }
-
 
 
     // onClick handler for the "X" button of each row
@@ -614,7 +620,7 @@ public class InputEvents extends AppCompatActivity {
         //firebaseRef.child("TestCustomEvent").removeValue();
 
         for (int i = 0; i < customE.size(); i++) {
-        //    firebaseRef.child("TestCustomEvent").push().setValue(customE.get(i));
+            //    firebaseRef.child("TestCustomEvent").push().setValue(customE.get(i));
         }
     }
 
@@ -657,8 +663,8 @@ public class InputEvents extends AppCompatActivity {
 
     ArrayList<LectureOrSection> transfer = new ArrayList<LectureOrSection>();
 
-    public void insertclasses(View viewit){
-        for (int i=0; i < classAdapter.checkedclasses.size(); i++){
+    public void insertclasses(View viewit) {
+        for (int i = 0; i < classAdapter.checkedclasses.size(); i++) {
             transfer.add(classAdapter.checkedclasses.get(i));
 
             String name = classAdapter.checkedclasses.get(i).getNamofLS();
@@ -666,10 +672,9 @@ public class InputEvents extends AppCompatActivity {
             String weekdays = classAdapter.checkedclasses.get(i).getDaysOfWeek();
             String time = classAdapter.checkedclasses.get(i).getTimeofDay();
             String empty = "";
-            inflatedEditRow(name,classrom,weekdays,time,empty,empty,empty,empty,empty);
+            inflatedEditRow(name, classrom, weekdays, time, empty, empty, empty, empty, empty);
             viewit.setVisibility(View.VISIBLE);
         }
     }
-
 
 }

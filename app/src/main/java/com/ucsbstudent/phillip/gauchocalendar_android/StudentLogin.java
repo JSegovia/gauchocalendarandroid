@@ -48,7 +48,6 @@ public class  StudentLogin extends AppCompatActivity {
                         if (authData.getProviderData().containsKey("email")) {
                             map.put("email", authData.getProviderData().get("email").toString());
                         }
-                        firebaseRef.child("Users").child(user_name).child("courseCalendar").child("0").child("ClassRoom").setValue("Broida");
                         Toast.makeText(StudentLogin.this, "Login Successful", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(v.getContext(), Information.class);
                         intent.putExtra("username",use);
@@ -90,8 +89,8 @@ public class  StudentLogin extends AppCompatActivity {
                 CustomEventClass testEvent = new CustomEventClass(testString, testString, testString, testInt, testInt, testInt, testString, testInt, testInt, testString);
                 LectureOrSection testLect = new LectureOrSection(testString, testString,testString, testString, testString);
 
-                final ArrayList<CustomEventClass> customCalendar = new ArrayList<CustomEventClass>() {};
-                final ArrayList<LectureOrSection> courseCalendar = new ArrayList<LectureOrSection>() {};
+                ArrayList<CustomEventClass> customCalendar = new ArrayList<CustomEventClass>() {};
+                ArrayList<LectureOrSection> courseCalendar = new ArrayList<LectureOrSection>() {};
                 customCalendar.add(testEvent);
                 courseCalendar.add(testLect);
 

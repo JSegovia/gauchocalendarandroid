@@ -291,6 +291,7 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/spinnerAmPm1"
             android:text="Save"
+            android:onClick="saveSchedule"
             />
 
 
