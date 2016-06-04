@@ -465,12 +465,14 @@
                 android:layout_marginTop="940dp"
                 android:background="#777" />
 
-            <View
-                android:id="@+id/EventDescriptionsList"
+
+            <Button
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="980dp"
-                android:background="@color/red"/>
+                android:layout_marginTop="960dp"
+                android:background="@color/lightblue"
+                android:text="reschedule"
+                android:onClick="reschedule"/>
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
